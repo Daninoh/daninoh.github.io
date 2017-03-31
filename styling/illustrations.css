@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+
+.centering{
+    transition: 0.6s ease;
+    margin-top: 5vh;
+}
+    
+ul{
+    transition: 0.6s ease;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    letter-spacing: 4px;
+    text-align: center;
+    color: #7AC5E5;
+    list-style-type: none;
+}
+
+#nav ul li a:hover{
+    transition: 0.6s ease;
+    color: #345563;
+    font-weight: bolder;
+    font-size: 20px;
+    letter-spacing: 14px
+}
+
+#nav ul li a{
+    color: 7AC5E5
+}
+
+.boldname{
+    transition: 0.6s ease;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 14px
+}
+
+.icon:hover{
+    transition: 0.4s ease;
+    border-right: 10vh solid #7AC5E5;
+    border-left: 10vh solid #7AC5E5
+}
+
