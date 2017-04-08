@@ -75,20 +75,25 @@ h1{
 .paragraph{
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
-    padding-left: 50vh;
-    padding-right: 50vh;
+    font-size: 22px;
+    padding-left: 40vh;
+    padding-right: 40vh;
 }
 
 .images{
     border: solid #7AC5E5;
     border-width: 1.5vh;
-    width: 700px
+    margin:auto;
+}
+
+.images img{
+    width:100%
 }
 
 h2{
     font-family: 'Roboto Slab', serif;
     color: black;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 16px;
+    font-weight: 200;
     text-align: center;
 }
