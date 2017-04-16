@@ -40,3 +40,28 @@ ul{
     border-left: 10vh solid #7AC5E5
 }
 
+.personal {
+    margin: auto;
+}
+
+.pictitle {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: 900;
+}
+
+.picdesc {
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.personal img {
+    width: 500px;
+    width: 100%;
+    border: solid #7AC5E5;
+    border-width: 0.1vh;
+}
