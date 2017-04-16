@@ -60,8 +60,7 @@ ul{
 }
 
 .personal img {
-    width: 500px;
-    width: 100%;
+    width: 40%;
     border: solid #7AC5E5;
     border-width: 0.1vh;
 }
