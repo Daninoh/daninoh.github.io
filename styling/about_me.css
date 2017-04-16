@@ -39,3 +39,33 @@ ul{
     border-right: 10vh solid #7AC5E5;
     border-left: 10vh solid #7AC5E5
 }
+
+h1{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    font-weight: 100;
+    color: grey;
+    padding-right: 70vh;
+    padding-left: 70vh;  
+}
+
+.profile{
+    border-color: #7AC5E5;
+}
+
+h2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #7AC5E5;
+    padding-right: 70vh;
+    padding-left: 70vh;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+h2:hover{
+    transition: 0.4s ease-in-out;
+    color: black;
+    font-size: 23px;
+}
