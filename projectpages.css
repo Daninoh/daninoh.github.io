@@ -75,10 +75,10 @@ h1{
 .paragraph{
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 22px;
     left: auto 50%;
     margin-right: auto -50%;
-    width: 32em;  
+    width: 30em;  
 }
 
 .images{
