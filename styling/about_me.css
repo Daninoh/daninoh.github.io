@@ -45,8 +45,9 @@ h1{
     font-size: 16px;
     font-weight: 100;
     color: grey;
-    padding-right: 70vh;
-    padding-left: 70vh;  
+    left: auto 50%;
+    margin-right: auto -50%;
+    width: 30em;  
 }
 
 .profile{
@@ -58,8 +59,8 @@ h2{
     font-size: 20px;
     font-weight: 700;
     color: #7AC5E5;
-    padding-right: 70vh;
-    padding-left: 70vh;
+    margin-left: auto;
+    margin-right: auto;
     letter-spacing: 2px;
     text-align: center;
 }
