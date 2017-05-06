@@ -76,14 +76,16 @@ h1{
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
     font-size: 22px;
-    padding-left: 40vh;
-    padding-right: 40vh;
+    left: auto 50%;
+    margin-right: auto -50%;
+    width: 30em;  
 }
 
 .images{
     border: solid #7AC5E5;
     border-width: 1.5vh;
     margin: auto;
+    width: 30em;
 }
 
 .images img{
