@@ -75,7 +75,7 @@ h1{
 .paragraph{
     font-family: 'Roboto Slab', serif;
     font-weight: 300;
-    font-size: 22px;
+    font-size: 18px;
     left: auto 50%;
     margin-right: auto -50%;
     width: 30em;  
@@ -100,3 +100,6 @@ h2{
     text-align: center;
 }
 
+p{
+    font-size: 18px !important;
+}
