@@ -50,10 +50,10 @@ ul{
 
 .icon1:hover{
     transition: 0.3s ease;
-    border-right: 1.5vh solid #7AC5E5;
-    border-left: 1.5vh solid #7AC5E5;
-    border-bottom: 1.5vh solid #7AC5E5;
-    border-top: 1.5vh solid #7AC5E5;
+    border-right: 1vh solid #7AC5E5;
+    border-left: 1vh solid #7AC5E5;
+    border-bottom: 1vh solid #7AC5E5;
+    border-top: 1vh solid #7AC5E5;
 }
 
 .personal {
