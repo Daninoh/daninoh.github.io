@@ -98,3 +98,23 @@ h2{
     font-weight: 200;
     text-align: center;
 }
+
+#myBtn {
+    display: none;
+    position: fixed; 
+    bottom: 40px; 
+    right: 50px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    background-color: #7AC5E5;
+    color: white; 
+    cursor: pointer; 
+    padding: 18px; 
+    font-size: 15px;
+}
+
+#myBtn:hover {
+    transition: 0.4s ease;
+    background-color: #345563; 
+}
