@@ -7,6 +7,9 @@
     </head>
     
     <body>
+        
+        <button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+        
         <div class="centering">
         <header>
             <center><a href="index.html"><div class="icon"><img src="images/logo.png" alt="Logo" width="275px" height="116.5118px"></div></a></center>
@@ -34,14 +37,14 @@
         </div>
         <div class="paragraph">
         <p>
-            First Paragraph!
+            first paragraph
         </p>
             &nbsp;
             <div class="images"><img src="images/cubehousemodelextrude.jpg" alt="Cube House Model" width=350px>
             </div>
             &nbsp;
         <p>
-            Lorem something Dipsum thing lololol.
+            second paragraph
         </p>
             &nbsp;
             <div class="images"><img src="images/cubehouseplan.jpg" alt="Plan" width=700px>
@@ -54,14 +57,14 @@
             <div class="images"><img src="images/cubehouseaxon.jpg" alt="Axon" width=700px>
             </div>
         <p>
-            again... lolololol
+            third paragraph
         </p>
             &nbsp;
             <div class="images"><img src="images/cubehousemodelaxon.jpg" alt="Cube House Model 2" width=700px>
             </div>
             &nbsp;
         <p>
-            hello!
+            conclusion
         </p>
             &nbsp;
             <div class="images"><img src="images/cubehousemodelplan.jpg" alt="Cube House Model 3" width=700px>
@@ -69,6 +72,23 @@
         </div>
         &nbsp;
         </center>
+        
+        <script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
         
     </body>
 </html>

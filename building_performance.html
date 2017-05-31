@@ -7,6 +7,9 @@
     </head>
     
     <body>
+        
+        <button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+        
         <div class="centering">
         <header>
             <center><a href="index.html"><div class="icon"><img src="images/logo.png" alt="Logo" width="275px" height="116.5118px"></div></a></center>
@@ -54,6 +57,10 @@
             </div>
             &nbsp;
         <p>
+            ADD PROCESS IMAGES    
+        </p>
+            
+        <p>
             The tools implemented into this
             design are an iron and a potato
             peeler. The design itself was
@@ -64,9 +71,27 @@
             &nbsp;
             <div class="images"><img src="  images/buildperformance_final2.jpg" alt="BuildingPerformanceModel" width=700px>
             </div>
+
         </div>
         &nbsp;
         </center>
+        
+         <script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
         
     </body>
 </html>
