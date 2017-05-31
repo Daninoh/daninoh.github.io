@@ -5,8 +5,12 @@
         <link rel="stylesheet" type="text/css" href="styling/illustrations.css">
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     </head>
+
     
     <body>
+        
+        <button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+        
         <div class="centering">
         <header>
             <center><a href="index.html"><div class="icon"><img src="images/logo.png" alt="Logo" width="275px" height="116.5118px"></div></a></center>
@@ -25,6 +29,18 @@
         &nbsp;
         <center> 
         
+        <div class="personal">
+            <img src=images/personal-olympians.jpg alt="Olympians" width=500px>
+        </div>
+        <div class="pictitle">
+            olympians
+        </div>
+        <div class="picdesc">
+            2017
+        </div>
+            &nbsp; 
+            <p></p>
+            
         <div class="personal">
             <img src=images/personal-triad.png alt="Triad" width=500px>
         </div>
@@ -73,7 +89,23 @@
             2015
         </div>
         
-        
+    <script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+            
         </center>    
     </body>
 </html>
