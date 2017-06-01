@@ -1,7 +1,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>building performance</title>
+        <title>building study</title>
         <link rel="stylesheet" type="text/css" href="projectpages.css">
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     </head>
@@ -28,50 +28,50 @@
         <center>
          <div class="icon1">
              <a href="projects.html"style="text-decoration:none">
-                <img src="images/ICON-3.png" alt="Building Performance"width="200px" height="200px">
+                <img src="images/ICON-2.png" alt="Building Performance"width="200px" height="200px">
              </a>
         </div>
     
         <div class="boldname">
-            <h1>building performance</h1>    
+            <h1>building study</h1>    
         </div>
         <div class="paragraph">
             <h2>
-            model made in collaboration with Yoojin Kim
+            model made in collaboration Minh Le and Longney Luk
             </h2>
         <p>
-            This project was based around
-            the movements and motions of a
-            given kitchen utensil. The utensil’s
-            movements were first observed,
-            then translated/abstracted into 2D
-            draftings on vellum. The drawings
-            were, again, abstracted into five
-            different sections and finally
-            transformed into 3D wooden
-            models using minimal glue and
-            effective joinery.
+            first paragraph
         </p>
             &nbsp;
-            <div class="images"><img src="images/buildperformance_final1.jpg" alt="BuildingPerformanceModel" width=700px>
+            <div class="images"><img src="images/buildingstudy_final1.jpg" alt="BuildingStudyModel" width=700px>
             </div>
             &nbsp;
         <p>
-            ADD PROCESS IMAGES    
-        </p>
-            
-        <p>
-            The tools implemented into this
-            design are an iron and a potato
-            peeler. The design itself was
-            inspired by the action verb “sliding”,
-            as both of the utensils had a major
-            idea of sliding.
+            second paragraph
         </p>
             &nbsp;
-            <div class="images"><img src="  images/buildperformance_final2.jpg" alt="BuildingPerformanceModel" width=700px>
+            <div class="images"><img src="images/buildingstudyplan.jpg" alt="BuildingStudyPlan" width=700px>
             </div>
-
+            &nbsp;
+            <div class="images"><img src="images/buildingstudysection.jpg" alt="BuildingStudySection" width=700px>
+            </div>
+            &nbsp;
+            <div class="images"><img src="images/buildingstudyparaline.jpg" alt="BuildingStudyParaline" width=700px>
+            </div>
+            &nbsp;
+        <p>
+            third paragraph
+        </p>
+            &nbsp;
+            <div class="images"><img src="images/buildingstudy_final2.jpg" alt="BuildingStudyModel" width=700px>
+            </div>
+            &nbsp;
+        <p>
+            conclusion
+        </p>
+            &nbsp;
+            <div class="images"><img src="images/buildingstudy_final3.jpg" alt="BuildingStudyModel" width=700px>
+            </div>
         </div>
         &nbsp;
         </center>
@@ -94,4 +94,9 @@ function topFunction() {
 </script>
         
     </body>
+&nbsp;
+    <footer>
+        © 2017 by Daniel Noh. All Rights Reserved
+    </footer>
+&nbsp;
 </html>

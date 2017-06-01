@@ -71,3 +71,11 @@ h2:hover{
     font-size: 23px;
 }
 
+footer{
+    display: block;
+    font-family: 'Roboto Slab', serif;
+    font-size: 14px;
+    text-align: center;
+    bottom: 10px;
+    color: darkgrey;
+}
