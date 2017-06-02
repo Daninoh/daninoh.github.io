@@ -20,7 +20,7 @@ ul{
     color: #345563;
     font-weight: bolder;
     font-size: 20px;
-    letter-spacing: 14px
+    letter-spacing: 6px
 }
 
 #nav ul li a{
@@ -31,7 +31,7 @@ ul{
     color: black;
     font-size: 20px;
     font-weight: bolder;
-    letter-spacing: 14px
+    letter-spacing: 6px
 }
 
 .icon:hover{
@@ -50,10 +50,10 @@ ul{
 
 .icon1:hover{
     transition: 0.5s ease;
-    border-right: 12px solid #7AC5E5;
-    border-left: 12px solid #7AC5E5;
-    border-bottom: 12px solid #7AC5E5;
-    border-top: 12px solid #7AC5E5;
+    border-right: 10px solid #7AC5E5;
+    border-left: 10px solid #7AC5E5;
+    border-bottom: 10px solid #7AC5E5;
+    border-top: 10px solid #7AC5E5;
 }
 
 .pictitle {
