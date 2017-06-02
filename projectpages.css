@@ -20,7 +20,7 @@ ul{
     color: #345563;
     font-weight: bolder;
     font-size: 20px;
-    letter-spacing: 14px
+    letter-spacing: 6px
 }
 
 #nav ul li a{
@@ -30,7 +30,7 @@ ul{
 .clickbold{
     font-size: 20px;
     font-weight: bolder;
-    letter-spacing: 14px;
+    letter-spacing: 6px;
 }
 
 .boldname{
@@ -52,10 +52,10 @@ ul{
     margin: 25px;
     float: center;
     border: solid #7AC5E5;
-    border-right: 12px solid #7AC5E5;
-    border-left: 12px solid #7AC5E5;
-    border-top: 12px solid #7AC5E5;
-    border-bottom: 12px solid #7AC5E5;
+    border-right: 10px solid #7AC5E5;
+    border-left: 10px solid #7AC5E5;
+    border-top: 10px solid #7AC5E5;
+    border-bottom: 10px solid #7AC5E5;
 }
 
 .icon1:hover{
@@ -68,7 +68,7 @@ h1{
     color: black;
     font-size: 25px;
     font-weight: bolder;
-    letter-spacing: 10px;
+    letter-spacing: 4px;
     text-align: center;
 }
 
