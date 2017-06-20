@@ -37,7 +37,7 @@ ul{
     color: black;
     font-size: 20px;
     font-weight: bolder;
-    letter-spacing: 14px
+    letter-spacing: 6px;
 }
 
 .icon:hover{
@@ -78,13 +78,13 @@ h1{
     font-size: 16px;
     left: auto 50%;
     margin-right: auto -50%;
-    width: 30em;  
+    width: 50em;  
 }
 
 .images{
     border: solid #7AC5E5 3px;
     margin: auto;
-    width: 30em;
+    width: 50em;
 }
 
 .images img{
