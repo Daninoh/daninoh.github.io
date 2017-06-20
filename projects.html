@@ -6,7 +6,10 @@
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     </head>
     
-    <body>
+    <div id="loader"></div>
+    <div style="display:none;" id="loadanim" class="animate-bottom">
+    
+    <body onload="myFunction()" style="margin:0;">
         
         <button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
         
@@ -65,6 +68,17 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 500);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("loadanim").style.display = "block";
+}
 </script>
 &nbsp;
     <footer>
@@ -72,4 +86,5 @@ function topFunction() {
     </footer>
 &nbsp;
     </body>
+    </div>
 </html>
