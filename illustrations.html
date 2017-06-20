@@ -6,8 +6,13 @@
         <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     </head>
 
+        
+        <div id="loader"></div>
+        <div style="display:none;" id="loadanim" class="animate-bottom">
     
-    <body>
+    <body onload="myFunction()" style="margin:0;">
+
+
         
         <button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
         
@@ -28,7 +33,9 @@
         </div>
         &nbsp;
         <center> 
-        
+
+       
+            
         <div class="personal">
             <img src=images/personal-sandwhen.jpg alt="Sandwhen" width=500px>
         </div>
@@ -137,7 +144,8 @@
         </div>
             &nbsp;
             <p></p>
-            
+         </center>
+             
         
         
     <script>
@@ -155,13 +163,26 @@ function topFunction() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
 }
+        
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1500);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("loadanim").style.display = "block";
+}
 </script>
-            
-        </center>    
+    
     </body>
+            
+       
 &nbsp;
     <footer>
         © 2017 by Daniel Noh. All Rights Reserved
     </footer>
 &nbsp;
+    </div>
 </html>
