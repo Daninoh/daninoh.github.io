@@ -72,8 +72,9 @@ h2:hover{
     font-size: 23px;
 }
 
-a{
-    text-decoration: none; !important
+h2 a{
+    text-decoration: none;
+    color: #7AC5E5;
 }
 
 footer{
