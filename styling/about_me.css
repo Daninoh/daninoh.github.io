@@ -63,12 +63,18 @@ h2{
     margin-right: auto;
     letter-spacing: 2px;
     text-align: center;
+    text-decoration: none;
 }
 
 h2:hover{
     transition: 0.4s ease-in-out;
     color: black;
     font-size: 23px;
+}
+
+h2 a{
+    text-decoration: none;
+    color: #7AC5E5;
 }
 
 footer{
