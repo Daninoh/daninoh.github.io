@@ -3,7 +3,7 @@
 .centering{
     margin-top: 5vh;
 }
-    
+
 ul{
     margin: 0;
     padding: 0;
@@ -19,8 +19,8 @@ ul{
     transition: 0.6s ease;
     color: #345563;
     font-weight: bolder;
-    font-size: 20px;
-    letter-spacing: 6px
+    font-size: 16px;
+    letter-spacing: 4px
 }
 
 #nav ul li a{
@@ -29,9 +29,9 @@ ul{
 
 .boldname{
     color: black;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bolder;
-    letter-spacing: 6px
+    letter-spacing: 4px
 }
 
 .icon:hover{
@@ -47,7 +47,7 @@ h1{
     color: grey;
     left: auto 50%;
     margin-right: auto -50%;
-    width: 30em;  
+    width: 30em;
 }
 
 .profile{
@@ -69,7 +69,7 @@ h2{
 h2:hover{
     transition: 0.4s ease-in-out;
     color: black;
-    font-size: 23px;
+    font-size: 22x;
 }
 
 a{
@@ -122,12 +122,12 @@ footer{
 }
 
 @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
+    from { bottom:-100px; opacity:0 }
     to { bottom:0px; opacity:1 }
 }
 
-@keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
+@keyframes animatebottom {
+    from{ bottom:-100px; opacity:0 }
     to{ bottom:0; opacity:1 }
 }
 

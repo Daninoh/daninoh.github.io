@@ -3,7 +3,7 @@
 .centering{
     margin-top: 5vh;
 }
-    
+
 ul{
     margin: 0;
     padding: 0;
@@ -19,8 +19,8 @@ ul{
     transition: 0.6s ease;
     color: #345563;
     font-weight: bolder;
-    font-size: 20px;
-    letter-spacing: 6px
+    font-size: 16px;
+    letter-spacing: 4px
 }
 
 #nav ul li a{
@@ -28,16 +28,16 @@ ul{
 }
 
 .clickbold{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bolder;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
 }
 
 .boldname{
     color: black;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bolder;
-    letter-spacing: 6px;
+    letter-spacing: 4px;
 }
 
 .icon:hover{
@@ -66,9 +66,9 @@ ul{
 h1{
     font-family: 'Roboto Slab', serif;
     color: black;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bolder;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     text-align: center;
 }
 
@@ -78,7 +78,7 @@ h1{
     font-size: 16px;
     left: auto 50%;
     margin-right: auto -50%;
-    width: 50em;  
+    width: 50em;
 }
 
 .images{
@@ -101,22 +101,22 @@ h2{
 
 #myBtn {
     display: none;
-    position: fixed; 
-    bottom: 40px; 
-    right: 50px; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
     background-color: #7AC5E5;
-    color: white; 
-    cursor: pointer; 
-    padding: 18px; 
+    color: white;
+    cursor: pointer;
+    padding: 18px;
     font-size: 15px;
 }
 
 #myBtn:hover {
     transition: 0.4s ease;
-    background-color: #345563; 
+    background-color: #345563;
 }
 
 footer{
@@ -165,12 +165,12 @@ footer{
 }
 
 @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
+    from { bottom:-100px; opacity:0 }
     to { bottom:0px; opacity:1 }
 }
 
-@keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
+@keyframes animatebottom {
+    from{ bottom:-100px; opacity:0 }
     to{ bottom:0; opacity:1 }
 }
 

@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700');
 
 .centering{
     margin-top: 5vh;
 }
-    
+
 ul{
     margin: 0;
     padding: 0;
@@ -27,11 +27,17 @@ ul{
     color: 7AC5E5
 }
 
+.clickbold{
+    font-size: 16px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+}
+
 .boldname{
     color: black;
     font-size: 16px;
     font-weight: bolder;
-    letter-spacing: 4px
+    letter-spacing: 4px;
 }
 
 .icon:hover{
@@ -45,20 +51,61 @@ ul{
     height: 200px;
     margin: 25px;
     float: center;
-    border: solid #7AC5E5
+    border: solid #7AC5E5;
+    border-right: 10px solid #7AC5E5;
+    border-left: 10px solid #7AC5E5;
+    border-top: 10px solid #7AC5E5;
+    border-bottom: 10px solid #7AC5E5;
 }
 
 .icon1:hover{
-    transition: 0.5s ease;
-    border-right: 10px solid #7AC5E5;
-    border-left: 10px solid #7AC5E5;
-    border-bottom: 10px solid #7AC5E5;
-    border-top: 10px solid #7AC5E5;
+    transition: 0.6s;
+    border: solid #7AC5E5
+}
+
+h1{
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+.paragraph{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    font-size: 16px;
+    left: auto 50%;
+    margin-right: auto -50%;
+    width: 50em;
+}
+
+.images{
+    border: solid #7AC5E5 3px;
+    margin: auto;
+    width: 50em;
+}
+
+.images img{
+    width:100%
+}
+
+h2{
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 16px;
+    font-weight: 200;
+    text-align: center;
+}
+
+.personal {
+    margin: auto;
 }
 
 .pictitle {
     font-family: 'Roboto Slab', serif;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 2px;
     text-align: center;
     font-weight: 900;
@@ -66,34 +113,29 @@ ul{
 
 .picdesc {
     font-family: 'Roboto Slab', serif;
-    font-size: 10px;
+    font-size: 14px;
     letter-spacing: 2px;
-    color: darkgray;
     text-align: center;
-}
-
-.personal {
-    border: solid #7AC5E5;
 }
 
 #myBtn {
     display: none;
-    position: fixed; 
-    bottom: 40px; 
-    right: 50px; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
     background-color: #7AC5E5;
-    color: white; 
-    cursor: pointer; 
-    padding: 18px; 
+    color: white;
+    cursor: pointer;
+    padding: 18px;
     font-size: 15px;
 }
 
 #myBtn:hover {
     transition: 0.4s ease;
-    background-color: #345563; 
+    background-color: #345563;
 }
 
 footer{
@@ -142,12 +184,12 @@ footer{
 }
 
 @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
+    from { bottom:-100px; opacity:0 }
     to { bottom:0px; opacity:1 }
 }
 
-@keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
+@keyframes animatebottom {
+    from{ bottom:-100px; opacity:0 }
     to{ bottom:0; opacity:1 }
 }
 
