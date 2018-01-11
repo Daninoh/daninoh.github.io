@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
+@import url('https://fonts.googleapis.com/css?family=Asap');
 
 .centering{
     margin-top: 5vh;
 }
-    
+
 ul{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Asap', serif;
     font-size: 14px;
+    font-weight: bolder;
     letter-spacing: 4px;
     text-align: center;
     color: #7AC5E5;
@@ -57,7 +58,7 @@ ul{
 }
 
 .pictitle {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Asap', serif;
     font-size: 15px;
     letter-spacing: 2px;
     text-align: center;
@@ -65,7 +66,7 @@ ul{
 }
 
 .picdesc {
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Asap', serif;
     font-size: 10px;
     letter-spacing: 2px;
     color: darkgray;
@@ -78,27 +79,27 @@ ul{
 
 #myBtn {
     display: none;
-    position: fixed; 
-    bottom: 40px; 
-    right: 50px; 
-    z-index: 99; 
-    border: none; 
-    outline: none; 
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
     background-color: #7AC5E5;
-    color: white; 
-    cursor: pointer; 
-    padding: 18px; 
+    color: white;
+    cursor: pointer;
+    padding: 18px;
     font-size: 15px;
 }
 
 #myBtn:hover {
     transition: 0.4s ease;
-    background-color: #345563; 
+    background-color: #345563;
 }
 
 footer{
     display: block;
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Asap', serif;
     font-size: 14px;
     text-align: center;
     bottom: 10px;
@@ -142,12 +143,12 @@ footer{
 }
 
 @-webkit-keyframes animatebottom {
-    from { bottom:-100px; opacity:0 } 
+    from { bottom:-100px; opacity:0 }
     to { bottom:0px; opacity:1 }
 }
 
-@keyframes animatebottom { 
-    from{ bottom:-100px; opacity:0 } 
+@keyframes animatebottom {
+    from{ bottom:-100px; opacity:0 }
     to{ bottom:0; opacity:1 }
 }
 
