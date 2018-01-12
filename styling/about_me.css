@@ -37,8 +37,8 @@ ul{
 
 .icon:hover{
     transition: 0.4s ease;
-    border-right: 10vh solid #7AC5E5;
-    border-left: 10vh solid #7AC5E5
+    border-right: 15vh solid #7AC5E5;
+    border-left: 15vh solid #7AC5E5
 }
 
 h1{
