@@ -57,7 +57,7 @@ h1{
 
 h2{
     font-family: 'Asap', serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     color: #7AC5E5;
     margin-left: auto;
@@ -70,7 +70,7 @@ h2{
 h2:hover{
     transition: 0.4s ease-in-out;
     color: black;
-    font-size: 22x;
+    font-size: 20px;
 }
 
 a{

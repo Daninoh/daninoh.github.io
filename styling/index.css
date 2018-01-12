@@ -13,6 +13,10 @@ h1{
     margin-bottom: 25vh;
 }
 
+p{
+    color: #7AC5E5;
+}
+
 ul{
     transition: 0.6s ease;
     margin: 0;
