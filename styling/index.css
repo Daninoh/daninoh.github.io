@@ -1,60 +1,86 @@
 @import url('https://fonts.googleapis.com/css?family=Asap');
 
-h1{
-    font-family: 'Asap', serif;
-    font-size: 18px;
-    letter-spacing: 15px;
-    text-align: center;
+ul {
+  transition: 0.5s ease;
+  text-align:center;
+  text-decoration: none;
+  margin: 0;
+  margin-right: -4px;
+  padding: 0;
+  font-family: 'Asap', serif;
+  font-size: 14px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  color: #7AC5E5;
+  list-style-type: none;
 }
 
-.centering{
-    transition: 0.6s ease;
-    margin-top: 25vh;
-    margin-bottom: 25vh;
+#nav ul li a:hover {
+  text-decoration: none;
+  transition: 0.4s ease;
+  color: #497689;
+  font-weight: bolder;
+  font-size: 14px;
+  letter-spacing: 4px
 }
 
-p{
-    color: #7AC5E5;
+#nav ul li a {
+  text-decoration: none;
+  color: #7AC5E5
 }
 
-ul{
-    transition: 0.6s ease;
-    margin: 0;
-    padding: 0;
-    font-family: 'Asap', serif;
-    font-weight: bolder;
-    font-size: 14px;
-    letter-spacing: 4px;
-    text-align: center;
-    color: #7AC5E5;
-    list-style-type: none;
+.logo {
+  transition: 0.6s ease;
+  margin-top: 25vh;
 }
 
-#nav ul li a:hover{
-    transition: 0.6s ease;
-    color: #345563;
-    transition: 0.6s ease;
-    color: black;
-    font-size: 16px;
-    font-weight: bolder;
-    letter-spacing: 4px
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
 }
 
-#nav ul li a{
-    color: 7AC5E5
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
 }
 
 .icon:hover{
-    transition: 0.6s ease;
-    border-right: 76vh solid #7AC5E5;
-    border-left: 76vh solid #7AC5E5
+  transition: 0.6s ease;
+  border-right: 76vh solid #7AC5E5;
+  border-left: 76vh solid #7AC5E5
 }
 
 footer{
-    display: block;
-    font-family: 'Asap', serif;
-    font-size: 14px;
-    text-align: center;
-    bottom: 10px;
-    color: darkgrey;
+  transition: ease 0.5s;
+  position: fixed;
+  display: block;
+  font-family: 'Asap', serif;
+  font-size: 14px;
+  text-align: center;
+  bottom: 10px;
+  color: darkgrey;
+  width: 75%;
+  margin-left: -37.5%;
+  left: 50%;
+}
+
+@media screen and (max-height:550px) {
+  footer {
+    transition: ease 0.5s;
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width:400px) {
+  ul {
+    font-size: 1.15rem;
+  }
 }
