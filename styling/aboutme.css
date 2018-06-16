@@ -191,10 +191,10 @@ main p {
   ul {
     font-size: 1.15rem;
   }
-  .clickbold {
+  .boldname {
     font-size: 1.15rem;
   }
-  .boldname {
+  #nav ul li a:hover {
     font-size: 1.15rem;
   }
 }
