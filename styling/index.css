@@ -83,4 +83,7 @@ footer{
   ul {
     font-size: 1.15rem;
   }
+  #nav ul li a:hover {
+    font-size: 1.15rem;
+  }
 }
