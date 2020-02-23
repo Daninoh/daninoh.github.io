@@ -10,22 +10,22 @@ ul {
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 4px;
-  color: #7AC5E5;
+  color: #f7975d;
   list-style-type: none;
 }
 
 #nav ul li a:hover {
   text-decoration: none;
   transition: 0.4s ease;
-  color: #497689;
+  color: #f36814;
   font-weight: bolder;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 4px
 }
 
 #nav ul li a {
   text-decoration: none;
-  color: #7AC5E5
+  color: #f7975d;
 }
 
 .logo {
@@ -53,8 +53,8 @@ ul {
 
 .icon:hover{
   transition: 0.6s ease;
-  border-right: 76vh solid #7AC5E5;
-  border-left: 76vh solid #7AC5E5
+  border-right: 76vh solid #f7975d;
+  border-left: 76vh solid #f7975d;
 }
 
 footer{

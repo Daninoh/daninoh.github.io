@@ -10,14 +10,14 @@ ul {
   font-size: 14px;
   font-weight: normal;
   letter-spacing: 4px;
-  color: #7AC5E5;
+  color: #f7975d;
   list-style-type: none;
 }
 
 #nav ul li a:hover {
   text-decoration: none;
   transition: 0.4s ease;
-  color: #497689;
+  color: #f36814;
   font-weight: bolder;
   font-size: 14px;
   letter-spacing: 4px
