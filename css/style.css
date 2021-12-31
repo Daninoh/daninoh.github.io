@@ -11,9 +11,9 @@ a:hover {
   color: #992c00;
   text-decoration: none;
 }
-button {
+/*button {
   margin-top: 6px;
-}
+}*/
 footer {
   font-size: 0.8em;
   font-style: italic;
@@ -38,11 +38,9 @@ h3 {
 }
 h4 {
   font-size: 1.2rem;
-  margin: 15px;
 }
 h5 {
   font-size: 1rem;
-  margin-top: 10px;
   margin-bottom: 30px;
 }
 p {
@@ -57,9 +55,10 @@ p {
 .col-md-4>img:hover {
   transition: .2s ease-in-out;
   opacity: 0.5;
-  color: #ff4a00;
-  border-width: 1px;
+  color: #ff4a00 !important; 
+  border-width: 2px;
 }
+
 .currentindex {
   text-decoration: line-through !important;
 }
