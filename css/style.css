@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+* {
+  font-family: 'Work Sans', sans-serif;
+}
+a {
+  transition: 0.1s ease-in;
+  color: #ff4a00;
+  text-decoration: none;
+}
+a:hover {
+  color: #992c00;
+  text-decoration: none;
+}
+button {
+  margin-top: 6px;
+}
+footer {
+  font-size: 0.8em;
+  font-style: italic;
+}
+h1 {
+  transition: 0.2s ease-out;
+  color: black;
+  font-weight: bold;
+  font-size: 1.6em;
+  margin-bottom: 15px;
+}
+h1:hover {
+  transition: 0.2s;
+  color: #ff4a00
+}
+h2 {
+  font-size: 1.6rem;
+}
+h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+h4 {
+  font-size: 1.4rem;
+  margin: 15px;
+}
+h5 {
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+p {
+  margin: none;
+  color: #212529;
+}
+.col-md-4>img {
+  border-style: solid;
+  border-width: 1px;
+  color: rgba(0, 0, 0, .15);
+}
+.col-md-4>img:hover {
+  transition: .2s ease-in-out;
+  opacity: 0.5;
+  color: #ff4a00;
+  border-width: 1px;
+}
+.currentindex {
+  text-decoration: line-through !important;
+}
+.indexmenu {
+  color: black;
+}
+.indexmenu:hover {
+  color: #ff4a00;
+}
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.navbar-light .navbar-toggler {
+  border: none;
+}
+.nav-link:hover {
+  color: #ff4a00 !important;
+}
+.nav-item>.active {
+  color: #ff4a00 !important;
+  font-weight: bold;
+}
+.nav-item>.active:hover {
+  font-weight: bold;
+}
+/* List */
+
+#searchBar {
+  width: 100%;
+  /* Full-width */
+  font-size: 16px;
+  /* Increase font-size */
+  padding: 12px 20px 12px 20px;
+  /* Add some padding */
+  border: 1px solid #ddd;
+  /* Add a grey border */
+  margin-bottom: 12px;
+  /* Add some space below the input */
+  margin-top: 12px;
+  /* Add some space above the input */
+}
+#searchList {
+  /* Remove default list styling */
+  list-style-type: none;
+  padding: 0;
+  line-height: 1.4em;
+}
+#searchList li a {
+  border: 1px solid #ddd;
+  /* Add a border to all links */
+  background-color: #f6f6f6;
+  /* Grey background color */
+  padding: 12px;
+  /* Add some padding */
+  text-decoration: none;
+  /* Remove default text underline */
+  font-size: 18px;
+  /* Increase the font-size */
+  color: black;
+  /* Add a black text color */
+  display: block;
+  /* Make it into a block element to fill the whole list */
+}
+#searchList li a:hover:not(.header) {
+  background-color: rgba(238, 238, 238, 50);
+  /* Background color change to box on hover */
+  transition: 0.1s ease-in;
+  color: #ff4a00;
+  /* Text color change on hover *
+}
