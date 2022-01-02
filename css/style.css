@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
 * {
   font-family: 'Work Sans', sans-serif;
+  box-sizing: border-box;
 }
 a {
   transition: 0.1s ease-in;
@@ -8,6 +9,7 @@ a {
   text-decoration: none;
 }
 a:hover {
+  transition: 0.3s ease-in-out;
   color: #992c00;
   text-decoration: none;
 }
@@ -43,10 +45,35 @@ h5 {
   font-size: 1rem;
   margin-bottom: 30px;
 }
-p {
-  margin: none;
-  color: #212529;
+
+.container2 {
+  position: relative;
+  width: 100%;
+  display: flex;
+  gap: 10px;
 }
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.post {
+  position: relative;
+  overflow: hidden;
+  /* background: #131313; */
+}
+
+img {
+  width: 100%;
+}
+
+.content>img{
+  max-width: 100%;
+}
+
 .col-md-4>img {
   margin-bottom: 15px;
   border-style: solid;
@@ -87,53 +114,14 @@ p {
 .nav-item>.active:hover {
   font-weight: bold;
 }
+.grid-item { 
+  width: 200px;
+}
+.grid-item--width2 {
+  width: 400px;
+}
 
-
-/* List */
-
-#searchBar {
-  width: 100%;
-  /* Full-width */
-  font-size: 16px;
-  /* Increase font-size */
-  padding: 12px 20px 12px 20px;
-  /* Add some padding */
-  border: 1px solid #ddd;
-  /* Add a grey border */
-  margin-bottom: 12px;
-  /* Add some space below the input */
-  margin-top: 12px;
-  /* Add some space above the input */
-}
-#searchList {
-  /* Remove default list styling */
-  list-style-type: none;
-  padding: 0;
-  line-height: 1.4em;
-}
-#searchList li a {
-  border: 1px solid #ddd;
-  /* Add a border to all links */
-  background-color: #f6f6f6;
-  /* Grey background color */
-  padding: 12px;
-  /* Add some padding */
-  text-decoration: none;
-  /* Remove default text underline */
-  font-size: 18px;
-  /* Increase the font-size */
-  color: black;
-  /* Add a black text color */
-  display: block;
-  /* Make it into a block element to fill the whole list */
-}
-#searchList li a:hover:not(.header) {
-  background-color: rgba(238, 238, 238, 50);
-  /* Background color change to box on hover */
-  transition: 0.1s ease-in;
-  color: #ff4a00;
-  /* Text color change on hover */
-}
+/* loader */
 
 #loader {
   position: absolute;
@@ -163,9 +151,9 @@ p {
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
+  -webkit-animation-duration: 1.5s;
   animation-name: animatebottom;
-  animation-duration: 1s
+  animation-duration: 1.5s
 }
 
 @-webkit-keyframes animatebottom {
@@ -177,9 +165,9 @@ p {
   from{ bottom:-100px; opacity:0 }
   to{ bottom:0; opacity:1 }
 }
-
+/*
 #loadanim {
   display: none;
-}
+}*/
 
 
