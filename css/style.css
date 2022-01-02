@@ -151,9 +151,9 @@ img {
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 1.7s;
   animation-name: animatebottom;
-  animation-duration: 1.5s
+  animation-duration: 1.7s
 }
 
 @-webkit-keyframes animatebottom {
