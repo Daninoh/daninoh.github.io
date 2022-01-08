@@ -45,6 +45,9 @@ h5 {
   font-size: 1rem;
   margin-bottom: 45px;
 }
+p {
+  margin-bottom: 0;
+}
 iframe {
   top: 0;
   left: 0;
@@ -54,6 +57,7 @@ iframe {
 }
 .iframe_wrapper{
   position: relative;
+  margin-top: 15px;
   padding-bottom: 56.25%;
 }
 .container2 {
@@ -82,6 +86,16 @@ iframe {
   margin-bottom: 45px;
 }
 
+.small-img {
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  margin-top: 45px;
+}
+
 img {
   width: 100%;
 }
@@ -101,6 +115,17 @@ a>img:hover {
   color: #ff4a00 !important; 
   border-width: 3px;
 }
+.btn-outline-info {
+  color: #ff4a00;
+  border-color: #ff4a00;
+}
+
+.btn-outline-info:hover {
+  color: white;
+  background-color: #ff4a00;
+  border-color: #ff4a00;
+}
+
 .currentindex {
   text-decoration: line-through !important;
 }
@@ -108,7 +133,7 @@ a>img:hover {
   color: black;
 }
 .indexmenu:hover {
-  color: #ff4a00;
+  background-color: #ff4a00;
 }
 .navbar {
   padding-left: 0;
