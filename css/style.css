@@ -124,10 +124,10 @@ a>img:hover {
   border-color: #ff4a00;
 }
 
-.btn-outline-info:hover {
-  color: white;
-  background-color: #ff4a00;
-  border-color: #ff4a00;
+.btn-outline-info:hover, .btn-outline-info:active, .btn-outline-info:focus {
+  color: white !important;
+  background-color: #ff4a00 !important;
+  border-color: #ff4a00 !important;
 }
 
 .currentindex {
