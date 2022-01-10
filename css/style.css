@@ -164,7 +164,11 @@ a>img:hover {
 .grid-item--width2 {
   width: 400px;
 }
-
+.iframe_wrapper_game {
+  position: relative;
+  height: 0;
+  padding-bottom: 660px;
+}
 /* loader */
 
 #loader {
