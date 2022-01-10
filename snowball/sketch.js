@@ -24,7 +24,7 @@ var carrotStoptime = 0;
 var score = 0;
 
 var yVelocity = 1;
-var nBalls = 26; //numbrt of snowballs
+var nBalls = 36; //numbrt of snowballs
 
 function preload() {
     //these URLs preload the loading carrot
