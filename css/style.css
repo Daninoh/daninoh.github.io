@@ -124,7 +124,11 @@ a>img:hover {
   border-color: #ff4a00;
 }
 
-.btn-outline-info:hover, .btn-outline-info:active, .btn-outline-info:focus {
+.btn-outline-info:hover, 
+.btn-outline-info:active, 
+.btn-outline-info:focus, 
+.btn-outline-info:visited,
+.btn-outline-info:active:focus {
   color: white !important;
   background-color: #ff4a00 !important;
   border-color: #ff4a00 !important;
