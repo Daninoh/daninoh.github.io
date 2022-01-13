@@ -9,7 +9,7 @@ const images = [
     'img/illo/afloat.png',
     'img/illo/thebarista.png',
     'img/illo/pittsburgh.png',
-    'img/illo/readmylips.png',
+    // 'img/illo/readmylips.png',
     'img/illo/pancake.png',
     'img/illo/bunny.png',
     'img/illo/avoidburnout.png',
