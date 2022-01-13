@@ -7,8 +7,7 @@ const images = [
     'img/draw/dancers.jpeg',
     'img/draw/tipsytula.jpeg',
     'img/draw/lion.jpeg',
-    'img/draw/bones.jpeg',
-    'img/draw/jonandrussell.jpeg'
+    'img/draw/bones.jpeg'
 ]
 
 let imageIndex = 0;
