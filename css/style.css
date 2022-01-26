@@ -16,6 +16,9 @@ a:hover {
 /*button {
   margin-top: 6px;
 }*/
+html {
+  scroll-behavior: smooth;
+}
 footer {
   font-size: 0.8em;
   font-style: italic;
@@ -141,6 +144,10 @@ a>img:hover {
   color: black;
 }
 .indexmenu:hover {
+  background-color: #ff4a00;
+}
+.list-group-item-action:hover {
+  color: white;
   background-color: #ff4a00;
 }
 .navbar {
