@@ -1,5 +1,3 @@
-
-
 const posts = []
 
 const images = [
@@ -25,7 +23,6 @@ let imageIndex = 0;
 for(let i = 1; i <= images.length; i++){
     let item = {
         id: i,
-        // title: `Post ${i}`,
         image: images[imageIndex]
     }
     posts.push(item);
@@ -33,4 +30,3 @@ for(let i = 1; i <= images.length; i++){
     if (imageIndex > images.length - 1) imageIndex = 0;
 }
 
-// console.log(posts)
