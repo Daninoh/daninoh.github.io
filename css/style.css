@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url("https://fonts.googleapis.com/css?family=Work+Sans");
 * {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
   box-sizing: border-box;
 }
 a {
@@ -26,7 +26,7 @@ footer {
 }
 h1 {
   transition: 0.2s ease-out;
-  color: #FF4A00;
+  color: #ff4a00;
   font-weight: bold;
   font-size: 1.6em;
   margin-bottom: 15px;
@@ -61,12 +61,12 @@ iframe {
   width: 100%;
   height: 100%;
 }
-.iframe_wrapper{
+.iframe_wrapper {
   position: relative;
   margin-top: 15px;
   padding-bottom: 56.25%;
 }
-.iframe_wrapper_long{
+.iframe_wrapper_long {
   position: relative;
   margin-top: 15px;
   padding-bottom: 206%;
@@ -110,21 +110,21 @@ img {
   width: 100%;
 }
 
-.content>img{
+.content > img {
   max-width: 100%;
 }
-a>img {
+a > img {
   margin-bottom: 10px;
   border-style: solid;
   border-width: 1px;
-  color: rgba(0, 0, 0, .15);
+  color: rgba(0, 0, 0, 0.15);
 }
 
-a>img:hover,
-a>img:focus-visible {
-  transition: .2s ease-in-out;
+a > img:hover,
+a > img:focus-visible {
+  transition: 0.2s ease-in-out;
   opacity: 0.5;
-  color: #ff4a00 !important; 
+  color: #ff4a00 !important;
   transform: scale(1.05);
 }
 .btn-outline-info {
@@ -132,10 +132,9 @@ a>img:focus-visible {
   border-color: #ff4a00;
 }
 
-.btn-outline-info:hover, 
-.btn-outline-info:active, 
-.btn-outline-info:focus-visible
-{
+.btn-outline-info:hover,
+.btn-outline-info:active,
+.btn-outline-info:focus-visible {
   color: white !important;
   background-color: #ff4a00 !important;
   border-color: #ff4a00 !important;
@@ -164,16 +163,16 @@ a>img:focus-visible {
   color: #ff4a00 !important;
   transform: scale(1.05);
 }
-.nav-item>.active,
-.nav-item>.focus-visible {
+.nav-item > .active,
+.nav-item > .focus-visible {
   color: #ff4a00 !important;
   font-weight: bold;
 }
-.nav-item>.active:hover,
-.nav-tem>.active:focus-visible {
+.nav-item > .active:hover,
+.nav-tem > .active:focus-visible {
   font-weight: bold;
 }
-.grid-item { 
+.grid-item {
   width: 200px;
 }
 .grid-item--width2 {
@@ -202,13 +201,21 @@ a>img:focus-visible {
 }
 
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(540deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(540deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(540deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(540deg);
+  }
 }
 
 .animate-bottom {
@@ -216,17 +223,27 @@ a>img:focus-visible {
   -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1.7s;
   animation-name: animatebottom;
-  animation-duration: 1.7s
+  animation-duration: 1.7s;
 }
 
 @-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 }
-  to { bottom:0px; opacity:1 }
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0px;
+    opacity: 1;
+  }
 }
 
 @keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
+  from {
+    bottom: -100px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
 }
-
-
