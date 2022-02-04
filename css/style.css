@@ -35,7 +35,7 @@ h1:hover,
 h1:focus-visible {
   transition: 0.2s;
   color: #ff4a00;
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 h2 {
   font-size: 1.6rem;
