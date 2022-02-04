@@ -125,7 +125,7 @@ a > img:focus-visible {
   transition: 0.2s ease-in-out;
   opacity: 0.5;
   color: #ff4a00 !important;
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 .btn-outline-info {
   color: #ff4a00;
