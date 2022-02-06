@@ -175,6 +175,19 @@ a img:focus-visible {
 
 .navbar-light .navbar-toggler {
   border: none;
+  outline: none;
+}
+
+.navbar-toggler:focus-visible,
+.navbar-toggler:hover {
+  transform: rotate(-270deg);
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar-toggler.collapsed:focus-visible,
+.navbar-toggler.collapsed:hover {
+  transform: rotate(-540deg);
+  transition: all 0.2s ease-in-out;
 }
 
 .nav-link {
