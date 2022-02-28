@@ -4,9 +4,7 @@
   box-sizing: border-box;
 }
 
-a,
-a:focus-visible,
-a:focus {
+a {
   transition: 0.1s ease-in;
   color: #e61b00;
   text-decoration: none;
