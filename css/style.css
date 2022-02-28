@@ -11,6 +11,7 @@ a {
 }
 
 :is(p, h1, h2, h3, h4, h5) a:hover,
+:is(p, h1, h2, h3, h4, h5) a:active,
 :is(p, h1, h2, h3, h4, h5) a:focus-visible {
   color: white;
   background-color: #e61b00;
@@ -36,6 +37,7 @@ h1 {
 }
 
 h1:hover,
+h1:active,
 h1:focus-visible {
   transition: 0.2s;
   color: #e61b00;
@@ -134,6 +136,7 @@ a img {
 }
 
 a img:hover,
+a img:active,
 a img:focus-visible {
   transition: 0.2s ease-in-out;
   opacity: 0.5;
@@ -160,6 +163,7 @@ a img:focus-visible {
 }
 
 .list-group-item-action:hover,
+.list-group-item-action:active,
 .list-group-item-action:focus-visible {
   color: white;
   background-color: #e61b00;
@@ -183,13 +187,13 @@ a img:focus-visible {
 }
 
 .nav-link:hover,
+.nav-link:active,
 .nav-link:focus-visible {
   color: #e61b00 !important;
   transform: scale(1.05);
 }
 
-.nav-item .active,
-.nav-item .focus-visible {
+.nav-item .active {
   color: #e61b00 !important;
   font-weight: bold;
 }
