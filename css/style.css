@@ -214,8 +214,8 @@ a img:focus-visible {
 
 /* scroll bar */
 
-/* ::-webkit-scrollbar {
-  width: 1.5em;
+::-webkit-scrollbar {
+  width: 1em;
 }
 
 ::-webkit-scrollbar-track {
@@ -227,7 +227,11 @@ a img:focus-visible {
   background: #e61b00;
   border: 0.25em solid rgb(255, 255, 255);
   border-radius: 100vw;
-} */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e61b00;
+}
 
 /* loader */
 
