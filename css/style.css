@@ -20,6 +20,11 @@ a {
   text-decoration: none;
 }
 
+:is(p, h1, h2, h3, h4, h5) a:focus-visible {
+  outline: 3px solid #e61b00;
+  outline-offset: 5px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -163,6 +168,11 @@ a img:focus-visible {
   border-color: #e61b00 !important;
 }
 
+.btn-outline-info:focus-visible {
+  outline: 3px solid #e61b00;
+  outline-offset: 5px;
+}
+
 .currentindex {
   text-decoration: line-through !important;
 }
@@ -235,42 +245,10 @@ a img:focus-visible {
   text-decoration: none;
 }
 
-.wrapper .icon:hover,
-.wrapper .icon:hover .tooltip,
-.wrapper .icon:hover .tooltip::before {
+.wrapper .icon:hover {
   background-color: #e61b00;
   color: #ffffff;
 }
-/* .wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
-  background-color: #3b5999;
-  color: #ffffff;
-}
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
-  background-color: #46c1f6;
-  color: #ffffff;
-}
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
-  background-color: #e1306c;
-  color: #ffffff;
-}
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
-  background-color: #333333;
-  color: #ffffff;
-}
-.wrapper .youtube:hover,
-.wrapper .youtube:hover .tooltip,
-.wrapper .youtube:hover .tooltip::before {
-  background-color: #de463b;
-  color: #ffffff;
-} */
 
 /* scroll bar */
 
