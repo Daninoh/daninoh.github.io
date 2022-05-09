@@ -1,21 +1,21 @@
 const posts = [];
 
 const images = [
-  "img/illustrations/wes.jpg",
-  "img/illustrations/asianglow.png",
-  "img/illustrations/airport.png",
-  "img/illustrations/afloat.png",
-  "img/illustrations/thebarista.png",
-  "img/illustrations/pittsburgh.png",
-  "img/illustrations/readmylips.png",
-  "img/illustrations/pancake.png",
-  "img/illustrations/bunny.png",
-  "img/illustrations/avoidburnout.png",
-  "img/illustrations/faucet.png",
-  "img/illustrations/thefashionista.png",
-  "img/illustrations/fantasist.jpg",
-  "img/illustrations/pool.png",
-  "img/illustrations/airplane.png",
+  "img/illos/wes.jpg",
+  "img/illos/asianglow.png",
+  "img/illos/airport.png",
+  "img/illos/afloat.png",
+  "img/illos/thebarista.png",
+  "img/illos/pittsburgh.png",
+  "img/illos/readmylips.png",
+  "img/illos/pancake.png",
+  "img/illos/bunny.png",
+  "img/illos/avoidburnout.png",
+  "img/illos/faucet.png",
+  "img/illos/thefashionista.png",
+  "img/illos/fantasist.jpg",
+  "img/illos/pool.png",
+  "img/illos/airplane.png",
 ];
 
 let imageIndex = 0;
