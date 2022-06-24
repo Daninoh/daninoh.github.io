@@ -49,12 +49,9 @@ h1:hover:before,
 h1:active:before,
 h1:focus-visible:before {
   font-family: 'Gothic A1' !important;
-  /* font-weight:400; */
-  /* color: #e61b00; */
   content: "노주현";
   color: white;
   background-color: #e61b00;
-  /* transform: scale(1.03); */
   transition: 0.2s;
   padding-top: .5rem;
 }
