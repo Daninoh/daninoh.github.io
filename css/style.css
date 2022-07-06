@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Work+Sans");
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@800&display=swap');
 
 * {
@@ -95,6 +95,7 @@ h3 {
 
 h4 {
   font-size: 1.2rem;
+  font-weight: 400;
   line-height: 1.5;
 }
 
