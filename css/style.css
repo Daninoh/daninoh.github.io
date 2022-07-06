@@ -9,7 +9,7 @@
 a {
   transition: 0.1s ease-in;
   color: #e61b00;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 :is(p, h1, h2, h3, h4, h5) a:hover,
@@ -18,12 +18,34 @@ a {
   color: white;
   background-color: #e61b00;
   transition: 0.3s ease-in-out;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 :is(p, h1, h2, h3, h4, h5) a:focus-visible {
   outline: 3px solid #e61b00;
   outline-offset: 5px;
+}
+
+h5 b {
+  color: #e61b00;
+}
+
+a:hover h5 b,
+a:active h5 b,
+a:focus-visible h5 b {
+  color: white;
+  background-color: #e61b00;
+  transition: 0.3s ease-in-out;
+  text-decoration: none !important;
+}
+
+a:hover img,
+a:active img,
+a:focus-visible {
+  transition: 0.2s ease-in-out;
+  opacity: 0.5;
+  color: #e61b00 !important;
+  transform: scale(1.02);
 }
 
 html {
@@ -39,10 +61,7 @@ h1 span {
   font-family: 'Gothic A1' !important;
   transition: 0.2s ease-out;
   color: #e61b00;
-  /* font-weight: bold; */
-  /* font-size: 1em; */
   margin-bottom: 1rem;
-  /* padding-top: .125rem; */
 }
 
 h1:hover:before,
@@ -82,7 +101,7 @@ h4 {
 h5 {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 2.8125rem;
+  display: inline;
 }
 
 p {
@@ -152,20 +171,12 @@ img {
 .content img {
   max-width: 100%;
 }
+
 a img {
   margin-bottom: 0.625rem;
   border-style: solid;
   border-width: 0.0625rem;
   color: rgba(0, 0, 0, 0.15);
-}
-
-a img:hover,
-a img:active,
-a img:focus-visible {
-  transition: 0.2s ease-in-out;
-  opacity: 0.5;
-  color: #e61b00 !important;
-  transform: scale(1.02);
 }
 
 .btn-outline-info {
@@ -335,9 +346,9 @@ a img:focus-visible {
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1.7s;
+  -webkit-animation-duration: 1.8s;
   animation-name: animatebottom;
-  animation-duration: 1.7s;
+  animation-duration: 1.8s;
 }
 
 @-webkit-keyframes animatebottom {
