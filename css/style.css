@@ -227,6 +227,7 @@ a img {
 
 .nav-link {
   color: rgba(0, 0, 0, 0.6) !important;
+  margin-left: 0.5rem;
 }
 
 .nav-link:hover,
