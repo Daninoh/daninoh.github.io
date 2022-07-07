@@ -28,6 +28,7 @@ a {
 
 h5 b {
   color: #e61b00;
+  font-weight: 500;
 }
 
 a:hover h5 b,
@@ -102,6 +103,7 @@ h4 {
 h5 {
   font-size: 1rem;
   line-height: 1.6;
+  font-weight: 300;
   display: inline;
 }
 
