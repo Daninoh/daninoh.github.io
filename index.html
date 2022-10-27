@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<!-- Metatags -->
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- Bootstrap CSS -->
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
@@ -18,7 +17,7 @@
 	<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
 	<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
 	<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-	<link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -29,277 +28,118 @@
 	<script src="https://kit.fontawesome.com/2b9890c185.js" crossorigin="anonymous"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-2VB9K1RKK4"></script>
 	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() { dataLayer.push(arguments); }
-		gtag('js', new Date());
-		gtag('config', 'G-2VB9K1RKK4');
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-2VB9K1RKK4');
 	</script>
 </head>
 
 <div id="loader"></div>
 <div style="display:none;" id="loadanim" class="animate-bottom">
 
-	<body onload="loaderFunction()">
-		<div class="container">
-			<!-- Navigation Bar -->
-			<nav class="navbar navbar-expand-md navbar-light w-100">
-				<div class="d-flex flex-grow-1">
-					<a class="navbar-brand d-none d-lg-inline-block" href="index">
-						<h1><span>ㄴㅈㅎ</span></h1>
-					</a>
-					<a class="navbar-brand mx-auto d-lg-none text-center" href="index">
-						<h1><span>ㄴㅈㅎ</span></h1>
-					</a>
-					<div class="w-100 text-right">
-						<button class="navbar-toggler" data-target="#myNavbar" data-toggle="collapse"
-							type="button"><span class="navbar-toggler-icon"></span></button>
-					</div>
-				</div>
-				<div class="collapse navbar-collapse flex-grow-1 text-center" id="myNavbar">
-					<ul class="navbar-nav ml-auto flex-nowrap">
-						<li class="nav-item">
-							<a class="nav-link active" href="index">projects</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="illos">illos</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="me">about</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-			<!-- Navigation Bar End -->
-			<!-- Heading -->
-			<div class="row">
-				<div class="col-lg-12">
-					<h4>Hello, I'm Daniel Noh [also 노주현]. I'm a <b>educator, designer, maker, and researcher</b> currently exploring <b>learning, equity, play, and creativity</b>.<br>
-					<br>
-					I'm currently a Museum Educator at the <a href="https://mitmuseum.mit.edu/" target="_blank">MIT Museum</a> and a Teaching Fellow at the <a href="https://www.gse.harvard.edu/" target="_blank">Harvard Graduate School of Education</a>, teaching about digital fabrication, design thinking, and tinkering in education.<br>
-					<br>
-					Learn more about me <a href="me">here</a>.<br>
-					<br>
-					</h4>
+<body onload="loaderFunction()">
+	<div class="container">
+		<!-- Navigation Bar -->
+		<nav class="navbar navbar-expand-md navbar-light w-100">
+			<div class="d-flex flex-grow-1">
+				<a class="navbar-brand d-none d-lg-inline-block" href="index">
+										<h1><span>ㄴㅈㅎ</span></h1></a>
+				<a class="navbar-brand mx-auto d-lg-none text-center" href="index">
+										<h1><span>ㄴㅈㅎ</span></h1></a>
+				<div class="w-100 text-right">
+					<button class="navbar-toggler" data-target="#myNavbar" data-toggle="collapse" type="button"><span class="navbar-toggler-icon"></span></button>
 				</div>
 			</div>
-			<!-- Heading End -->
+			<div class="collapse navbar-collapse flex-grow-1 text-center" id="myNavbar">
+				<ul class="navbar-nav ml-auto flex-nowrap">
+					<li class="nav-item">
+						<a class="nav-link" href="projects">PROJECTS</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="play">PLAY</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pub">PUB</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="index">?</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- Navigation Bar End -->
+		<!-- Heading -->
+		<div class="row">
+			<div class="col-lg-8 col-md-12">
+				<h3>Hello! I'm Daniel Noh [also 노주현]. <a href="https://www.mypronouns.org/he-him">(he/him/his)</a></h3><br>
+				<p>
+				I am an <b>educator, designer, maker, and researcher</b> currently exploring <b>learning, equity, play, and creativity</b> based in Cambridge, MA.
+				<br><br>
+				I am currently a Museum Education Associate at the <a href="https://mitmuseum.mit.edu/" target="_blank">MIT Museum</a> and a
+				Teaching Fellow at the <a href="https://www.gse.harvard.edu/" target="_blank">Harvard Graduate School of Education</a>,
+				teaching about digital fabrication, design thinking, and tinkering in education.
+				<br><br>
+				I hold a Master of Education in Learning Design, Innovation, and Technology from the Harvard Graduate School of Education and a Bachelor of Architecture with University & College Honors from Carnegie Mellon University, with minors in Human-Computer Interaction and Design for Learning.
+				<br><br>
+				I have previously been a Research Assistant for <a target="_blank" href="http://www.pz.harvard.edu/">Project Zero</a> at the Harvard Graduate School of Education and a Research Associate for <a target="_blank" href="https://www.hcii.cmu.edu/project/classinsight">ClassInSight</a> at the Human-Computer Interaction Institute at Carnegie Mellon University.
+				<br><br>
+				Click <a target="_blank" href="documents/danielnoh_resume.pdf">here</a> for my resume.
+				<br><br>
+				</p>
+			</div>
+			<div class="col-lg-4 col-md-12">
+				<img class="img-fluid rounded" alt="Photograph of Daniel teaching Makey Makey" src="img/me_real.png">
+			</div>
 		</div>
+		<!-- Heading End -->
+	</div>
+
+	<!-- Footer -->
+	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-12">
-					<h3><i>projects</i> &nbsp;<span style="color: #e61b00">&gt;&gt;</span><br><br></h3>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/inhale"><img class="img-fluid" src="img/project_covers/inhale_cover.png">
-						<h5><b>inHale</b></h5>
-					</a>
+				<div class="col-lg-12 text-center">
 					<br>
-					<h5>Design + Fabrication</h5>
-				</div>
-				<!-- <div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/tll"><img class="img-fluid" src="img/project_covers/tll_cover.png">
-						<h5><b>ARTA Initiative</b></h5>
-					</a>
+
+					<div class="wrapper">
+						<a href="mailto: dan.j.noh@gmail.com" class="icon at">
+							<span><i class="fab fa-at"></i></span>
+						</a>
+						<a href="https://www.linkedin.com/in/dnoh/" target="_blank" class="icon linkedin-in">
+							<span><i class="fab fa-linkedin-in"></i></span>
+						</a>
+						<a href="https://twitter.com/Daninoh" target="_blank"  class="icon twitter">
+							<span><i class="fab fa-twitter"></i></span>
+						</a>
+						<a href="https://www.instagram.com/dan_noh/" target="_blank"  class="icon instagram">
+							<span><i class="fab fa-instagram"></i></span>
+						</a>
+						<a href="https://github.com/Daninoh" target="_blank"  class="icon github">
+							<span><i class="fab fa-github"></i></span>
+						</a>
+						<a href="https://dnoh.medium.com/" target="_blank" class="icon medium">
+							<span><i class="fab fa-medium"></i></span>
+						</a>
+					</div>
 					<br>
-					<h5>Learning Design + Web Design</h5>
-				</div> -->
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/two-wins-to-win"><img class="img-fluid"
-							src="img/project_covers/twowinstowin_cover.png">
-						<h5><b>Two Wins to Win</b></h5>
-					</a>
-					<br>
-					<h5>Learning Design + Game Design</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/water-anthropocene"><img class="img-fluid"
-							src="img/project_covers/cmnh_cover.png">
-						<h5><b>Fatbergs and Flocculation</b></h5>
-					</a>
-					<br>
-					<h5>Learning Design</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/future-fiction"><img class="img-fluid"
-							src="img/project_covers/futurefiction_cover.png">
-						<h5><b>Future Fiction</b></h5>
-					</a>
-					<br>
-					<h5>Narrative + Spatial Design</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/ergonomic-handrail"><img class="img-fluid"
-							src="img/project_covers/handrail_cover.png">
-						<h5><b>Ergonomic Handrail</b></h5>
-					</a>
-					<br>
-					<h5>Design + Fabrication</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/h2ome"><img class="img-fluid" src="img/project_covers/h2ome_cover.png">
-						<h5><b>H2OME</b></h5>
-					</a>
-					<br>
-					<h5>Learning Design</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/stamp-and-floss"><img class="img-fluid"
-							src="img/project_covers/stampandfloss.png">
-						<h5><b>Stamp and Floss</b></h5>
-					</a>
-					<br>
-					<h5>Generative Art</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/environmental-charter-school"><img class="img-fluid"
-							src="img/project_covers/ecs_cover.png">
-						<h5><b>Environmental Charter School</b></h5>
-					</a>
-					<br>
-					<h5>Spatial Design</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/orientation-guide"><img class="img-fluid"
-							src="img/project_covers/orientation_cover.png">
-						<h5><b>CMU Orientation Guide</b></h5>
-					</a>
-					<br>
-					<h5>UX/UI + Web Development</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/soft-robotics"><img class="img-fluid"
-							src="img/project_covers/softrobotics_cover.png">
-						<h5><b>Soft Robotics Assessment</b></h5>
-					</a>
-					<br>
-					<h5>Learning Design</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/moment"><img class="img-fluid" src="img/project_covers/hoop_cover.png">
-						<h5><b>Moment</b></h5>
-					</a>
-					<br>
-					<h5>Design + Fabrication</h5>
-				</div>
-				<!-- <div class="col-xl-4 col-lg-6 col-md-6 text-center">
-				<a href="projects/aias"><img class="img-fluid" alt="AIAS Branding Cover Image" src="img/project_covers/aias_cover.png">
-				<h5><b>AIAS</b></h5></a>
-				Graphic Design</h5>
-				<br>
-			</<h5>div> -->
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/locus"><img class="img-fluid" src="img/project_covers/intensivity_cover.png">
-						<h5><b>Locus</b></h5>
-					</a>
-					<br>
-					<h5>Spatial Design</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/career-world-explorer"><img class="img-fluid"
-							src="img/project_covers/careerexplore_cover.png">
-						<h5><b>Career World Explorer</b></h5>
-					</a>
-					<br>
-					<h5>Learning Design</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/livefm"><img class="img-fluid" src="img/project_covers/livefm_cover.png">
-						<h5><b>live.fm</b></h5>
-					</a>
-					<br>
-					<h5>UX/UI</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/saco"><img class="img-fluid" src="img/project_covers/saco_cover.png">
-						<h5><b>Saco Bath House</b></h5>
-					</a>
-					<br>
-					<h5>Spatial Design</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/sculpting-movement"><img class="img-fluid"
-							src="img/project_covers/sculpt_cover.png">
-						<h5><b>Sculpting Movement</b></h5>
-					</a>
-					<br>
-					<h5>Design + Fabrication</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/erosion"><img class="img-fluid" src="img/project_covers/porous_cover.png">
-						<h5><b>Erosion</b></h5>
-					</a>
-					<br>
-					<h5>Spatial Design</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/dodge-the-snowballs"><img class="img-fluid"
-							src="img/project_covers/snowman_cover.png">
-						<h5><b>Dodge the Snowballs</b></h5>
-					</a>
-					<br>
-					<h5>Game Design + Programming</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/eff"><img class="img-fluid" src="img/project_covers/eff2_cover.png">
-						<h5><b>Environment and Form Housing</b></h5>
-					</a>
-					<br>
-					<h5>Spatial Design</h5>
-				</div>
-				<div class="col-xl-4 col-lg-6 col-md-6 text-center mb-5">
-					<a href="projects/cabinet"><img class="img-fluid" alt="Cabinet Cover Image"
-							src="img/project_covers/cabinet_cover.png">
-						<h5><b>Cabinet</b></h5>
-					</a>
-					<br>
-					<h5>UX/UI</h5>
+					&copy; 2022 by Daniel Noh.
+					<br><br>
 				</div>
 			</div>
 		</div>
-		<!-- Footer -->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 text-center">
-						<div class="wrapper">
-							<a href="mailto: dan.j.noh@gmail.com" class="icon at">
-								<span><i class="fab fa-at"></i></span>
-							</a>
-							<a href="https://www.linkedin.com/in/dnoh/" target="_blank" class="icon linkedin-in">
-								<span><i class="fab fa-linkedin-in"></i></span>
-							</a>
-							<a href="https://twitter.com/Daninoh" target="_blank" class="icon twitter">
-								<span><i class="fab fa-twitter"></i></span>
-							</a>
-							<a href="https://www.instagram.com/dan_noh/" target="_blank" class="icon instagram">
-								<span><i class="fab fa-instagram"></i></span>
-							</a>
-							<a href="https://github.com/Daninoh" target="_blank" class="icon github">
-								<span><i class="fab fa-github"></i></span>
-							</a>
-							<a href="https://dnoh.medium.com/" target="_blank" class="icon medium">
-								<span><i class="fab fa-medium"></i></span>
-							</a>
-						</div>
-						<br>
-						&copy; 2022 by Daniel Noh.
-						<br><br>
-					</div>
-				</div>
-			</div>
-		</footer>
-		<!-- Footer End -->
-		<!-- JavaScript -->
-		<script src="js/script.js">
-		</script>
+	</footer>
+	<!-- Footer End -->
+	<!-- JavaScript -->
+	<script src="js/script.js">
+	</script> 
 
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
-		</script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
-		</script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
-		</script>
-	</body>
-
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+	</script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
+	</script> 
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js">
+	</script>
+</body>
 </html>
