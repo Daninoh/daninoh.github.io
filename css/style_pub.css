@@ -8,7 +8,7 @@
 
 a {
   transition: 0.1s ease-in;
-  color: #e61b00;
+  color: #6D14CC;
   text-decoration: none !important;
 }
 
@@ -16,18 +16,18 @@ a {
 :is(p, h1, h2, h3, h4, h5) a:active,
 :is(p, h1, h2, h3, h4, h5) a:focus-visible {
   color: white;
-  background-color: #e61b00;
+  background-color: #6D14CC;
   transition: 0.3s ease-in-out;
   text-decoration: none !important;
 }
 
 :is(p, h1, h2, h3, h4, h5) a:focus-visible {
-  outline: 3px solid #e61b00;
+  outline: 3px solid #6D14CC;
   outline-offset: 5px;
 }
 
 h5 b {
-  color: #e61b00;
+  color: #6D14CC;
   font-weight: 500;
 }
 
@@ -35,7 +35,7 @@ a:hover h5 b,
 a:active h5 b,
 a:focus-visible h5 b {
   color: white;
-  background-color: #e61b00;
+  background-color: #6D14CC;
   transition: 0.3s ease-in-out;
   text-decoration: none !important;
 }
@@ -45,7 +45,7 @@ a:active img,
 a:focus-visible {
   transition: 0.2s ease-in-out;
   opacity: 0.5;
-  color: #e61b00 !important;
+  color: #6D14CC !important;
   transform: scale(1.02);
 }
 
@@ -62,7 +62,7 @@ footer {
 
 h1 span {
   font-family: 'Gothic A1' !important;
-  color: #e61b00;
+  color: #6D14CC;
   margin-bottom: 1rem;
 
   transition: opacity 0.3s linear;
@@ -76,7 +76,7 @@ h1:focus-visible:before {
   font-family: 'Gothic A1' !important;
   content: "노주현";
   color: white;
-  background-color: #e61b00;
+  background-color: #6D14CC;
   padding-top: .5rem;
 }
 
@@ -190,8 +190,8 @@ a img {
 }
 
 .btn-outline-info {
-  color: #e61b00;
-  border-color: #e61b00;
+  color: #6D14CC;
+  border-color: #6D14CC;
 }
 
 .btn-outline-info:hover,
@@ -199,12 +199,12 @@ a img {
 .btn-outline-info:focus,
 .btn-outline-info:focus-visible {
   color: white !important;
-  background-color: #e61b00 !important;
-  border-color: #e61b00 !important;
+  background-color: #6D14CC !important;
+  border-color: #6D14CC !important;
 }
 
 .btn-outline-info:focus-visible {
-  outline: 3px solid #e61b00;
+  outline: 3px solid #6D14CC;
   outline-offset: 5px;
 }
 
@@ -216,7 +216,7 @@ a img {
 .list-group-item-action:active,
 .list-group-item-action:focus-visible {
   color: white;
-  background-color: #e61b00;
+  background-color: #6D14CC;
 }
 
 .navbar {
@@ -229,7 +229,7 @@ a img {
 
 .navbar-light .navbar-toggler {
   border: none;
-  outline-color: #e61b00;
+  outline-color: #6D14CC;
 }
 
 .nav-link {
@@ -273,7 +273,7 @@ a img {
 }
 
 .nav-item .active {
-  color: #e61b00 !important;
+  color: #6D14CC !important;
   font-weight: bold;
 }
 
@@ -310,7 +310,7 @@ a img {
 }
 
 .wrapper .icon:hover {
-  background-color: #e61b00;
+  background-color: #6D14CC;
   color: #ffffff;
 }
 
@@ -326,25 +326,25 @@ a img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #e61b00;
+  background: #6D14CC;
   border: 0.25em solid rgb(255, 255, 255);
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #e61b00;
+  background: #6D14CC;
 }
 
 /* highlight selector */
 
 ::-moz-selection {
   color: white;
-  background: #e61b00;
+  background: #6D14CC;
 }
 
 ::selection {
   color: white;
-  background: #e61b00;
+  background: #6D14CC;
 }
 
 /* loader */
@@ -357,7 +357,7 @@ a img {
   width: 3.125rem;
   height: 3.125rem;
   margin: -1.25rem 0 0 -1.25rem;
-  border: 0.3125rem solid #e61b00;
+  border: 0.3125rem solid #6D14CC;
   width: 1.875rem;
   height: 1.875rem;
   -webkit-animation: spin 2.2s cubic-bezier(0.1, 0.7, 0.9, 0.5) infinite;
