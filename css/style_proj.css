@@ -9,7 +9,12 @@
 a {
   transition: 0.1s ease-in;
   color: #26762C;
+  font-weight: 500;
   text-decoration: none !important;
+}
+
+p a {
+  font-weight: 600;
 }
 
 :is(p, h1, h2, h3, h4, h5) a:hover,
@@ -136,7 +141,7 @@ iframe {
 .iframe_wrapper_long {
   position: relative;
   margin-top: 0.9375rem;
-  padding-bottom: 206%;
+  padding-bottom: 125%;
 }
 
 .container2 {

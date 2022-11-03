@@ -9,7 +9,12 @@
 a {
   transition: 0.1s ease-in;
   color: #304BC5;
+  font-weight: 500;
   text-decoration: none !important;
+}
+
+p a {
+  font-weight: 600;
 }
 
 :is(p, h1, h2, h3, h4, h5) a:hover,
