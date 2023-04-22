@@ -1,6 +1,7 @@
 const posts = [];
 
 const images = [
+  "../img/illos/sunandwater.png",
   "../img/illos/grapes.png",
   "../img/illos/asianglow.png",
   "../img/illos/airport.png",
