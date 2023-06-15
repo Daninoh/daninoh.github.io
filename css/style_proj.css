@@ -20,15 +20,11 @@ p a {
 :is(p, h1, h2, h3, h4, h5) a:hover,
 :is(p, h1, h2, h3, h4, h5) a:active,
 :is(p, h1, h2, h3, h4, h5) a:focus-visible {
-  color: white;
-  background-color: #26762C;
-  transition: 0.3s ease-in-out;
+  color: white !important;
+  background-color: #26762C !important;
+  transition: 0.1s ease-in-out;
   text-decoration: none !important;
-}
-
-:is(p, h1, h2, h3, h4, h5) a:focus-visible {
   outline: 3px solid #26762C;
-  outline-offset: 5px;
 }
 
 h5 b {
@@ -41,15 +37,16 @@ a:active h5 b,
 a:focus-visible h5 b {
   color: white;
   background-color: #26762C;
-  transition: 0.3s ease-in-out;
+  transition: 0.2s ease-in-out;
   text-decoration: none !important;
+  outline: 3px solid #26762C;
 }
 
 a:hover img,
 a:active img,
-a:focus-visible {
+a:focus-visible img {
   transition: 0.2s ease-in-out;
-  opacity: 0.5;
+  opacity: 0.5; 
   color: #26762C !important;
   transform: scale(1.02);
 }
@@ -69,8 +66,7 @@ h1 span {
   font-family: 'Gothic A1' !important;
   color: #26762C;
   margin-bottom: 1rem;
-
-  transition: opacity 0.3s linear;
+  transition: opacity 0.2s linear;
   visibility: visible;
   opacity: 1;
 }
@@ -80,19 +76,29 @@ h1:active:before,
 h1:focus-visible:before {
   font-family: 'Gothic A1' !important;
   content: "노주현";
-  color: white;
-  background-color: #26762C;
+  color: #26762C;
   padding-top: .5rem;
+  outline: hidden;
+  transition: 0.2s ease-in-out;
+  text-decoration: none !important;
+  outline: 3px solid #26762C;
+  outline-offset: 3px;
 }
 
 h1:hover span,
 h1:active span,
-h1:focus-visible span {
+h1:focus-visible span,
+h1 a:focus-visible {
   font-family: 'Gothic A1' !important;
   visibility: hidden;
-  
   opacity: 0;
-  transition: opacity 0.3s linear;
+  transition: opacity 0.2s linear;
+  outline: 3px solid #26762C;
+  outline-offset: 3px;
+}
+
+.navbar a:focus-visible {
+  outline: 3px solid #26762C;
 }
 
 h2 {
@@ -255,13 +261,17 @@ a img {
 #pub:focus-visible {
   color: #6D14CC !important;
   transform: scale(1.05);
+  outline: 3px solid #6D14CC;
+  outline-offset: -2px;
 }
 
 #play:hover,
 #play:active,
 #play:focus-visible {
-  color: #304bc5 !important;
+  color: #304BC5 !important;
   transform: scale(1.05);
+  outline: 3px solid #304BC5;
+  outline-offset: -2px;
 }
 
 #proj:hover,
@@ -269,6 +279,8 @@ a img {
 #proj:focus-visible {
   color: #26762C !important;
   transform: scale(1.05);
+  outline: 3px solid #26762C;
+  outline-offset: -2px;
 }
 
 #me:hover,
@@ -276,6 +288,8 @@ a img {
 #me:focus-visible {
   color: #e61b00 !important;
   transform: scale(1.05);
+  outline: 3px solid #e61b00;
+  outline-offset: -2px;
 }
 
 .nav-item .active {
