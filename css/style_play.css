@@ -66,7 +66,6 @@ h1 span {
   font-family: 'Gothic A1' !important;
   color: #304BC5;
   margin-bottom: 1rem;
-  transition: opacity 0.2s linear;
   visibility: visible;
   opacity: 1;
 }

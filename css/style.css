@@ -76,7 +76,6 @@ h1 span {
   font-family: 'Gothic A1' !important;
   color: #e61b00;
   margin-bottom: 1rem;
-  transition: opacity 0.2s linear;
   visibility: visible;
   opacity: 1;
 }
@@ -102,7 +101,6 @@ h1 a:focus-visible {
   font-family: 'Gothic A1' !important;
   visibility: hidden;
   opacity: 0;
-  transition: opacity 0.2s linear;
   outline: 3px solid #e61b00;
   outline-offset: 3px;
 }
