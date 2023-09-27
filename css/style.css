@@ -12,6 +12,12 @@ a {
   font-weight: 600;
 }
 
+p a {
+  text-decoration: underline wavy #e61b00;
+  color: #000000;
+  font-weight: 400;
+}
+
 :is(p, h1, h2, h3, h4, h5) a:hover,
 :is(p, h1, h2, h3, h4, h5) a:active,
 :is(p, h1, h2, h3, h4, h5) a:focus-visible {

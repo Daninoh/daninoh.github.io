@@ -14,7 +14,8 @@ a {
 }
 
 p a {
-  font-weight: 600;
+  text-decoration: underline wavy #26762C !important;
+  font-weight: 400;
 }
 
 :is(p, h1, h2, h3, h4, h5) a:hover,
