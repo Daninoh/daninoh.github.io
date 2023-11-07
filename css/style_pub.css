@@ -69,6 +69,7 @@ footer {
 }
 
 h1 span {
+  font-size: 2rem;
   font-family: 'Gothic A1' !important;
   color: #6D14CC;
   margin-bottom: 1rem;
@@ -79,6 +80,7 @@ h1 span {
 h1:hover:before,
 h1:active:before,
 h1:focus-visible:before {
+  font-size: 2rem;
   font-family: 'Gothic A1' !important;
   content: "노주현";
   color: #6D14CC;
@@ -94,6 +96,7 @@ h1:hover span,
 h1:active span,
 h1:focus-visible span,
 h1 a:focus-visible {
+  font-size: 2rem;
   font-family: 'Gothic A1' !important;
   visibility: hidden;
   opacity: 0;
