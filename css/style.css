@@ -89,16 +89,13 @@ h1 span {
 h1:hover:before,
 h1:active:before,
 h1:focus-visible:before {
-  font-size: 2rem;
-  font-family: 'Gothic A1' !important;
-  content: "노주현";
+  font-size: 1.4rem;
+  font-weight: bold;
+  content: "DANIEL J NOH";
   color: #e61b00;
   padding-top: .5rem;
   outline: hidden;
-  transition: 0.2s ease-in-out;
   text-decoration: none !important;
-  outline: 3px solid #e61b00;
-  outline-offset: 3px;
 }
 
 h1:hover span,
@@ -109,8 +106,6 @@ h1 a:focus-visible {
   font-family: 'Gothic A1' !important;
   visibility: hidden;
   opacity: 0;
-  outline: 3px solid #e61b00;
-  outline-offset: 3px;
 }
 
 .navbar a:focus-visible {
