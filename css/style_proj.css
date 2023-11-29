@@ -401,14 +401,14 @@ a img {
 .animate-bottom {
   position: relative;
   -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1.8s;
+  -webkit-animation-duration: 1.4s;
   animation-name: animatebottom;
-  animation-duration: 1.8s;
+  animation-duration: 1.4s;
 }
 
 @-webkit-keyframes animatebottom {
   from {
-    bottom: -6.25rem;
+    bottom: -2.25rem;
     opacity: 0;
   }
   to {
@@ -419,7 +419,7 @@ a img {
 
 @keyframes animatebottom {
   from {
-    bottom: -6.25rem;
+    bottom: -2.25rem;
     opacity: 0;
   }
   to {
