@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&display=swap");
 
 * {
   font-family: "Work Sans", sans-serif;
@@ -9,12 +9,12 @@
 a {
   transition: 0.1s ease-in;
   font-weight: 500;
-  color: #6D14CC;
+  color: #6d14cc;
   text-decoration: none !important;
 }
 
 p a {
-  text-decoration: underline wavy #6D14CC !important;
+  text-decoration: underline wavy #6d14cc !important;
   font-weight: 400;
 }
 
@@ -22,10 +22,10 @@ p a {
 :is(p, h1, h2, h3, h4, h5) a:active,
 :is(p, h1, h2, h3, h4, h5) a:focus-visible {
   color: white !important;
-  background-color: #6D14CC !important;
+  background-color: #6d14cc !important;
   transition: 0.1s ease-in-out;
   text-decoration: none !important;
-  outline: 3px solid #6D14CC;
+  outline: 3px solid #6d14cc;
 }
 /* 
 :is(p, h1, h2, h3, h4, h5) a:focus-visible {
@@ -34,7 +34,7 @@ p a {
 } */
 
 h5 b {
-  color: #6D14CC;
+  color: #6d14cc;
   font-weight: 500;
 }
 
@@ -42,10 +42,10 @@ a:hover h5 b,
 a:active h5 b,
 a:focus-visible h5 b {
   color: white;
-  background-color: #6D14CC;
+  background-color: #6d14cc;
   transition: 0.1s ease-in-out;
   text-decoration: none !important;
-  outline: 3px solid #6D14CC;
+  outline: 3px solid #6d14cc;
 }
 
 a:hover img,
@@ -53,7 +53,7 @@ a:active img,
 a:focus-visible img {
   transition: 0.2s ease-in-out;
   opacity: 0.5;
-  color: #6D14CC !important;
+  color: #6d14cc !important;
   transform: scale(1.02);
 }
 
@@ -70,8 +70,8 @@ footer {
 
 h1 span {
   font-size: 2rem;
-  font-family: 'Gothic A1' !important;
-  color: #6D14CC;
+  font-family: "Gothic A1" !important;
+  color: #6d14cc;
   margin-bottom: 1rem;
   visibility: visible;
   opacity: 1;
@@ -83,8 +83,8 @@ h1:focus-visible:before {
   font-size: 1.4rem;
   font-weight: 500;
   content: "DANIEL J NOH";
-  color: #6D14CC;
-  padding-top: .5rem;
+  color: #6d14cc;
+  padding-top: 0.5rem;
   outline: hidden;
   text-decoration: none !important;
 }
@@ -94,14 +94,13 @@ h1:active span,
 h1:focus-visible span,
 h1 a:focus-visible {
   font-size: 2rem;
-  font-family: 'Gothic A1' !important;
+  font-family: "Gothic A1" !important;
   visibility: hidden;
   opacity: 0;
 }
 
-
 .navbar a:focus-visible {
-  outline: 3px solid #6D14CC;
+  outline: 3px solid #6d14cc;
 }
 
 h2 {
@@ -205,8 +204,8 @@ a img {
 }
 
 .btn-outline-info {
-  color: #6D14CC;
-  border-color: #6D14CC;
+  color: #6d14cc;
+  border-color: #6d14cc;
 }
 
 .btn-outline-info:hover,
@@ -214,12 +213,12 @@ a img {
 .btn-outline-info:focus,
 .btn-outline-info:focus-visible {
   color: white !important;
-  background-color: #6D14CC !important;
-  border-color: #6D14CC !important;
+  background-color: #6d14cc !important;
+  border-color: #6d14cc !important;
 }
 
 .btn-outline-info:focus-visible {
-  outline: 3px solid #6D14CC;
+  outline: 3px solid #6d14cc;
   outline-offset: 5px;
 }
 
@@ -231,7 +230,7 @@ a img {
 .list-group-item-action:active,
 .list-group-item-action:focus-visible {
   color: white;
-  background-color: #6D14CC;
+  background-color: #6d14cc;
 }
 
 .navbar {
@@ -244,7 +243,7 @@ a img {
 
 .navbar-light .navbar-toggler {
   border: none;
-  outline-color: #6D14CC;
+  outline-color: #6d14cc;
 }
 
 .nav-link {
@@ -255,34 +254,34 @@ a img {
 .nav-link:hover,
 .nav-link:active,
 .nav-link:focus-visible {
-  color: #304BC5;
+  color: #304bc5;
   transform: scale(1.05);
 }
 
 #pub:hover,
 #pub:active,
 #pub:focus-visible {
-  color: #6D14CC !important;
+  color: #6d14cc !important;
   transform: scale(1.05);
-  outline: 3px solid #6D14CC;
+  outline: 3px solid #6d14cc;
   outline-offset: -2px;
 }
 
 #play:hover,
 #play:active,
 #play:focus-visible {
-  color: #304BC5 !important;
+  color: #304bc5 !important;
   transform: scale(1.05);
-  outline: 3px solid #304BC5;
+  outline: 3px solid #304bc5;
   outline-offset: -2px;
 }
 
 #proj:hover,
 #proj:active,
 #proj:focus-visible {
-  color: #26762C !important;
+  color: #26762c !important;
   transform: scale(1.05);
-  outline: 3px solid #26762C;
+  outline: 3px solid #26762c;
   outline-offset: -2px;
 }
 
@@ -296,7 +295,7 @@ a img {
 }
 
 .nav-item .active {
-  color: #6D14CC !important;
+  color: #6d14cc !important;
 }
 
 .grid-item {
@@ -332,7 +331,7 @@ a img {
 }
 
 .wrapper .icon:hover {
-  background-color: #6D14CC;
+  background-color: #6d14cc;
   color: #ffffff;
 }
 
@@ -348,25 +347,25 @@ a img {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #6D14CC;
+  background: #6d14cc;
   border: 0.25em solid rgb(255, 255, 255);
   border-radius: 100vw;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #6D14CC;
+  background: #6d14cc;
 }
 
 /* highlight selector */
 
 ::-moz-selection {
   color: white;
-  background: #6D14CC;
+  background: #6d14cc;
 }
 
 ::selection {
   color: white;
-  background: #6D14CC;
+  background: #6d14cc;
 }
 
 /* loader */
@@ -379,7 +378,7 @@ a img {
   width: 3.125rem;
   height: 3.125rem;
   margin: -1.25rem 0 0 -1.25rem;
-  border: 0.3125rem solid #6D14CC;
+  border: 0.3125rem solid #6d14cc;
   width: 1.875rem;
   height: 1.875rem;
   -webkit-animation: spin 2.2s cubic-bezier(0.1, 0.7, 0.9, 0.5) infinite;
@@ -433,4 +432,3 @@ a img {
     opacity: 1;
   }
 }
-

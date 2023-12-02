@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&display=swap");
 
 * {
   font-family: "Work Sans", sans-serif;
@@ -35,7 +35,6 @@ p a {
       outline: 3px solid #e61b00;
       outline-offset: 3px;
 } */
-
 
 h5 b {
   color: #e61b00;
@@ -79,7 +78,7 @@ footer {
 
 h1 span {
   font-size: 2rem;
-  font-family: 'Gothic A1' !important;
+  font-family: "Gothic A1" !important;
   color: #e61b00;
   margin-bottom: 1rem;
   visibility: visible;
@@ -93,7 +92,7 @@ h1:focus-visible:before {
   font-weight: 500;
   content: "DANIEL J NOH";
   color: #e61b00;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   outline: hidden;
   text-decoration: none !important;
 }
@@ -103,7 +102,7 @@ h1:active span,
 h1:focus-visible span,
 h1 a:focus-visible {
   font-size: 2rem;
-  font-family: 'Gothic A1' !important;
+  font-family: "Gothic A1" !important;
   visibility: hidden;
   opacity: 0;
 }
@@ -267,34 +266,34 @@ a img {
 .nav-link:hover,
 .nav-link:active,
 .nav-link:focus-visible {
-  color: #304BC5;
+  color: #304bc5;
   transform: scale(1.05);
 }
 
 #pub:hover,
 #pub:active,
 #pub:focus-visible {
-  color: #6D14CC !important;
+  color: #6d14cc !important;
   transform: scale(1.05);
-  outline: 3px solid #6D14CC;   
+  outline: 3px solid #6d14cc;
   outline-offset: -2px;
 }
 
 #play:hover,
 #play:active,
 #play:focus-visible {
-  color: #304BC5 !important;
+  color: #304bc5 !important;
   transform: scale(1.05);
-  outline: 3px solid #304BC5;
+  outline: 3px solid #304bc5;
   outline-offset: -2px;
 }
 
 #proj:hover,
 #proj:active,
 #proj:focus-visible {
-  color: #26762C !important;
+  color: #26762c !important;
   transform: scale(1.05);
-  outline: 3px solid #26762C;
+  outline: 3px solid #26762c;
   outline-offset: -2px;
 }
 
