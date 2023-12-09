@@ -38,6 +38,14 @@ h5 b {
   font-weight: 500;
 }
 
+video {
+  padding-top: 1.875rem;
+  padding-bottom: 1.875rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 a:hover h5 b,
 a:active h5 b,
 a:focus-visible h5 b {
