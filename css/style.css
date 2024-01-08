@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+@import url("https://use.typekit.net/wey7amp.css");
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&display=swap");
 
 * {
-  font-family: "Work Sans", sans-serif;
+  font-family: "neue-haas-grotesk-display", sans-serif;
   box-sizing: border-box;
 }
 
@@ -10,6 +10,7 @@ a {
   transition: 0.1s ease-in;
   color: #e61b00;
   font-weight: 600;
+  text-decoration: none !important;
 }
 
 p a {
@@ -17,9 +18,9 @@ p a {
   font-weight: 400;
 }
 
-:is(p, h1, h2, h3, h4, h5) a:hover,
-:is(p, h1, h2, h3, h4, h5) a:active,
-:is(p, h1, h2, h3, h4, h5) a:focus-visible {
+:is(p, .nameicon, h1, h2, h3, h4, h5) a:hover,
+:is(p, .nameicon, h1, h2, h3, h4, h5) a:active,
+:is(p, .nameicon, h1, h2, h3, h4, h5) a:focus-visible {
   color: white !important;
   background-color: #e61b00 !important;
   transition: 0.1s ease-in-out;
@@ -45,6 +46,10 @@ p b {
   font-weight: 600;
 }
 
+.introduction {
+  font-weight: 600;
+}
+
 a:hover h5 b,
 a:active h5 b,
 a:focus-visible h5 b {
@@ -52,7 +57,7 @@ a:focus-visible h5 b {
   background-color: #e61b00;
   transition: 0.1s ease-in-out;
   text-decoration: none !important;
-  outline: none;
+  outline: 3px solid #e61b00;
 }
 
 a:hover img,
@@ -62,7 +67,6 @@ a:focus-visible img {
   opacity: 0.5;
   color: #e61b00 !important;
   transform: scale(1.02);
-  outline: none;
 }
 
 html {
@@ -83,28 +87,6 @@ h1 span {
   margin-bottom: 1rem;
   visibility: visible;
   opacity: 1;
-}
-
-h1:hover:before,
-h1:active:before,
-h1:focus-visible:before {
-  font-size: 1.4rem;
-  font-weight: 500;
-  content: "DANIEL J NOH";
-  color: #e61b00;
-  padding-top: 0.5rem;
-  outline: hidden;
-  text-decoration: none !important;
-}
-
-h1:hover span,
-h1:active span,
-h1:focus-visible span,
-h1 a:focus-visible {
-  font-size: 2rem;
-  font-family: "Gothic A1" !important;
-  visibility: hidden;
-  opacity: 0;
 }
 
 .navbar a:focus-visible {
@@ -137,6 +119,7 @@ h5 {
 }
 
 p {
+  font-size: 1.2rem;
   margin-bottom: 0;
   line-height: 1.6;
 }
