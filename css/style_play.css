@@ -80,28 +80,6 @@ h1 span {
   opacity: 1;
 }
 
-h1:hover:before,
-h1:active:before,
-h1:focus-visible:before {
-  font-size: 1.4rem;
-  font-weight: 500;
-  content: "DANIEL J NOH";
-  color: #304bc5;
-  padding-top: 0.5rem;
-  outline: hidden;
-  text-decoration: none !important;
-}
-
-h1:hover span,
-h1:active span,
-h1:focus-visible span,
-h1 a:focus-visible {
-  font-size: 2rem;
-  font-family: "Gothic A1" !important;
-  visibility: hidden;
-  opacity: 0;
-}
-
 .navbar a:focus-visible {
   outline: 3px solid #304bc5;
 }
