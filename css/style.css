@@ -246,9 +246,9 @@ a img {
   transform: scale(1.05);
 }
 
-#pub:hover,
-#pub:active,
-#pub:focus-visible {
+#research:hover,
+#research:active,
+#research:focus-visible {
   color: #6d14cc !important;
   transform: scale(1.05);
   outline: 3px solid #6d14cc;
