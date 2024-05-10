@@ -34,8 +34,12 @@ p a {
 } */
 
 h5 b {
+  /* color: #6d14cc; */
+  font-weight: 600;
+}
+
+.pub-title {
   color: #6d14cc;
-  font-weight: 500;
 }
 
 video {
