@@ -10,7 +10,7 @@ a {
   transition: 0.1s ease-in;
   color: #304bc5;
   font-weight: 500;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 p a {
@@ -24,7 +24,7 @@ p a {
   color: white !important;
   background-color: #304bc5 !important;
   transition: 0.1s ease-in-out;
-  text-decoration: none !important;
+  text-decoration: none;
   outline: 3px solid #304bc5;
 }
 
@@ -47,7 +47,7 @@ video {
   color: white;
   background-color: #304bc5;
   transition: 0.1s ease-in-out;
-  text-decoration: none !important;
+  text-decoration: none;
   outline: 3px solid #304bc5;
 }
 

@@ -10,7 +10,7 @@ a {
   transition: 0.1s ease-in;
   color: #26762c;
   font-weight: 500;
-  text-decoration: none !important;
+  text-decoration: none;
 }
 
 p a {
@@ -24,7 +24,7 @@ p a {
   color: white !important;
   background-color: #26762c !important;
   transition: 0.1s ease-in-out;
-  text-decoration: none !important;
+  text-decoration: none;
   outline: 3px solid #26762c;
 }
 
@@ -47,7 +47,7 @@ a:focus-visible h5 b {
   color: white;
   background-color: #26762c;
   transition: 0.2s ease-in-out;
-  text-decoration: none !important;
+  text-decoration: none;
   outline: 3px solid #26762c;
 }
 
