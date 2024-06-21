@@ -56,9 +56,9 @@ video {
 }
 
 .modal {
-  text-align:center;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  text-align: center;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
 .carousel-item img {
@@ -157,6 +157,10 @@ iframe {
   position: relative;
   margin-top: 0.9375rem;
   padding-bottom: 206%;
+}
+
+.pageheader {
+  text-decoration: underline #304bc5 solid 6px !important;
 }
 
 .container2 {
