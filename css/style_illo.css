@@ -8,6 +8,7 @@
 
 a {
   transition: 0.1s ease-in;
+  outline: none;
   color: #304bc5;
   font-weight: 500;
   text-decoration: none !important;
@@ -43,12 +44,23 @@ video {
 
 .modal-gallery:hover h5 b,
 .modal-gallery:active h5 b,
+.modal-gallery:focus h5 b,
 .modal-gallery:focus-visible h5 b {
   color: white;
   background-color: #304bc5;
   transition: 0.1s ease-in-out;
   text-decoration: none !important;
   outline: 3px solid #304bc5;
+}
+
+.modal-gallery:hover img,
+.modal-gallery:active img,
+.modal-gallery:focus img,
+.modal-gallery:focus-visible img {
+  transition: 0.2s ease-in-out;
+  outline: 3px solid #304bc5;
+  outline-offset: -3px;
+  transform: scale(1.02);
 }
 
 .modal::-webkit-scrollbar {
@@ -73,15 +85,6 @@ video {
 .modal-dialog {
   display: inline-block;
   width: auto;
-}
-
-.modal-gallery:hover img,
-.modal-gallery:active img,
-.modal-gallery:focus-visible img {
-  transition: 0.2s ease-in-out;
-  opacity: 0.5;
-  color: #304bc5 !important;
-  transform: scale(1.02);
 }
 
 html {
@@ -240,6 +243,7 @@ img {
 
 .list-group-item-action:hover,
 .list-group-item-action:active,
+.list-group-item-action:focus,
 .list-group-item-action:focus-visible {
   color: white;
   background-color: #304bc5;
@@ -260,6 +264,7 @@ img {
 
 .nav-link {
   color: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 6px;
   margin-left: 0.5rem;
 }
 
@@ -268,6 +273,10 @@ img {
 .nav-link:focus-visible {
   color: #304bc5;
   transform: scale(1.05);
+}
+
+.navbar-brand {
+  border-radius: 6px;
 }
 
 #research:hover,
@@ -347,7 +356,10 @@ img {
   text-decoration: none;
 }
 
-.wrapper .icon:hover {
+.wrapper .icon:hover,
+.wrapper .icon:active,
+.wrapper .icon:focus,
+.wrapper .icon:focus-visible {
   background-color: #304bc5;
   color: #ffffff;
 }
