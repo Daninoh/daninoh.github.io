@@ -8,6 +8,7 @@
 
 a {
   transition: 0.1s ease-in;
+  outline: none;
   color: #e61b00;
   font-weight: 600;
   text-decoration: none !important;
@@ -20,6 +21,7 @@ p a {
 
 :is(p, .nameicon, h1, h2, h3, h4, h5) a:hover,
 :is(p, .nameicon, h1, h2, h3, h4, h5) a:active,
+:is(p, .nameicon, h1, h2, h3, h4, h5) a:focus,
 :is(p, .nameicon, h1, h2, h3, h4, h5) a:focus-visible {
   color: white !important;
   background-color: #e61b00 !important;
@@ -44,6 +46,7 @@ p b {
 
 a:hover h5 b,
 a:active h5 b,
+a:focus h5 b,
 a:focus-visible h5 b {
   color: white;
   background-color: #e61b00;
@@ -56,8 +59,8 @@ a:hover img,
 a:active img,
 a:focus-visible img {
   transition: 0.2s ease-in-out;
-  opacity: 0.5;
-  color: #e61b00 !important;
+  outline: 3px solid #e61b00;
+  outline-offset: -3px;
   transform: scale(1.02);
 }
 
@@ -197,13 +200,10 @@ a img {
 .btn-outline-info:focus,
 .btn-outline-info:focus-visible {
   color: white !important;
-  background-color: #e61b00 !important;
-  border-color: #e61b00 !important;
-}
-
-.btn-outline-info:focus-visible {
   outline: 3px solid #e61b00;
-  outline-offset: 5px;
+  outline-offset: 2px;
+  background-color: #e61b00 !important;
+  box-shadow: none;
 }
 
 .currentindex {
@@ -236,6 +236,7 @@ a img {
 
 .nav-link {
   color: rgba(0, 0, 0, 0.6) !important;
+  border-radius: 6px;
   margin-left: 0.5rem;
 }
 
@@ -244,6 +245,10 @@ a img {
 .nav-link:focus-visible {
   color: #304bc5;
   transform: scale(1.05);
+}
+
+.navbar-brand {
+  border-radius: 6px;
 }
 
 #research:hover,
@@ -318,7 +323,10 @@ a img {
   text-decoration: none;
 }
 
-.wrapper .icon:hover {
+.wrapper .icon:hover,
+.wrapper .icon:active,
+.wrapper .icon:focus,
+.wrapper .icon:focus-visible {
   background-color: #e61b00;
   color: #ffffff;
 }
