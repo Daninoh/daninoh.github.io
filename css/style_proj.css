@@ -75,20 +75,20 @@ footer {
   padding-top: 1rem;
 }
 
-h1 span {
+h1 span a {
   font-size: 2rem;
   transition: 0.1s ease-in;
   font-family: "Gothic A1" !important;
   color: #26762c;
   padding-top: 0.3rem;
-  margin-bottom: 1rem;
   border-radius: 6px;
+  white-space: nowrap;
 }
 
-h1 span:hover,
-h1 span:active,
-h1 span:focus-visible,
-h1 span:focus {
+h1 span a:hover,
+h1 span a:active,
+h1 span a:focus-visible,
+h1 span a:focus {
   outline-offset: -1px;
   outline: 3px solid #26762c;
   color: #ffffff;
@@ -240,10 +240,12 @@ a img {
   padding-right: 0;
   padding-top: 0.9375rem;
   padding-bottom: 0.9375rem;
+  margin-bottom: 1rem;
   font-size: 1.1rem;
 }
 
 .navbar-light .navbar-toggler {
+  margin-top: 0.3rem;
   border: none;
   outline-color: #26762c;
 }
