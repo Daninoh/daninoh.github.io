@@ -220,7 +220,7 @@ a img {
   outline-offset: 2px;
   background-color: #26762c !important;
   box-shadow: none;
-  border: none;
+  border-color: #26762c;
 }
 
 .currentindex {

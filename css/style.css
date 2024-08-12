@@ -238,7 +238,7 @@ a img {
 }
 
 .navbar-light .navbar-toggler {
-  border: none;
+  border-color: none;
   outline-color: #e61b00;
 }
 

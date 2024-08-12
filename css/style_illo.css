@@ -242,7 +242,7 @@ img {
   background-color: #304bc5 !important;
   outline: 3px solid #304bc5;
   outline-offset: 5px;
-  border: none;
+  border-color: #304bc5;
 }
 
 .currentindex {
