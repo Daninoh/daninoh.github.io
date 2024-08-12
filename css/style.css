@@ -77,11 +77,22 @@ footer {
 
 h1 span {
   font-size: 2rem;
+  transition: 0.1s ease-in;
   font-family: "Gothic A1" !important;
   color: #e61b00;
+  padding-top: 0.25rem;
   margin-bottom: 1rem;
-  visibility: visible;
-  opacity: 1;
+  border-radius: 6px;
+}
+
+h1 span:hover,
+h1 span:active,
+h1 span:focus-visible,
+h1 span:focus {
+  outline-offset: -1px;
+  outline: 3px solid #e61b00;
+  color: #ffffff;
+  background-color: #e61b00;
 }
 
 .navbar a:focus-visible {
@@ -199,7 +210,7 @@ a img {
 .btn-outline-info:active,
 .btn-outline-info:focus,
 .btn-outline-info:focus-visible {
-  color: white !important;
+  color: #ffffff !important;
   outline: 3px solid #e61b00;
   outline-offset: 2px;
   background-color: #e61b00 !important;

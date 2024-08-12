@@ -77,11 +77,22 @@ footer {
 
 h1 span {
   font-size: 2rem;
+  transition: 0.1s ease-in;
   font-family: "Gothic A1" !important;
   color: #26762c;
+  padding-top: 0.25rem;
   margin-bottom: 1rem;
-  visibility: visible;
-  opacity: 1;
+  border-radius: 6px;
+}
+
+h1 span:hover,
+h1 span:active,
+h1 span:focus-visible,
+h1 span:focus {
+  outline-offset: -1px;
+  outline: 3px solid #26762c;
+  color: #ffffff;
+  background-color: #26762c;
 }
 
 .navbar a:focus-visible {
