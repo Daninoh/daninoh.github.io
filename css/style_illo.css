@@ -103,7 +103,7 @@ h1 span {
   transition: 0.1s ease-in;
   font-family: "Gothic A1" !important;
   color: #304bc5;
-  padding-top: 0.25rem;
+  padding-top: 0.3rem;
   margin-bottom: 1rem;
   border-radius: 6px;
 }
@@ -240,12 +240,9 @@ img {
 .btn-outline-info:focus-visible {
   color: white !important;
   background-color: #304bc5 !important;
-  border-color: #304bc5 !important;
-}
-
-.btn-outline-info:focus-visible {
   outline: 3px solid #304bc5;
   outline-offset: 5px;
+  border: none;
 }
 
 .currentindex {

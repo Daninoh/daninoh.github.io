@@ -8,7 +8,7 @@
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- Bootstrap CSS -->
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
 	<link href="../css/style_proj.css" rel="stylesheet">
-	<title>inHale &#8212; Daniel J Noh</title>
+	<title>Shirtsmas &#8212; Daniel J Noh</title>
 	<link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
@@ -58,13 +58,13 @@
 				<div class="collapse navbar-collapse flex-grow-1 text-center" id="myNavbar">
 					<ul class="navbar-nav ml-auto flex-nowrap">
 						<li class="nav-item">
-							<a class="nav-link active" id="proj" href="../projects">Projects</a>
+							<a class="nav-link" id="research" href="../research">Research</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" id="play" href="../illos">Illustrations</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="research" href="../research">Research</a>
+							<a class="nav-link active" id="proj" href="../archive">Archive</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" id="me" href="../">About</a>
@@ -86,100 +86,45 @@
 					<hr class="mb-5">
 				</div>
 				<div class="col-md-6">
-					<h2 class="mb-4"><b style="color: #26762C">inHale</b>
-						<br>a synchronous tele-tangible device for regulating collective breathing
+					<h2 class="mb-4"><b style="color: #26762C">Shirtsmas 2023</b>
+						<br>sweater design for a white elephant gift exchange
 					</h2>
-					<h3 class="mb-4">MIT Media Lab</h3>
-					<p class="my-4" style="color: #636363;">Collaborators: Tatiana Baughman, Dana Gretton, Audrey
-						Mock,
-						Leandra Tejedor
-					</p>
-					<h2><button type="button" class="btn btn-outline-info"
-							onClick="window.open('../documents/inhale.pdf', '_blank');">View Full Paper Here</button>
-					</h2>
-					<h2><button type="button" class="btn btn-outline-info"
-							onClick="window.open('https://docs.google.com/presentation/d/e/2PACX-1vT-OtpgPDLvSGGGwpgUi0wW7_mvfVzNsLSPdGkEzcoWD8Ihc0g0kVeQ3NPx5IV7jMjoBes2rkpXbUWA/research?start=false&loop=false&delayms=3000', '_blank');">View
-							Presentation Here</button></h2>
+					<h3 class="mb-0">Personal Project</h3>
 				</div>
-				<div class="col-md-12 mb-5">
+				<div class="col-md-12">
 					<hr class="my-5">
-					<div class="iframe_wrapper">
-						<iframe src="https://www.youtube.com/embed/kg3v87o8Jq8" title="YouTube video player"
-							frameborder="0"
-							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-							allowfullscreen></iframe>
-					</div>
 				</div>
 				<div class="col-md-12">
 					<h3>Project Synopsis</h3>
 					<p>
-						inHale is a teletangible device that promotes synchronized breathing by enabling groups of
-						individuals to create
-						their own rhythms, patterns, and self-define their own collective metronome. We propose inHale
-						as a tool that
-						facilitates group synchronization in remote settings through breath.
+						A fun sweater exchange between six designers.
 					</p>
 				</div>
-
-				<div class="col-md-12 my-5">
-					<img loading="lazy" class="mx-auto" alt="GIF of someone using Inhale"
-						src="../img/inhale/inhale.gif">
+				<div class="col-lg-6 mt-5">
+					<img class="mx-auto" alt="front sweater design" src="../img/shirtsmas/front.png">
 				</div>
-				<div class="col-md-12">
-					<h3>The Technical</h3>
+				<div class="col-lg-6 mt-5">
+					<img class="mx-auto" alt="front sweater design" src="../img/shirtsmas/back.png">
+				</div>
+				<div class="col-lg-12 my-5">
+					<img class="mx-auto" alt="front sweater illustration" src="../img/shirtsmas/shirtsmas_print.png">
+				</div>
+				<div class="col-lg-12">
 					<p>
-						The current design of inHale reflects both the smooth flow, inspired by the relaxed, flow state
-						in yoga, and the need for the wearable to be minimally invasive.
+						I also had the fortunate opportunity to create a 1x1 inch nanochip version of this illustration
+						through an MIT IAP (Independent Activities Period) course! I wore a bunny suit and everything.
+						Thank you MIT.nano for the delightful experience!
 					</p>
 				</div>
-				<div class="col-md-12 mx-auto my-5">
-					<img loading="lazy" class="mx-auto" alt="Exploded Axonometric Mechanism Drawing of Inhale"
-						src="../img/inhale/exploded-axon.png">
+				<div class="col-lg-8 mt-5">
+					<img class="mx-auto" alt="nano chip version of illustration"
+						src="../img/shirtsmas/shirtsmas-nano-chip.png">
 				</div>
-				<div class="col-md-12">
-					<p class="mb-4">
-						The <b>inner motor and encoder</b> are controlled by a Raspberry Pi and synchronized by a
-						server-based script.
-					</p>
-					<p class="mb-4">
-						The <b>inner casing</b>, consisting of four 3D-printed parts and four bearings, houses the
-						motor, fixes the actuating belt onto the device, and allows for the actuating belt to expand and
-						contract smoothly.
-					</p>
-					<p class="mb-4">
-						The <b>spiral railing</b> was designed to minimize the size of the device. The double-spiral
-						design also enables the direct translation of the motor’s rotational movement to a symmetrical,
-						bilateral linear movement.
-					</p>
-					<p>
-						Lastly, the <b>actuating belt</b>, comprising two straps, a buckle, and two unique,
-						bearing-relieved ‘hooks’ that latch onto the spiral railing, creating the dynamic contraction
-						and expansion of the device.
-					</p>
-				</div>
-				<div class="col-md-12 my-5">
-					<img loading="lazy" class="mx-auto" alt="Hero shot image of people wearing inhale"
-						src="../img/inhale/heroshot.jpg">
-				</div>
-				<div class="col-md-12">
-					<p>
-						While most current haptic wearable research focuses on the recreation of physical sensations in
-						virtual environments (e.g. haptic VR gloves) or embodying virtual feedback through touch (e.g.
-						music rhythm), inHale aims to create interpersonal connections through a physical and
-						essentially human input and output. The device is strapped onto each person’s chest or stomach,
-						depending on use (e.g. singing utilizes ‘belly’ breathing), and buckled into the actuating belt.
-						In the case of a chest-strapped scenario, when one participant inhales, other participants feel
-						a slight expansion of the device, and when a participant exhales, other participants feel the
-						contraction around their diaphragms. The expansion and contraction suggests the wearer to inhale
-						and exhale in synchrony with the movement of the device. When synchrony is attained, the device
-						is effectively passive.
-					</p>
-				</div>
-				<div class="col-md-12 mt-5">
-					<img loading="lazy" class="mx-auto" alt="render of two inhales" src="../img/inhale/render 1.png">
+				<div class="col-lg-4 mt-5">
+					<img class="mx-auto" alt="daniel noh in a bunny suit" src="../img/shirtsmas/bunnysuit.png">
 				</div>
 				<div class="col-md-12 text-center mt-5 pt-3">
-					<h3><a href="../projects">&lt;&lt; go back to projects</a></h3>
+					<h3><a href="../archive">&lt;&lt; go back to archive</a></h3>
 				</div>
 			</div>
 		</div>

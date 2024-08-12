@@ -88,7 +88,7 @@ h1 span {
   transition: 0.1s ease-in;
   font-family: "Gothic A1" !important;
   color: #6d14cc;
-  padding-top: 0.25rem;
+  padding-top: 0.3rem;
   margin-bottom: 1rem;
   border-radius: 6px;
 }
@@ -228,6 +228,7 @@ a img {
   outline-offset: 2px;
   background-color: #6d14cc !important;
   box-shadow: none;
+  border: none;
 }
 
 .currentindex {
