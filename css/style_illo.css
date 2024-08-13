@@ -15,7 +15,9 @@ a {
 }
 
 p a {
-  text-decoration: underline wavy #304bc5 !important;
+  color: #304bc5;
+  text-underline-offset: 0.25rem;
+  text-decoration: underline wavy #304bc5 2px !important;
   font-weight: 400;
 }
 
@@ -42,10 +44,10 @@ video {
   transform: translateY(-50%);
 }
 
-a:hover .modal-gallery h5 b,
-a:active .modal-gallery h5 b,
-a:focus .modal-gallery h5 b,
-a:focus-visible .modal-gallery h5 b {
+a:hover .modal-gallery h3 b,
+a:active .modal-gallery h3 b,
+a:focus .modal-gallery h3 b,
+a:focus-visible .modal-gallery h3 b {
   color: white;
   background-color: #304bc5;
   transition: 0.1s ease-in-out;
@@ -123,26 +125,13 @@ h1 span a:focus {
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  font-style: italic;
-  line-height: 1.5;
-  margin-bottom: 1rem;
-}
-
-h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-h5 {
   font-size: 1rem;
+  line-height: 1.6;
   font-weight: 300;
   display: inline;
 }

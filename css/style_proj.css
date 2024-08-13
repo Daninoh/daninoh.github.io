@@ -15,8 +15,10 @@ a {
 }
 
 p a {
-  text-decoration: underline wavy #26762c !important;
-  font-weight: 500;
+  color: #26762c;
+  text-underline-offset: 0.25rem;
+  text-decoration: underline wavy #26762c 2px !important;
+  font-weight: 400;
 }
 
 :is(p, h1, h2, h3, h4, h5) a:hover,
@@ -43,10 +45,10 @@ video {
   transform: translateY(-50%);
 }
 
-a:hover h5 b,
-a:active h5 b,
-a:focus h5 b,
-a:focus-visible h5 b {
+a:hover h3 b,
+a:active h3 b,
+a:focus h3 b,
+a:focus-visible h3 b {
   color: white;
   background-color: #26762c;
   transition: 0.2s ease-in-out;
@@ -100,34 +102,34 @@ h1 span a:focus {
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
 h3 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1.5;
-  font-style: italic;
-  margin-bottom: 1rem;
-}
-
-h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.5;
-}
-
-h5 {
   font-size: 1rem;
+  line-height: 1.6;
   font-weight: 300;
   display: inline;
+}
+
+.proj-subheading {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 p {
   font-size: 1.2rem;
   margin-bottom: 0;
   line-height: 1.6;
+}
+
+.project-title {
+  font-size: 1.6rem;
+}
+
+.proj-description {
+  line-height: 1.4;
 }
 
 iframe {
