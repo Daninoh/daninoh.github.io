@@ -17,7 +17,7 @@ a {
 p a {
   color: #e61b00;
   text-underline-offset: 0.25rem;
-  text-decoration: underline wavy #e61b00 2px !important;
+  /* text-decoration: underline wavy #e61b00 2px !important; */
   font-weight: 400;
 }
 
