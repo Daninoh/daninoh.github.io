@@ -209,6 +209,7 @@ a img {
   margin-bottom: 0.625rem;
   border-style: solid;
   border-width: 0.0625rem;
+  border-radius: 12px;
   color: rgba(0, 0, 0, 0.15);
 }
 

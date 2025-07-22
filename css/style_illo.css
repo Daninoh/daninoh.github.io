@@ -213,6 +213,7 @@ img {
   object-fit: cover;
   aspect-ratio: 3/2;
   margin-bottom: 0.625rem;
+  border-radius: 12px;
   border-style: solid;
   border-width: 0.0625rem;
   color: rgba(0, 0, 0, 0.15);

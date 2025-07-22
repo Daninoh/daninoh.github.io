@@ -185,6 +185,7 @@ img {
 a img {
   margin-bottom: 0.625rem;
   border-style: solid;
+  border-radius: 12px;
   border-width: 0.0625rem;
   color: rgba(0, 0, 0, 0.15);
 }
