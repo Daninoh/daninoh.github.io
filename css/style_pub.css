@@ -197,20 +197,14 @@ iframe {
 
 img {
   width: 100%;
+  border-width: 0.0625rem;
+  border-style: solid;
+  color: rgba(0, 0, 0, 0.15);
+  border-radius: 12px;
 }
 
 .content img {
   max-width: 100%;
-}
-
-a img {
-  object-fit: cover;
-  aspect-ratio: 3/2;
-  margin-bottom: 0.625rem;
-  border-style: solid;
-  border-width: 0.0625rem;
-  border-radius: 12px;
-  color: rgba(0, 0, 0, 0.15);
 }
 
 .btn-outline-info {
