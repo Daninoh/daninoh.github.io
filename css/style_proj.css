@@ -29,7 +29,7 @@ p a {
   background-color: #26762c !important;
   transition: 0.1s ease-in-out;
   text-decoration: none !important;
-  outline: 3px solid #26762c;
+  outline: 2px solid #26762c;
 }
 
 h5 b {
@@ -53,7 +53,7 @@ a:focus-visible h3 b {
   background-color: #26762c;
   transition: 0.2s ease-in-out;
   text-decoration: none !important;
-  outline: 3px solid #26762c;
+  outline: 2px solid #26762c;
 }
 
 a:hover img,

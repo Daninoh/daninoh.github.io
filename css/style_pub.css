@@ -28,7 +28,7 @@ p a {
   background-color: #6d14cc !important;
   transition: 0.1s ease-in-out;
   text-decoration: none !important;
-  outline: 3px solid #6d14cc;
+  outline: 2px solid #6d14cc;
 }
 /* 
 :is(p, h1, h2, h3, h4, h5) a:focus-visible {
@@ -61,7 +61,7 @@ a:focus-visible h5 b {
   background-color: #6d14cc;
   transition: 0.1s ease-in-out;
   text-decoration: none !important;
-  outline: 3px solid #6d14cc;
+  outline: 2px solid #6d14cc;
 }
 
 a:hover img,
@@ -197,9 +197,9 @@ iframe {
 
 img {
   width: 100%;
-  border-width: 0.0625rem;
+  border-width: 1px;
   border-style: solid;
-  color: rgba(0, 0, 0, 0.15);
+  color: rgba(0, 0, 0, 0.25);
   border-radius: 12px;
 }
 
