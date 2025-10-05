@@ -51,7 +51,7 @@ a:focus h3 b,
 a:focus-visible h3 b {
   color: white;
   background-color: #26762c;
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
   text-decoration: none !important;
   outline: 2px solid #26762c;
 }
@@ -60,7 +60,7 @@ a:hover img,
 a:active img,
 a:focus img,
 a:focus-visible img {
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
   outline: 3px solid #26762c;
   outline-offset: -3px;
   transform: scale(1.02);

@@ -68,7 +68,7 @@ a:hover img,
 a:active img,
 a:focus img,
 a:focus-visible img {
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
   outline: 3px solid #6d14cc;
   outline-offset: -3px;
   transform: scale(1.02);

@@ -59,7 +59,7 @@ a:hover .modal-gallery img,
 a:active .modal-gallery img,
 a:focus .modal-gallery img,
 a:focus-visible .modal-gallery img {
-  transition: 0.2s ease-in-out;
+  transition: 0.1s ease-in-out;
   outline: 3px solid #304bc5;
   outline-offset: -3px;
   transform: scale(1.02);
