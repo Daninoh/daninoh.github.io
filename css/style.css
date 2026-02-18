@@ -154,13 +154,22 @@ iframe {
 
 .drawing-area {
   width: 100%;
-  max-width: 350px;
+  /* max-width: 350px; */
   height: 300px;
   border: 1px solid #e61b00;
   background-color: #ffffff;
   cursor: crosshair;
   margin-bottom: 30px;
   border-radius: 12px;
+}
+
+.canvas-container {
+  width: 100%;
+}
+
+#drawingCanvas {
+  width: 100%;
+  display: block;
 }
 
 .post {
