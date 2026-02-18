@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Set up the drawing canvas
   const canvas = document.getElementById("drawingCanvas");
   const ctx = canvas.getContext("2d");
 
   let isDrawing = false;
 
-  // Resize + Initialize Canvas
+  // resize function + initialize
 
   function resizeCanvas() {
     const temp = document.createElement("canvas");
@@ -16,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     temp.height = canvas.height;
     tempCtx.drawImage(canvas, 0, 0);
 
-    // Measure new size — rect is driven by CSS (100% width)
+    // get new size of container
     const rect = canvas.getBoundingClientRect();
     const width = Math.min(350, rect.width || 350);
     const height = 300;
@@ -26,18 +25,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
-    // ✅ Destination in logical pixels, not physical
-    ctx.drawImage(
-      temp,
-      0,
-      0,
-      temp.width,
-      temp.height,
-      0,
-      0,
-      width,
-      height, // <-- was canvas.width, canvas.height
-    );
+    // redraw old **scale to new size**
+    ctx.drawImage(temp, 0, 0, temp.width, temp.height, 0, 0, width, height);
 
     ctx.lineWidth = 2;
     ctx.strokeStyle = "#e61b00";
@@ -52,10 +41,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Initial setup
+  // initialize
   window.addEventListener("load", resizeCanvas);
 
-  // Drawing Helpers
+  // helpers for mouse/touch position
   function getPos(e) {
     const rect = canvas.getBoundingClientRect();
 
@@ -71,8 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const dpr = window.devicePixelRatio || 1;
 
-    // canvas.width is physical pixels, so divide by DPR to get logical pixels,
-    // then scale by how much CSS has stretched/shrunk the element
+    // physical / logical pixels
     const scaleX = canvas.width / dpr / rect.width;
     const scaleY = canvas.height / dpr / rect.height;
 
@@ -82,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function () {
     };
   }
 
-  // Drawing Logic
+  // drawing
   function startDrawing(e) {
     isDrawing = true;
 
@@ -106,13 +94,13 @@ document.addEventListener("DOMContentLoaded", function () {
     ctx.stroke();
   }
 
-  // Mouse Events
+  // mouse
   canvas.addEventListener("mousedown", startDrawing);
   canvas.addEventListener("mousemove", draw);
   canvas.addEventListener("mouseup", stopDrawing);
   canvas.addEventListener("mouseleave", stopDrawing);
 
-  // Touch Events
+  // touch
   canvas.addEventListener(
     "touchstart",
     (e) => {
