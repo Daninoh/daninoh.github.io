@@ -297,7 +297,7 @@
 					canvas.height = height * dpr;
 
 					// Scale context to match device pixel ratio
-					ctx.scale(dpr, dpr);
+					ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
 
 					// Restore drawing (scaled)
 					ctx.drawImage(
@@ -326,23 +326,39 @@
 				window.addEventListener('load', resizeCanvas);
 
 				// Drawing Helpers
-				function getMousePos(e) {
+				function getPos(e) {
 					const rect = canvas.getBoundingClientRect();
 
-					const scaleX = canvas.width / rect.width;
-					const scaleY = canvas.height / rect.height;
+					let clientX, clientY;
+
+					if (e.touches && e.touches.length > 0) {
+						clientX = e.touches[0].clientX;
+						clientY = e.touches[0].clientY;
+					} else {
+						clientX = e.clientX;
+						clientY = e.clientY;
+					}
+
+					const dpr = window.devicePixelRatio || 1;
+
+					// canvas.width is physical pixels, so divide by DPR to get logical pixels,
+					// then scale by how much CSS has stretched/shrunk the element
+					const scaleX = (canvas.width / dpr) / rect.width;
+					const scaleY = (canvas.height / dpr) / rect.height;
 
 					return {
-						x: (e.clientX - rect.left) * scaleX,
-						y: (e.clientY - rect.top) * scaleY
+						x: (clientX - rect.left) * scaleX,
+						y: (clientY - rect.top) * scaleY
 					};
 				}
+
 
 				// Drawing Logic
 				function startDrawing(e) {
 					isDrawing = true;
 
-					const pos = getMousePos(e);
+					const pos = getPos(e);
+
 
 					ctx.beginPath();
 					ctx.moveTo(pos.x, pos.y);
@@ -356,7 +372,8 @@
 				function draw(e) {
 					if (!isDrawing) return;
 
-					const pos = getMousePos(e);
+					const pos = getPos(e);
+
 
 					ctx.lineTo(pos.x, pos.y);
 					ctx.stroke();
@@ -368,40 +385,23 @@
 				canvas.addEventListener('mouseup', stopDrawing);
 				canvas.addEventListener('mouseleave', stopDrawing);
 
-				// Touch → Mouse Mapping
+				// Touch Events
 				canvas.addEventListener('touchstart', (e) => {
 					e.preventDefault();
-
-					const t = e.touches[0];
-
-					canvas.dispatchEvent(
-						new MouseEvent('mousedown', {
-							clientX: t.clientX,
-							clientY: t.clientY
-						})
-					);
+					startDrawing(e);
 				}, { passive: false });
 
 				canvas.addEventListener('touchmove', (e) => {
 					e.preventDefault();
-
-					const t = e.touches[0];
-
-					canvas.dispatchEvent(
-						new MouseEvent('mousemove', {
-							clientX: t.clientX,
-							clientY: t.clientY
-						})
-					);
+					draw(e);
 				}, { passive: false });
 
 				canvas.addEventListener('touchend', (e) => {
 					e.preventDefault();
-
-					canvas.dispatchEvent(
-						new MouseEvent('mouseup')
-					);
+					stopDrawing();
 				}, { passive: false });
+
+				canvas.addEventListener('touchcancel', stopDrawing);
 			});
 
 		</script>
