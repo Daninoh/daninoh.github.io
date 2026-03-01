@@ -22,8 +22,6 @@ p a {
 }
 
 :is(p, h1, h2, h3, h4, h5) a:hover,
-:is(p, h1, h2, h3, h4, h5) a:active,
-:is(p, h1, h2, h3, h4, h5) a:focus,
 :is(p, h1, h2, h3, h4, h5) a:focus-visible {
   color: white !important;
   background-color: #26762c !important;
@@ -46,8 +44,6 @@ video {
 }
 
 a:hover h3 b,
-a:active h3 b,
-a:focus h3 b,
 a:focus-visible h3 b {
   color: white;
   background-color: #26762c;
@@ -57,8 +53,6 @@ a:focus-visible h3 b {
 }
 
 a:hover img,
-a:active img,
-a:focus img,
 a:focus-visible img {
   transition: 0.1s ease-in-out;
   outline: 3px solid #26762c;
@@ -88,9 +82,7 @@ h1 span a {
 }
 
 h1 span a:hover,
-h1 span a:active,
-h1 span a:focus-visible,
-h1 span a:focus {
+h1 span a:focus-visible {
   outline-offset: -1px;
   outline: 3px solid #26762c;
   color: #ffffff;
@@ -215,8 +207,6 @@ a img {
 }
 
 .btn-outline-info:hover,
-.btn-outline-info:active,
-.btn-outline-info:focus,
 .btn-outline-info:focus-visible {
   color: white !important;
   outline: 3px solid #26762c;
@@ -231,8 +221,6 @@ a img {
 }
 
 .list-group-item-action:hover,
-.list-group-item-action:active,
-.list-group-item-action:focus,
 .list-group-item-action:focus-visible {
   color: white;
   background-color: #26762c;
@@ -260,7 +248,6 @@ a img {
 }
 
 .nav-link:hover,
-.nav-link:active,
 .nav-link:focus-visible {
   color: #26762c;
   transform: scale(1.05);
@@ -271,7 +258,6 @@ a img {
 }
 
 #research:hover,
-#research:active,
 #research:focus-visible {
   color: #6d14cc !important;
   transform: scale(1.05);
@@ -280,7 +266,6 @@ a img {
 }
 
 #play:hover,
-#play:active,
 #play:focus-visible {
   color: #304bc5 !important;
   transform: scale(1.05);
@@ -289,7 +274,6 @@ a img {
 }
 
 #proj:hover,
-#proj:active,
 #proj:focus-visible {
   color: #26762c !important;
   transform: scale(1.05);
@@ -298,7 +282,6 @@ a img {
 }
 
 #me:hover,
-#me:active,
 #me:focus-visible {
   color: #e61b00 !important;
   transform: scale(1.05);
@@ -343,8 +326,6 @@ a img {
 }
 
 .wrapper .icon:hover,
-.wrapper .icon:active,
-.wrapper .icon:focus,
 .wrapper .icon:focus-visible {
   background-color: #26762c;
   color: #ffffff;
