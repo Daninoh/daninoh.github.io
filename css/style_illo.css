@@ -41,11 +41,11 @@ p a {
     height: auto;
     padding: 0.6rem 1.2rem;
 
-    background-color: #e61b00;
+    background-color: #304bc5;
     color: #ffffff;
 
     border-radius: 8px;
-    outline: 3px solid #e61b00;
+    outline: 3px solid #304bc5;
     outline-offset: 2px;
 
     font-weight: 500;
@@ -295,7 +295,7 @@ img {
 .nav-link:hover,
 .nav-link:focus-visible {
     color: #304bc5;
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 .navbar-brand {
@@ -305,7 +305,7 @@ img {
 #research:hover,
 #research:focus-visible {
     color: #6d14cc !important;
-    transform: scale(1.05);
+
     outline: 3px solid #6d14cc;
     outline-offset: -2px;
 }
@@ -313,7 +313,7 @@ img {
 #play:hover,
 #play:focus-visible {
     color: #304bc5 !important;
-    transform: scale(1.05);
+
     outline: 3px solid #304bc5;
     outline-offset: -2px;
 }
@@ -321,7 +321,7 @@ img {
 #proj:hover,
 #proj:focus-visible {
     color: #26762c !important;
-    transform: scale(1.05);
+
     outline: 3px solid #26762c;
     outline-offset: -2px;
 }
@@ -329,7 +329,7 @@ img {
 #me:hover,
 #me:focus-visible {
     color: #e61b00 !important;
-    transform: scale(1.05);
+
     outline: 3px solid #e61b00;
     outline-offset: -2px;
 }
