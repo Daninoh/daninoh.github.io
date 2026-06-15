@@ -65,6 +65,10 @@ p a {
   outline: 2px solid #e61b00;
 }
 
+.pageheader {
+  text-decoration: underline #e61b00 solid 6px !important;
+}
+
 h3 b {
   font-weight: 600;
 }
