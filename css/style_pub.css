@@ -225,6 +225,10 @@ img {
     border-radius: 12px;
 }
 
+.award {
+    color: #6d14cc;
+}
+
 .content img {
     max-width: 100%;
 }
