@@ -226,6 +226,9 @@ img {
 }
 
 .award {
+    font-size: 1rem;
+    font-weight: 300;
+    display: inline;
     color: #6d14cc;
 }
 
