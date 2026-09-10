@@ -246,6 +246,11 @@ a img {
   border-color: #e61b00;
 }
 
+.headshot {
+  border-style: solid;
+  border-radius: 12px;
+}
+
 .btn-outline-info:hover,
 .btn-outline-info:focus-visible {
   color: #ffffff !important;
