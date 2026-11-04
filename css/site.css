@@ -2,28 +2,29 @@
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&display=swap");
 
 /* ==========================================================
-   Accent
+   Page accent colors
+   Each page sets a class on <html>, e.g. <html class="page-cv">
    ========================================================== */
 
 :root {
-  --research: #6d14cc;
-  --illos: #304bc5;
-  --cv: #26762c;
-  --about: #e61b00;
-  --accent: var(--about);
+    --research: #6d14cc;
+    --illos: #304bc5;
+    --cv: #26762c;
+    --about: #e61b00;
+    --accent: var(--about);
 }
 
 .page-research {
-  --accent: var(--research);
+    --accent: var(--research);
 }
 .page-illos {
-  --accent: var(--illos);
+    --accent: var(--illos);
 }
 .page-cv {
-  --accent: var(--cv);
+    --accent: var(--cv);
 }
 .page-about {
-  --accent: var(--about);
+    --accent: var(--about);
 }
 
 /* ==========================================================
@@ -31,90 +32,90 @@
    ========================================================== */
 
 * {
-  font-family: "neue-haas-grotesk-display", sans-serif;
-  box-sizing: border-box;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    box-sizing: border-box;
 }
 
 html {
-  overflow-y: scroll;
-  scroll-behavior: smooth;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 a {
-  transition: 0.2s ease-in;
-  outline: none;
-  color: var(--accent);
-  font-weight: 500;
-  text-decoration: none !important;
+    transition: 0.2s ease-in;
+    outline: none;
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none !important;
 }
 
 p a {
-  color: var(--accent);
-  text-underline-offset: 0.25rem;
-  text-decoration: underline wavy var(--accent) 2px !important;
-  font-weight: 400;
+    color: var(--accent);
+    text-underline-offset: 0.25rem;
+    text-decoration: underline wavy var(--accent) 2px !important;
+    font-weight: 400;
 }
 
 :is(p, .nameicon, h1, h2, h3, h4, h5) a:hover,
 :is(p, .nameicon, h1, h2, h3, h4, h5) a:focus-visible {
-  color: white !important;
-  background-color: var(--accent) !important;
-  transition: 0.2s ease-in-out;
-  text-decoration: none !important;
-  outline: 2px solid var(--accent);
+    color: white !important;
+    background-color: var(--accent) !important;
+    transition: 0.2s ease-in-out;
+    text-decoration: none !important;
+    outline: 2px solid var(--accent);
 }
 
 a:hover img,
 a:focus-visible img {
-  transition: 0.2s ease-in-out;
-  outline: 3px solid var(--accent);
-  outline-offset: -3px;
-  transform: scale(1.02);
+    transition: 0.2s ease-in-out;
+    outline: 3px solid var(--accent);
+    outline-offset: -3px;
+    transform: scale(1.02);
 }
 
 h2 {
-  font-size: 2.5rem;
-  font-weight: 400;
+    font-size: 2.5rem;
+    font-weight: 400;
 }
 
 h3 {
-  font-size: 1rem;
-  line-height: 1.6;
-  font-weight: 300;
-  display: inline;
+    font-size: 1rem;
+    line-height: 1.6;
+    font-weight: 300;
+    display: inline;
 }
 
 h5 b {
-  color: var(--accent);
-  font-weight: 500;
+    color: var(--accent);
+    font-weight: 500;
 }
 
 p {
-  font-size: 1.2rem;
-  margin-bottom: 0;
-  line-height: 1.6;
+    font-size: 1.2rem;
+    margin-bottom: 0;
+    line-height: 1.6;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
 .content img {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 video {
-  padding-top: 1.875rem;
-  padding-bottom: 1.875rem;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
+    padding-top: 1.875rem;
+    padding-bottom: 1.875rem;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 footer {
-  font-size: 0.8em;
-  font-style: italic;
-  padding-top: 1rem;
+    font-size: 0.8em;
+    font-style: italic;
+    padding-top: 1rem;
 }
 
 /* ==========================================================
@@ -122,32 +123,32 @@ footer {
    ========================================================== */
 
 .skip-link {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
 }
 
 .skip-link:focus,
 .skip-link:focus-visible {
-  position: fixed;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: auto;
-  height: auto;
-  padding: 0.6rem 1.2rem;
-  background-color: var(--accent);
-  color: #ffffff;
-  border-radius: 8px;
-  outline: 3px solid var(--accent);
-  outline-offset: 2px;
-  font-weight: 500;
-  font-size: 0.95rem;
-  z-index: 9999;
-  transition: none;
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    height: auto;
+    padding: 0.6rem 1.2rem;
+    background-color: var(--accent);
+    color: #ffffff;
+    border-radius: 8px;
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+    font-weight: 500;
+    font-size: 0.95rem;
+    z-index: 9999;
+    transition: none;
 }
 
 /* ==========================================================
@@ -155,350 +156,336 @@ footer {
    ========================================================== */
 
 h1 span a {
-  font-size: 2rem;
-  transition: 0.2s ease-in;
-  font-family: "Gothic A1" !important;
-  color: var(--accent);
-  padding-top: 0.3rem;
-  border-radius: 6px;
-  white-space: nowrap;
+    font-size: 2rem;
+    transition: 0.2s ease-in;
+    font-family: "Gothic A1" !important;
+    color: var(--accent);
+    padding-top: 0.3rem;
+    border-radius: 6px;
+    white-space: nowrap;
 }
 
 h1 span a:hover,
 h1 span a:focus-visible {
-  outline-offset: -1px;
-  outline: 3px solid var(--accent);
-  color: #ffffff;
-  background-color: var(--accent);
+    outline-offset: -1px;
+    outline: 3px solid var(--accent);
+    color: #ffffff;
+    background-color: var(--accent);
 }
 
 .navbar {
-  padding: 0.9375rem 0;
-  margin-bottom: 1rem;
-  font-size: 1.1rem;
+    padding: 0.9375rem 0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
 }
 
 .navbar a:focus-visible {
-  outline: 3px solid var(--accent);
+    outline: 3px solid var(--accent);
 }
 
 .navbar-light .navbar-toggler {
-  margin-top: 0.3rem;
-  border: none;
-  outline-color: var(--accent);
+    margin-top: 0.3rem;
+    border: none;
+    outline-color: var(--accent);
 }
 
 .navbar-brand {
-  border-radius: 6px;
+    border-radius: 6px;
 }
 
 .nav-link {
-  color: rgba(0, 0, 0, 0.6) !important;
-  border-radius: 6px;
-  font-weight: 500;
-  margin-left: 0.5rem;
+    color: rgba(0, 0, 0, 0.6) !important;
+    border-radius: 6px;
+    font-weight: 500;
+    margin-left: 0.5rem;
 }
 
 .nav-link:hover,
 .nav-link:focus-visible {
-  transform: scale(1.02);
-  outline-offset: -2px;
+    transform: scale(1.02);
+    outline-offset: -2px;
 }
 
 .nav-item .active {
-  color: var(--accent) !important;
+    color: var(--accent) !important;
 }
 
 /* each nav link always hovers in its own page's color */
 #research:hover,
 #research:focus-visible {
-  color: var(--research) !important;
-  outline: 3px solid var(--research);
+    color: var(--research) !important;
+    outline: 3px solid var(--research);
 }
 
 #play:hover,
 #play:focus-visible {
-  color: var(--illos) !important;
-  outline: 3px solid var(--illos);
+    color: var(--illos) !important;
+    outline: 3px solid var(--illos);
 }
 
 #proj:hover,
 #proj:focus-visible {
-  color: var(--cv) !important;
-  outline: 3px solid var(--cv);
+    color: var(--cv) !important;
+    outline: 3px solid var(--cv);
 }
 
 #me:hover,
 #me:focus-visible {
-  color: var(--about) !important;
-  outline: 3px solid var(--about);
+    color: var(--about) !important;
+    outline: 3px solid var(--about);
 }
 
 /* ==========================================================
-   Components
+   Shared components
    ========================================================== */
 
 .pageheader {
-  text-decoration: underline var(--accent) solid 6px !important;
+    text-decoration: underline var(--accent) solid 6px !important;
 }
 
 .btn-outline-info {
-  color: var(--accent);
-  border-color: var(--accent);
+    color: var(--accent);
+    border-color: var(--accent);
 }
 
 .btn-outline-info:hover,
 .btn-outline-info:focus-visible {
-  color: #ffffff !important;
-  background-color: var(--accent) !important;
-  border-color: var(--accent);
-  outline: 3px solid var(--accent);
-  outline-offset: 2px;
-  box-shadow: none;
+    color: #ffffff !important;
+    background-color: var(--accent) !important;
+    border-color: var(--accent);
+    outline: 3px solid var(--accent);
+    outline-offset: 2px;
+    box-shadow: none;
 }
 
 .list-group-item-action:hover,
 .list-group-item-action:focus-visible {
-  color: white;
-  background-color: var(--accent);
+    color: white;
+    background-color: var(--accent);
 }
 
 .currentindex {
-  text-decoration: line-through !important;
+    text-decoration: line-through !important;
 }
 
 /* layout helpers */
 
 .container2 {
-  position: relative;
-  width: 100%;
-  display: flex;
-  gap: 0.9375rem;
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 0.9375rem;
 }
 
 .column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.9375rem;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
 }
 
 .post {
-  position: relative;
-  overflow: hidden;
+    position: relative;
+    overflow: hidden;
 }
 
 .headimage {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 2.8125rem;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 2.8125rem;
 }
 
 .my-5 {
-  width: 100%;
-  margin-top: 1.875rem;
-  margin-bottom: 1.875rem;
+    width: 100%;
+    margin-top: 1.875rem;
+    margin-bottom: 1.875rem;
 }
 
 .subtitle {
-  margin-top: 2.8125rem;
+    margin-top: 2.8125rem;
 }
 
 .grid-item {
-  width: 12.5rem;
+    width: 12.5rem;
 }
 
 .grid-item--width2 {
-  width: 25rem;
+    width: 25rem;
 }
 
 /* embeds */
 
 iframe {
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .iframe_wrapper {
-  position: relative;
-  margin-top: 0.9375rem;
-  padding-bottom: 56.25%;
+    position: relative;
+    margin-top: 0.9375rem;
+    padding-bottom: 56.25%;
 }
 
 .iframe_wrapper_long {
-  position: relative;
-  margin-top: 0.9375rem;
-  padding-bottom: 206%;
+    position: relative;
+    margin-top: 0.9375rem;
+    padding-bottom: 206%;
 }
 
 .iframe_wrapper_game {
-  position: relative;
-  height: 0;
-  padding-bottom: 41.25rem;
+    position: relative;
+    height: 0;
+    padding-bottom: 41.25rem;
 }
 
 /* social media icons */
 
 .wrapper .icon {
-  position: relative;
-  background-color: #ffffff;
-  border-radius: 50%;
-  margin: 10px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  display: inline-block;
-  align-items: center;
-  cursor: pointer;
-  transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  color: #333;
-  text-decoration: none;
+    position: relative;
+    background-color: #ffffff;
+    border-radius: 50%;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    display: inline-block;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    color: #333;
+    text-decoration: none;
 }
 
 .wrapper .icon:hover,
 .wrapper .icon:focus-visible {
-  background-color: var(--accent);
-  color: #ffffff;
+    background-color: var(--accent);
+    color: #ffffff;
 }
 
 /* scroll bar */
 
 ::-webkit-scrollbar {
-  width: 1em;
+    width: 1em;
 }
 
 ::-webkit-scrollbar-track {
-  background: #ffffff;
-  margin-block: 0.1em;
+    background: #ffffff;
+    margin-block: 0.1em;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--accent);
-  border: 0.25em solid #ffffff;
-  border-radius: 100vw;
+    background: var(--accent);
+    border: 0.25em solid #ffffff;
+    border-radius: 100vw;
 }
 
 /* text selection */
 
 ::selection {
-  color: white;
-  background: var(--accent);
+    color: white;
+    background: var(--accent);
 }
 
 /* ==========================================================
-   Loader + page entrance animation
+   Page entrance animation
    ========================================================== */
 
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  z-index: 1;
-  width: 1.875rem;
-  height: 1.875rem;
-  margin: -1.25rem 0 0 -1.25rem;
-  border: 0.3125rem solid var(--accent);
-  animation: spin 2.2s cubic-bezier(0.1, 0.7, 0.9, 0.5) infinite;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(540deg);
-  }
-}
-
+/* ease-out curve: starts moving quickly, then settles gently into place */
 .animate-bottom {
-  position: relative;
-  animation: animatebottom 0.6s backwards;
+    animation: animatebottom 0.5s cubic-bezier(0.22, 1, 0.36, 1) backwards;
+}
+
+/* the nav bar is the only animated element without a delay,
+   so this gives it a slower, softer entrance */
+.animate-bottom:not(.animate-delay) {
+    animation-duration: 0.8s;
 }
 
 .animate-delay {
-  animation-delay: 0.3s;
+    animation-delay: 0.3s;
 }
 
+/* transform (not "bottom") so the browser can animate it smoothly */
 @keyframes animatebottom {
-  from {
-    bottom: -1rem;
-    opacity: 0;
-  }
-  to {
-    bottom: 0;
-    opacity: 1;
-  }
+    from {
+        transform: translateY(1rem);
+        opacity: 0;
+    }
+    to {
+        transform: none;
+        opacity: 1;
+    }
 }
 
 /* ==========================================================
-   About
+   About (index)
    ========================================================== */
 
 :where(.page-about) h2 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 /* links on this page take their parent's weight
    (:where keeps specificity low so .nav-link and p a still win) */
 :where(.page-about) a {
-  font-weight: inherit;
+    font-weight: inherit;
 }
 
 .page-about p a {
-  text-decoration: none !important;
+    text-decoration: none !important;
 }
 
 .page-about h3 b,
 .page-about p b {
-  font-weight: 600;
+    font-weight: 600;
 }
 
 .introduction {
-  font-size: 2.25rem;
-  font-weight: 600;
+    font-size: 2.25rem;
+    font-weight: 600;
 }
 
 .page-about a:hover h3,
 .page-about a:focus-visible h3 {
-  color: white;
-  background-color: var(--accent);
-  transition: 0.2s ease-in-out;
-  outline: 2px solid var(--accent);
+    color: white;
+    background-color: var(--accent);
+    transition: 0.2s ease-in-out;
+    outline: 2px solid var(--accent);
 }
 
 .page-about a img {
-  margin-bottom: 0.625rem;
-  border: 0.0625rem solid rgba(0, 0, 0, 0.15);
-  border-radius: 12px;
+    margin-bottom: 0.625rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
 }
 
 .headshot {
-  border-style: solid;
-  border-radius: 12px;
+    border-style: solid;
+    border-radius: 12px;
 }
 
 /* doodle pad */
 
 .drawing-area {
-  width: 100%;
-  height: 300px;
-  border: 1px solid var(--accent);
-  background-color: #ffffff;
-  cursor: crosshair;
-  margin-bottom: 30px;
-  border-radius: 12px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid var(--accent);
+    background-color: #ffffff;
+    cursor: crosshair;
+    margin-bottom: 30px;
+    border-radius: 12px;
 }
 
 .canvas-container {
-  width: 100%;
+    width: 100%;
 }
 
 #drawingCanvas {
-  width: 100%;
-  display: block;
+    width: 100%;
+    display: block;
 }
 
 /* ==========================================================
@@ -506,51 +493,51 @@ iframe {
    ========================================================== */
 
 .page-research h3 {
-  font-size: 1.6rem;
-  line-height: 1.2;
-  font-weight: 500;
-  display: block;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    font-weight: 500;
+    display: block;
 }
 
 .page-research h4 {
-  font-size: 1.2rem;
-  font-weight: 600;
-  line-height: 1.3;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.3;
 }
 
 .page-research h5 {
-  font-size: 1rem;
-  font-weight: 300;
-  display: inline;
+    font-size: 1rem;
+    font-weight: 300;
+    display: inline;
 }
 
 .page-research h5 b {
-  color: inherit;
-  font-weight: 600;
+    color: inherit;
+    font-weight: 600;
 }
 
 .page-research a:hover h5 b,
 .page-research a:focus-visible h5 b {
-  color: white;
-  background-color: var(--accent);
-  transition: 0.2s ease-in-out;
-  outline: 2px solid var(--accent);
+    color: white;
+    background-color: var(--accent);
+    transition: 0.2s ease-in-out;
+    outline: 2px solid var(--accent);
 }
 
 .page-research img {
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
 }
 
 .pub-title {
-  color: var(--accent);
+    color: var(--accent);
 }
 
 .award {
-  font-size: 1rem;
-  font-weight: 300;
-  display: inline;
-  color: var(--accent);
+    font-size: 1rem;
+    font-weight: 300;
+    display: inline;
+    color: var(--accent);
 }
 
 /* ==========================================================
@@ -558,47 +545,47 @@ iframe {
    ========================================================== */
 
 .modal-gallery img {
-  object-fit: cover;
-  aspect-ratio: 3/2;
-  margin-bottom: 0.625rem;
-  border: 0.0625rem solid rgba(0, 0, 0, 0.15);
-  border-radius: 12px;
+    object-fit: cover;
+    aspect-ratio: 3/2;
+    margin-bottom: 0.625rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
 }
 
 .page-illos a:hover .modal-gallery h3 b,
 .page-illos a:focus-visible .modal-gallery h3 b {
-  color: white;
-  background-color: var(--accent);
-  transition: 0.2s ease-in-out;
-  outline: 2px solid var(--accent);
+    color: white;
+    background-color: var(--accent);
+    transition: 0.2s ease-in-out;
+    outline: 2px solid var(--accent);
 }
 
 .modal {
-  text-align: center;
-  scrollbar-width: none;
+    text-align: center;
+    scrollbar-width: none;
 }
 
 .modal::-webkit-scrollbar {
-  display: none;
+    display: none;
 }
 
 .modal-body {
-  padding: 1rem;
+    padding: 1rem;
 }
 
 .modal-dialog {
-  display: inline-block;
-  width: auto;
+    display: inline-block;
+    width: auto;
 }
 
 .carousel-item img {
-  min-height: calc(100% - 3.5rem);
-  max-height: calc(100vh - 9rem);
+    min-height: calc(100% - 3.5rem);
+    max-height: calc(100vh - 9rem);
 }
 
 .heroillo {
-  margin-top: 0.9375rem;
-  margin-bottom: 0.9375rem;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem;
 }
 
 /* ==========================================================
@@ -607,25 +594,25 @@ iframe {
 
 .page-cv a:hover h3 b,
 .page-cv a:focus-visible h3 b {
-  color: white;
-  background-color: var(--accent);
-  transition: 0.2s ease-in-out;
-  outline: 2px solid var(--accent);
+    color: white;
+    background-color: var(--accent);
+    transition: 0.2s ease-in-out;
+    outline: 2px solid var(--accent);
 }
 
 .page-cv .iframe_wrapper_long {
-  padding-bottom: 125%;
+    padding-bottom: 125%;
 }
 
 .proj-subheading {
-  font-size: 1.4rem;
-  font-weight: 600;
+    font-size: 1.4rem;
+    font-weight: 600;
 }
 
 .project-title {
-  font-size: 1.6rem;
+    font-size: 1.6rem;
 }
 
 .proj-description {
-  line-height: 1.4;
+    line-height: 1.4;
 }
