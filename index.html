@@ -13,12 +13,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- Bootstrap CSS -->
-	<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-			integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-			crossorigin="anonymous"
-		/>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+		integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
 	<link href="css/site.css" rel="stylesheet">
 	<title>Daniel J Noh</title>
 	<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
@@ -39,35 +35,76 @@
 	<meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 	<script src="https://kit.fontawesome.com/2b9890c185.js" crossorigin="anonymous"></script>
+	<script>
+		(function () {
+			var t;
+			try {
+				t = localStorage.getItem("theme");
+			} catch (e) { }
+			if (t !== "light" && t !== "dark") {
+				t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+			}
+			document.documentElement.setAttribute("data-theme", t);
+		})();
+	</script>
 </head>
-	<body onload="loaderFunction()">
-		<div style="display:none;" id="loadanim">
+
+<body onload="loaderFunction()">
+	<div style="display:none;" id="loadanim">
 		<a href="#main-content" class="skip-link">Skip to Main Content
 		</a>
 		<div class="container animate-bottom">
 			<!-- Navigation Bar -->
 			<nav class="navbar navbar-expand-md navbar-light w-100">
 				<div class="d-flex flex-grow-1">
-					<h1><span><a href="/">ㄴㅈㅎ</a></span></h1>
+					<h1>
+						<span><a href="/">ㄴㅈㅎ</a></span>
+					</h1>
 					<div class="w-100 text-right">
-						<button class="navbar-toggler" data-target="#myNavbar" data-toggle="collapse"
-							type="button"><span class="navbar-toggler-icon"></span></button>
+						<!-- theme toggle, phones/tablets (sits next to the menu button) -->
+						<button type="button" class="nav-link theme-toggle d-inline-block d-md-none"
+							aria-label="Dark mode" aria-pressed="false">
+							<svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+								<path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z" />
+							</svg>
+							<svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+								<circle cx="12" cy="12" r="4" />
+								<path
+									d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+							</svg>
+						</button>
+						<button class="navbar-toggler" data-target="#myNavbar" data-toggle="collapse" type="button">
+							<span class="navbar-toggler-icon"></span>
+						</button>
 					</div>
 				</div>
 				<div class="collapse navbar-collapse flex-grow-1 text-center" id="myNavbar">
 					<ul class="navbar-nav ml-auto flex-nowrap">
-
 						<li class="nav-item">
-							<a class="nav-link" id="research" href="research">Research</a>
+							<a class="nav-link" id="research" href="/research">Research</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="play" href="illos">Illustrations</a>
+							<a class="nav-link" id="play" href="/illos">Illustrations</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" id="proj" href="cv">CV</a>
+							<a class="nav-link" id="proj" href="/cv">CV</a>
 						</li>
-						<li class="nav-item">
-							<a class="nav-link active" id="me" href="/">About</a>
+						<li class="nav-item active">
+							<a class="nav-link" id="me" href="/">About</a>
+						</li>
+						<!-- theme toggle, desktop -->
+						<li class="nav-item d-none d-md-block">
+							<button type="button" class="nav-link theme-toggle" aria-label="Dark mode"
+								aria-pressed="false">
+								<svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+									<path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z" />
+								</svg>
+								<svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+									<circle cx="12" cy="12" r="4" />
+									<path
+										d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+								</svg>
+							</button>
 						</li>
 					</ul>
 				</div>
@@ -164,7 +201,7 @@
 								University.
 							</p>
 							<p class="mb-4">
-								Send your doodles to<b>&nbsp;dnoh&commat;upenn&period;edu</b>.
+								Send your doodles to<b>&nbsp;dnoh [at] upenn&period;edu</b>.
 							</p>
 						</div>
 					</div>
@@ -240,12 +277,13 @@
 				<div class="row">
 					<div class="col-lg-12 text-center">
 						<div class="wrapper">
-							<a href="mailto: dan.j.noh@gmail.com" target="_blank" class="icon at" aria-label="email">
-								<span><i class="fa-lg fab fa-at"></i></span>
-							</a>
 							<a href="https://scholar.google.com/citations?user=Ci4GUBcAAAAJ&hl=en&oi=ao" target="_blank"
 								class="icon google-scholar" aria-label="google-scholar">
 								<span><i class="fa-lg fab fa-google-scholar"></i></span>
+							</a>
+							<a href="https://orcid.org/0009-0002-7219-1988" target="_blank" rel="noopener"
+								class="icon orcid" aria-label="ORCID">
+								<span><i class="fa-lg fab fa-orcid"></i></span>
 							</a>
 							<a href="https://www.linkedin.com/in/dnoh/" target="_blank" class="icon linkedin-in"
 								aria-label="linkedin">
@@ -259,22 +297,19 @@
 			</div>
 		</footer>
 		<!-- Footer End -->
-		</div>
-		<!-- JavaScript -->
-		<script src="js/script.js">
-		</script>
-		<script src="js/doodlebox.js">
-		</script>
-		<!-- jQuery, then Bootstrap JS (the bundle includes Popper) -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-			crossorigin="anonymous"
-		></script>
-	</body>
+	</div>
+	<!-- JavaScript -->
+	<script src="js/script.js">
+	</script>
+	<script src="js/doodlebox.js">
+	</script>
+	<!-- jQuery, then Bootstrap JS (the bundle includes Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>

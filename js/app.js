@@ -43,11 +43,7 @@ window.addEventListener("resize", () => {
   imageIndex = 0;
   if (window.innerWidth < 800 && previousScreenSize >= 800) {
     generateMasonryGrid(1, posts);
-  } else if (
-    window.innerWidth >= 800 &&
-    window.innerWidth < 1200 &&
-    (previousScreenSize < 800 || previousScreenSize >= 1200)
-  ) {
+  } else if (window.innerWidth >= 800 && window.innerWidth < 1200 && (previousScreenSize < 800 || previousScreenSize >= 1200)) {
     generateMasonryGrid(2, posts);
   } else if (window.innerWidth >= 1200 && previousScreenSize < 1200) {
     generateMasonryGrid(3, posts);

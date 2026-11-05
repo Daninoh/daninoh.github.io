@@ -1,41 +1,53 @@
 <!doctype html>
 <html lang="en" class="page-research">
-    <head>
-        <!-- Metatags -->
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
-        <!-- Bootstrap CSS -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
-            integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
-            crossorigin="anonymous"
-        />
-        <link href="css/site.css" rel="stylesheet" />
-        <title>RESEARCH &#8212; Daniel J Noh</title>
-        <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png" />
-        <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png" />
-        <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png" />
-        <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png" />
-        <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png" />
-        <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png" />
-        <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png" />
-        <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png" />
-        <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-        <link rel="manifest" href="favicon/manifest.json" />
-        <meta name="msapplication-TileColor" content="#ffffff" />
-        <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png" />
-        <meta name="theme-color" content="#ffffff" />
-        <script src="https://kit.fontawesome.com/2b9890c185.js" crossorigin="anonymous"></script>
-    </head>
-    <body onload="loaderFunction()">
-        <div style="display: none" id="loadanim">
-            <a href="#main-content" class="skip-link">Skip to Main Content </a>
+
+<head>
+    <!-- Metatags -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link href="css/site.css" rel="stylesheet" />
+    <title>RESEARCH &#8212; Daniel J Noh</title>
+    <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="https://kit.fontawesome.com/2b9890c185.js" crossorigin="anonymous"></script>
+    <script>
+        (function () {
+            var t;
+            try {
+                t = localStorage.getItem("theme");
+            } catch (e) { }
+            if (t !== "light" && t !== "dark") {
+                t = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+            }
+            document.documentElement.setAttribute("data-theme", t);
+        })();
+    </script>
+</head>
+
+<body onload="loaderFunction()">
+    <div style="display: none" id="loadanim">
+        <a href="#main-content" class="skip-link">Skip to Main Content </a>
+        <div class="container animate-bottom">
+            <!-- Navigation Bar -->
             <div class="container animate-bottom">
                 <!-- Navigation Bar -->
                 <nav class="navbar navbar-expand-md navbar-light w-100">
@@ -44,6 +56,18 @@
                             <span><a href="/">ㄴㅈㅎ</a></span>
                         </h1>
                         <div class="w-100 text-right">
+                            <!-- theme toggle, phones/tablets (sits next to the menu button) -->
+                            <button type="button" class="nav-link theme-toggle d-inline-block d-md-none"
+                                aria-label="Dark mode" aria-pressed="false">
+                                <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z" />
+                                </svg>
+                                <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                                    <circle cx="12" cy="12" r="4" />
+                                    <path
+                                        d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+                                </svg>
+                            </button>
                             <button class="navbar-toggler" data-target="#myNavbar" data-toggle="collapse" type="button">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
@@ -51,17 +75,31 @@
                     </div>
                     <div class="collapse navbar-collapse flex-grow-1 text-center" id="myNavbar">
                         <ul class="navbar-nav ml-auto flex-nowrap">
-                            <li class="nav-item">
-                                <a class="nav-link active" id="research" href="research">Research</a>
+                            <li class="nav-item active">
+                                <a class="nav-link" id="research" href="/research">Research</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="play" href="illos">Illustrations</a>
+                                <a class="nav-link" id="play" href="/illos">Illustrations</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="proj" href="cv">CV</a>
+                                <a class="nav-link" id="proj" href="/cv">CV</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" id="me" href="/">About</a>
+                            </li>
+                            <!-- theme toggle, desktop -->
+                            <li class="nav-item d-none d-md-block">
+                                <button type="button" class="nav-link theme-toggle" aria-label="Dark mode"
+                                    aria-pressed="false">
+                                    <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+                                        <path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z" />
+                                    </svg>
+                                    <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+                                        <circle cx="12" cy="12" r="4" />
+                                        <path
+                                            d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+                                    </svg>
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -83,42 +121,27 @@
                         <!-- babyGPT IJCCI -->
 
                         <div class="col-lg-4 col-md-4 mb-5">
-                            <img
-                                class="img-fluid"
-                                draggable="false"
-                                src="img/research_covers/ijcci_babygpt_cover.png"
-                                alt="filled out ethical matrix showing what values students consider in generative language models"
-                            />
+                            <img class="img-fluid" draggable="false" src="img/research_covers/ijcci_babygpt_cover.png"
+                                alt="filled out ethical matrix showing what values students consider in generative language models" />
                         </div>
                         <div class="col-lg-8 col-md-8 mb-5">
                             <div>
                                 <h4>
-                                    <b
-                                        >High School Students Building babyGPTs: Engaging in Data Practices and
+                                    <b>High School Students Building babyGPTs: Engaging in Data Practices and
                                         Addressing Ethical Issues Through the Construction of Generative Language
-                                        Models</b
-                                    >
+                                        Models</b>
                                 </h4>
                                 <h5>
-                                    Luis Morales-Navarro, <b><u>Daniel J. Noh</u></b
-                                    >, Yasmin B. Kafai<br />
+                                    Luis Morales-Navarro, <b><u>Daniel J. Noh</u></b>, Yasmin B. Kafai<br />
                                     <i>International Journal of Child-Computer Interaction, 2025</i><br />
                                 </h5>
                                 <h5>
-                                    <a
-                                        class="mt-3 py-1 btn btn-outline-info"
-                                        href="https://osf.io/preprints/edarxiv/vesa9_v1"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >PDF</a
-                                    >
-                                    <a
-                                        class="mt-3 mx-2 py-1 btn btn-outline-info"
+                                    <a class="mt-3 py-1 btn btn-outline-info"
+                                        href="https://osf.io/preprints/edarxiv/vesa9_v1" target="_blank"
+                                        rel="noopener">PDF</a>
+                                    <a class="mt-3 mx-2 py-1 btn btn-outline-info"
                                         href="https://www.sciencedirect.com/science/article/pii/S2212868925000509"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >Link</a
-                                    >
+                                        target="_blank" rel="noopener">Link</a>
                                 </h5>
                             </div>
                         </div>
@@ -130,12 +153,9 @@
                         <!-- IDC 2026 -->
 
                         <div class="col-lg-4 col-md-4 mb-5">
-                            <img
-                                class="img-fluid"
-                                draggable="false"
+                            <img class="img-fluid" draggable="false"
                                 src="img/research_covers/buildtounderstand_cover.png"
-                                alt="network of connected pieces of technical and socio-ethical knowledge"
-                            />
+                                alt="network of connected pieces of technical and socio-ethical knowledge" />
                         </div>
                         <div class="col-lg-8 col-md-8 mb-5">
                             <div>
@@ -147,25 +167,16 @@
                                     </b>
                                 </h4>
                                 <h5>
-                                    Luis Morales-Navarro, <b><u>Daniel J. Noh</u></b
-                                    >, Lucianne Servat, Carly Netting, Yasmin B. Kafai, Danaé Metaxa<br />
+                                    Luis Morales-Navarro, <b><u>Daniel J. Noh</u></b>, Lucianne Servat, Carly Netting,
+                                    Yasmin B. Kafai, Danaé Metaxa<br />
                                     <i>Interaction Design and Children (IDC), 2026 </i><br />
                                 </h5>
                                 <h5>
-                                    <a
-                                        class="mt-3 py-1 btn btn-outline-info"
-                                        href="https://arxiv.org/pdf/2603.25852"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >PDF</a
-                                    >
-                                    <a
-                                        class="mt-3 mx-2 py-1 btn btn-outline-info"
-                                        href="https://doi.org/10.1145/3773077.3806107"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >Link</a
-                                    >
+                                    <a class="mt-3 py-1 btn btn-outline-info" href="https://arxiv.org/pdf/2603.25852"
+                                        target="_blank" rel="noopener">PDF</a>
+                                    <a class="mt-3 mx-2 py-1 btn btn-outline-info"
+                                        href="https://doi.org/10.1145/3773077.3806107" target="_blank"
+                                        rel="noopener">Link</a>
                                 </h5>
                             </div>
                         </div>
@@ -173,12 +184,8 @@
                         <!-- Survey IDC 2026 -->
 
                         <div class="col-lg-4 col-md-4 mb-5">
-                            <img
-                                class="img-fluid"
-                                draggable="false"
-                                src="img/research_covers/ai-auditsurvey_cover.png"
-                                alt="screenshot of paper survey"
-                            />
+                            <img class="img-fluid" draggable="false" src="img/research_covers/ai-auditsurvey_cover.png"
+                                alt="screenshot of paper survey" />
                         </div>
                         <div class="col-lg-8 col-md-8 mb-5">
                             <div>
@@ -190,25 +197,15 @@
                                 </h4>
                                 <h5>
                                     Luis Morales-Navarro, Deborah A. Fields, Michael T. Giang,
-                                    <b><u>Daniel J. Noh</u></b
-                                    >, Yasmin Kafai, Danaé Metaxa<br />
+                                    <b><u>Daniel J. Noh</u></b>, Yasmin Kafai, Danaé Metaxa<br />
                                     <i>Interaction Design and Children (IDC), 2026 </i><br />
                                 </h5>
                                 <h5>
-                                    <a
-                                        class="mt-3 py-1 btn btn-outline-info"
-                                        href="https://arxiv.org/pdf/2604.22959"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >PDF</a
-                                    >
-                                    <a
-                                        class="mt-3 mx-2 py-1 btn btn-outline-info"
-                                        href="https://doi.org/10.1145/3773077.3806107"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >Link</a
-                                    >
+                                    <a class="mt-3 py-1 btn btn-outline-info" href="https://arxiv.org/pdf/2604.22959"
+                                        target="_blank" rel="noopener">PDF</a>
+                                    <a class="mt-3 mx-2 py-1 btn btn-outline-info"
+                                        href="https://doi.org/10.1145/3773077.3806107" target="_blank"
+                                        rel="noopener">Link</a>
                                 </h5>
                             </div>
                         </div>
@@ -216,41 +213,25 @@
                         <!-- ISLS 2026 -->
 
                         <div class="col-lg-4 col-md-4 mb-5">
-                            <img
-                                class="img-fluid"
-                                draggable="false"
-                                src="img/research_covers/shiftingteacher_cover.png"
-                                alt="screenshot of ai auditing lesson with teacher and computer emojis"
-                            />
+                            <img class="img-fluid" draggable="false" src="img/research_covers/shiftingteacher_cover.png"
+                                alt="screenshot of ai auditing lesson with teacher and computer emojis" />
                         </div>
                         <div class="col-lg-8 col-md-8 mb-5">
                             <div>
                                 <h4>
-                                    <b
-                                        >"You Can Actually Do Something": Shifts in High School Computer Science
-                                        Teachers' Conceptions of AI/ML Systems and Algorithmic Justice</b
-                                    >
+                                    <b>"You Can Actually Do Something": Shifts in High School Computer Science
+                                        Teachers' Conceptions of AI/ML Systems and Algorithmic Justice</b>
                                 </h4>
                                 <h5>
-                                    <b><u>Daniel J. Noh</u></b
-                                    >, Deborah A. Fields, Yasmin B. Kafai, Danaé Metaxa<br />
+                                    <b><u>Daniel J. Noh</u></b>, Deborah A. Fields, Yasmin B. Kafai, Danaé Metaxa<br />
                                     <i>International Conference of the Learning Sciences (ICLS), 2026 </i><br />
                                 </h5>
                                 <h5>
-                                    <a
-                                        class="mt-3 py-1 btn btn-outline-info"
-                                        href="https://arxiv.org/pdf/2602.16123"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >PDF</a
-                                    >
-                                    <a
-                                        class="mt-3 mx-2 py-1 btn btn-outline-info"
-                                        href="https://doi.org/10.22318/icls2026.716535"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >Link</a
-                                    >
+                                    <a class="mt-3 py-1 btn btn-outline-info" href="https://arxiv.org/pdf/2602.16123"
+                                        target="_blank" rel="noopener">PDF</a>
+                                    <a class="mt-3 mx-2 py-1 btn btn-outline-info"
+                                        href="https://doi.org/10.22318/icls2026.716535" target="_blank"
+                                        rel="noopener">Link</a>
                                 </h5>
                             </div>
                         </div>
@@ -258,41 +239,26 @@
                         <!-- ICQE2025 -->
 
                         <div class="col-lg-4 col-md-4 mb-5">
-                            <img
-                                class="img-fluid"
-                                draggable="false"
-                                src="img/research_covers/guideside_cover.png"
-                                alt="ordered network of teacher teaching practice"
-                            />
+                            <img class="img-fluid" draggable="false" src="img/research_covers/guideside_cover.png"
+                                alt="ordered network of teacher teaching practice" />
                         </div>
                         <div class="col-lg-8 col-md-8 mb-5">
                             <div>
                                 <h4>
-                                    <b
-                                        >Guide on the Side or Sage on the Stage?: Exploring the Relationship between
-                                        Teachers’ Spatial and Verbal Discursive Strategies</b
-                                    >
+                                    <b>Guide on the Side or Sage on the Stage?: Exploring the Relationship between
+                                        Teachers’ Spatial and Verbal Discursive Strategies</b>
                                 </h4>
                                 <h5>
-                                    <b><u>Daniel J. Noh</u></b
-                                    ><br />
+                                    <b><u>Daniel J. Noh</u></b><br />
                                     <i>In Advances in Quantitative Ethnography (ICQE), 2025</i><br />
                                 </h5>
                                 <h5>
-                                    <a
-                                        class="mt-3 py-1 btn btn-outline-info"
-                                        href="https://osf.io/preprints/edarxiv/wmp28_v1"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >PDF</a
-                                    >
-                                    <a
-                                        class="mt-3 mx-2 py-1 btn btn-outline-info"
+                                    <a class="mt-3 py-1 btn btn-outline-info"
+                                        href="https://osf.io/preprints/edarxiv/wmp28_v1" target="_blank"
+                                        rel="noopener">PDF</a>
+                                    <a class="mt-3 mx-2 py-1 btn btn-outline-info"
                                         href="https://link.springer.com/chapter/10.1007/978-3-032-12229-2_33"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >Link</a
-                                    >
+                                        target="_blank" rel="noopener">Link</a>
                                 </h5>
                             </div>
                         </div>
@@ -300,45 +266,29 @@
                         <!-- Youth as Advisor -->
 
                         <div class="col-lg-4 col-md-4 mb-5">
-                            <img
-                                class="img-fluid"
-                                draggable="false"
-                                src="img/research_covers/advisor_cover.png"
-                                alt="teachers presenting auditing projects to other teachers, teens, and researchers"
-                            />
+                            <img class="img-fluid" draggable="false" src="img/research_covers/advisor_cover.png"
+                                alt="teachers presenting auditing projects to other teachers, teens, and researchers" />
                         </div>
                         <div class="col-lg-8 col-md-8 mb-5">
                             <div>
                                 <h4>
-                                    <b
-                                        >Youth as Advisors in Participatory Design: Situating Teens’ Expertise in
-                                        Everyday Algorithm Auditing with Teachers and Researchers</b
-                                    >
+                                    <b>Youth as Advisors in Participatory Design: Situating Teens’ Expertise in
+                                        Everyday Algorithm Auditing with Teachers and Researchers</b>
                                 </h4>
                                 <h5>
-                                    <b><u>Daniel J. Noh</u></b
-                                    >, Deborah A. Fields, Luis Morales-Navarro, Alexis Cabrera-Sutch, Yasmin B. Kafai,
+                                    <b><u>Daniel J. Noh</u></b>, Deborah A. Fields, Luis Morales-Navarro, Alexis
+                                    Cabrera-Sutch, Yasmin B. Kafai,
                                     Danaé Metaxa<br />
-                                    <i
-                                        >In Proceedings of the 24th Interaction Design and Children Conference (IDC),
-                                        2025</i
-                                    ><br />
+                                    <i>In Proceedings of the 24th Interaction Design and Children Conference (IDC),
+                                        2025</i><br />
                                 </h5>
                                 <h5>
-                                    <a
-                                        class="mt-3 py-1 btn btn-outline-info"
-                                        href="https://dl.acm.org/doi/epdf/10.1145/3713043.3728849"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >PDF</a
-                                    >
-                                    <a
-                                        class="mt-3 mx-2 py-1 btn btn-outline-info"
-                                        href="https://dl.acm.org/doi/10.1145/3713043.3728849"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >Link</a
-                                    >
+                                    <a class="mt-3 py-1 btn btn-outline-info"
+                                        href="https://dl.acm.org/doi/epdf/10.1145/3713043.3728849" target="_blank"
+                                        rel="noopener">PDF</a>
+                                    <a class="mt-3 mx-2 py-1 btn btn-outline-info"
+                                        href="https://dl.acm.org/doi/10.1145/3713043.3728849" target="_blank"
+                                        rel="noopener">Link</a>
                                 </h5>
                             </div>
                         </div>
@@ -346,44 +296,27 @@
                         <!-- babyGPT IDC -->
 
                         <div class="col-lg-4 col-md-4 mb-5">
-                            <img
-                                class="img-fluid"
-                                draggable="false"
-                                src="img/research_covers/babygpt_cover.png"
-                                alt="sample of Marvel-themed text outputs from youth-designed generative language models"
-                            />
+                            <img class="img-fluid" draggable="false" src="img/research_covers/babygpt_cover.png"
+                                alt="sample of Marvel-themed text outputs from youth-designed generative language models" />
                         </div>
                         <div class="col-lg-8 col-md-8 mb-5">
                             <div>
                                 <h4>
-                                    <b
-                                        >Building babyGPTs: Youth Engaging in Data Practices and Ethical<br />
-                                        Considerations through the Construction of Generative Language Models</b
-                                    >
+                                    <b>Building babyGPTs: Youth Engaging in Data Practices and Ethical<br />
+                                        Considerations through the Construction of Generative Language Models</b>
                                 </h4>
                                 <h5>
-                                    Luis Morales-Navarro, <b><u>Daniel J. Noh</u></b
-                                    >, Yasmin B. Kafai<br />
-                                    <i
-                                        >In Proceedings of the 24th Interaction Design and Children Conference (IDC),
-                                        2025</i
-                                    ><br />
+                                    Luis Morales-Navarro, <b><u>Daniel J. Noh</u></b>, Yasmin B. Kafai<br />
+                                    <i>In Proceedings of the 24th Interaction Design and Children Conference (IDC),
+                                        2025</i><br />
                                 </h5>
                                 <h5>
-                                    <a
-                                        class="mt-3 py-1 btn btn-outline-info"
-                                        href="https://dl.acm.org/doi/epdf/10.1145/3713043.3731525"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >PDF</a
-                                    >
-                                    <a
-                                        class="mt-3 mx-2 py-1 btn btn-outline-info"
-                                        href="https://dl.acm.org/doi/10.1145/3713043.3731525"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >Link</a
-                                    >
+                                    <a class="mt-3 py-1 btn btn-outline-info"
+                                        href="https://dl.acm.org/doi/epdf/10.1145/3713043.3731525" target="_blank"
+                                        rel="noopener">PDF</a>
+                                    <a class="mt-3 mx-2 py-1 btn btn-outline-info"
+                                        href="https://dl.acm.org/doi/10.1145/3713043.3731525" target="_blank"
+                                        rel="noopener">Link</a>
                                 </h5>
                             </div>
                         </div>
@@ -395,36 +328,23 @@
                         <!-- Project Zero Research -->
 
                         <div class="col-lg-4 col-md-4 mb-5">
-                            <img
-                                class="img-fluid"
-                                draggable="false"
-                                src="img/research_covers/makingspace_cover.png"
-                                alt="collection of visual icons for learning space design principles"
-                            />
+                            <img class="img-fluid" draggable="false" src="img/research_covers/makingspace_cover.png"
+                                alt="collection of visual icons for learning space design principles" />
                         </div>
                         <div class="col-lg-8 col-md-8 mb-5">
                             <div>
                                 <h4><b>Making the Space for Learning</b></h4>
                                 <h5>
-                                    Paula Garza Gonzalez, <u><b>Daniel Noh</b></u
-                                    >, Daniel Wilson<br />
+                                    Paula Garza Gonzalez, <u><b>Daniel Noh</b></u>, Daniel Wilson<br />
                                     <i>Harvard University (Project Zero), 2022</i><br />
                                 </h5>
                                 <h5>
-                                    <a
-                                        class="mt-3 py-1 btn btn-outline-info"
+                                    <a class="mt-3 py-1 btn btn-outline-info"
                                         href="https://pz.harvard.edu/sites/default/files/Making%20the%20Space%20for%20Learning.pdf"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >PDF</a
-                                    >
-                                    <a
-                                        class="mt-3 mx-2 py-1 btn btn-outline-info"
+                                        target="_blank" rel="noopener">PDF</a>
+                                    <a class="mt-3 mx-2 py-1 btn btn-outline-info"
                                         href="https://pz.harvard.edu/resources/making-the-space-for-learning"
-                                        target="_blank"
-                                        rel="noopener"
-                                        >Link</a
-                                    >
+                                        target="_blank" rel="noopener">Link</a>
                                 </h5>
                             </div>
                         </div>
@@ -437,32 +357,20 @@
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <div class="wrapper">
-                                <a
-                                    href="mailto: dan.j.noh@gmail.com"
-                                    target="_blank"
-                                    class="icon at"
-                                    aria-label="email"
-                                >
-                                    <span><i class="fa-lg fab fa-at"></i></span>
-                                </a>
-                                <a
-                                    href="https://scholar.google.com/citations?user=Ci4GUBcAAAAJ&hl=en&oi=ao"
-                                    target="_blank"
-                                    class="icon google-scholar"
-                                    aria-label="google-scholar"
-                                >
+                                <a href="https://scholar.google.com/citations?user=Ci4GUBcAAAAJ&hl=en&oi=ao"
+                                    target="_blank" class="icon google-scholar" aria-label="google-scholar">
                                     <span><i class="fa-lg fab fa-google-scholar"></i></span>
                                 </a>
-                                <a
-                                    href="https://www.linkedin.com/in/dnoh/"
-                                    target="_blank"
-                                    class="icon linkedin-in"
-                                    aria-label="linkedin"
-                                >
+                                <a href="https://orcid.org/0009-0002-7219-1988" target="_blank" rel="noopener"
+                                    class="icon orcid" aria-label="ORCID">
+                                    <span><i class="fa-lg fab fa-orcid"></i></span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/dnoh/" target="_blank" class="icon linkedin-in"
+                                    aria-label="linkedin">
                                     <span><i class="fa-lg fab fa-linkedin-in"></i></span>
                                 </a>
                             </div>
-                            Always learning something — always making another.<br />
+                            Always learning something — always making another.<br>
                             &copy; 2026 by Daniel J Noh.
                         </div>
                     </div>
@@ -474,15 +382,12 @@
         <script src="js/script.js"></script>
 
         <!-- jQuery, then Bootstrap JS (the bundle includes Popper) -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
-            crossorigin="anonymous"
-        ></script>
-    </body>
+            crossorigin="anonymous"></script>
+</body>
+
 </html>

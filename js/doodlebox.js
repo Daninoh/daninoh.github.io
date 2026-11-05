@@ -4,6 +4,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let isDrawing = false;
 
+  function inkColor() {
+    return getComputedStyle(canvas).getPropertyValue("--doodle-ink").trim() || "#e61b00";
+  }
+
   // resize function + initialize
 
   function resizeCanvas() {
@@ -29,11 +33,31 @@ document.addEventListener("DOMContentLoaded", function () {
     ctx.drawImage(temp, 0, 0, temp.width, temp.height, 0, 0, width, height);
 
     ctx.lineWidth = 2;
-    ctx.strokeStyle = "#e61b00";
+    ctx.strokeStyle = inkColor();
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
     ctx.beginPath();
   }
+
+  // recolor everything already drawn (e.g. after switching light/dark mode).
+  // The canvas only holds strokes on a transparent background, so "source-in"
+  // paints the new color exactly where the existing strokes are.
+  function recolorInk() {
+    const color = inkColor();
+    ctx.save();
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.globalCompositeOperation = "source-in";
+    ctx.fillStyle = color;
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.restore();
+    ctx.strokeStyle = color;
+  }
+
+  // watch for the theme toggle changing data-theme on <html>
+  new MutationObserver(recolorInk).observe(document.documentElement, {
+    attributes: true,
+    attributeFilter: ["data-theme"],
+  });
 
   window.addEventListener("resize", () => {
     if (!isDrawing) {
