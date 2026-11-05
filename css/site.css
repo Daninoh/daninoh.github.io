@@ -101,6 +101,10 @@ a {
   text-decoration: none !important;
 }
 
+a:hover {
+  color: var(--accent);
+}
+
 p a {
   color: var(--accent);
   text-underline-offset: 0.25rem;
