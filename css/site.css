@@ -368,11 +368,32 @@ h1 span a:focus-visible {
   border-color: var(--accent);
 }
 
+.btn-outline-info:focus,
+.btn-outline-info:not(:disabled):not(.disabled):active:focus,
+.btn-accent:focus,
+.btn-accent:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none;
+}
+
 .btn-outline-info:hover,
 .btn-outline-info:focus-visible {
   color: var(--on-accent) !important;
   background-color: var(--accent) !important;
   border-color: var(--accent);
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  box-shadow: none;
+}
+
+.btn-accent {
+  color: var(--on-accent);
+  background-color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-accent:hover,
+.btn-accent:focus-visible {
+  color: var(--on-accent);
   outline: 3px solid var(--accent);
   outline-offset: 2px;
   box-shadow: none;
@@ -547,8 +568,6 @@ iframe {
   font-size: 2rem;
 }
 
-/* links on this page take their parent's weight
-   (:where keeps specificity low so .nav-link and p a still win) */
 :where(.page-about) a {
   font-weight: inherit;
 }
@@ -594,8 +613,9 @@ iframe {
   border: 1px solid var(--accent);
   background-color: var(--surface);
   cursor: crosshair;
-  margin-bottom: 30px;
+  margin-bottom: 0.75rem;
   border-radius: 12px;
+  touch-action: none;
 }
 
 .canvas-container {
@@ -605,6 +625,25 @@ iframe {
 #drawingCanvas {
   width: 100%;
   display: block;
+}
+
+.doodle-pad {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.doodle-actions {
+  position: absolute;
+  left: 0.6rem;
+  right: 0.6rem;
+  bottom: 0.6rem;
+  display: flex;
+  justify-content: space-between; /* Save on the left, Clear on the right */
+  pointer-events: none; /* you can still draw in the gap between the buttons */
+}
+
+.doodle-actions .btn {
+  pointer-events: auto;
 }
 
 /* ==========================================================

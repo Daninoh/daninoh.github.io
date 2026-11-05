@@ -1,156 +1,146 @@
 document.addEventListener("DOMContentLoaded", function () {
   const canvas = document.getElementById("drawingCanvas");
+  if (!canvas) return;
   const ctx = canvas.getContext("2d");
 
   let isDrawing = false;
 
+  // ink color
   function inkColor() {
     return getComputedStyle(canvas).getPropertyValue("--doodle-ink").trim() || "#e61b00";
   }
 
-  // resize function + initialize
-
-  function resizeCanvas() {
-    const temp = document.createElement("canvas");
-    const dpr = window.devicePixelRatio || 1;
-    const tempCtx = temp.getContext("2d");
-
-    temp.width = canvas.width;
-    temp.height = canvas.height;
-    tempCtx.drawImage(canvas, 0, 0);
-
-    // get new size of container
-    const rect = canvas.getBoundingClientRect();
-    const width = Math.min(350, rect.width || 350);
-    const height = 300;
-
-    canvas.width = width * dpr;
-    canvas.height = height * dpr;
-
-    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-
-    // redraw old **scale to new size**
-    ctx.drawImage(temp, 0, 0, temp.width, temp.height, 0, 0, width, height);
-
+  // pen settings
+  function setPen() {
     ctx.lineWidth = 2;
-    ctx.strokeStyle = inkColor();
     ctx.lineCap = "round";
     ctx.lineJoin = "round";
-    ctx.beginPath();
+    ctx.strokeStyle = ctx.fillStyle = inkColor();
   }
 
-  // recolor everything already drawn (e.g. after switching light/dark mode).
-  // The canvas only holds strokes on a transparent background, so "source-in"
-  // paints the new color exactly where the existing strokes are.
+  // resize
+  function resizeCanvas() {
+    const dpr = window.devicePixelRatio || 1;
+    const rect = canvas.getBoundingClientRect();
+    const width = Math.round(rect.width * dpr);
+    const height = Math.round(rect.height * dpr);
+
+    // skip while hidden
+    if (!width || !height || (width === canvas.width && height === canvas.height)) return;
+
+    const old = document.createElement("canvas");
+    old.width = canvas.width;
+    old.height = canvas.height;
+    old.getContext("2d").drawImage(canvas, 0, 0);
+
+    canvas.width = width;
+    canvas.height = height;
+    ctx.drawImage(old, 0, 0); // keep drawings at their original size, not stretched
+
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    setPen();
+  }
+
+  // recolor on theme change
   function recolorInk() {
-    const color = inkColor();
     ctx.save();
     ctx.setTransform(1, 0, 0, 1, 0, 0);
     ctx.globalCompositeOperation = "source-in";
-    ctx.fillStyle = color;
+    ctx.fillStyle = inkColor();
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     ctx.restore();
-    ctx.strokeStyle = color;
+    setPen();
   }
 
-  // watch for the theme toggle changing data-theme on <html>
+  // pointer position inside the canvas
+  function getPos(e) {
+    const rect = canvas.getBoundingClientRect();
+    return { x: e.clientX - rect.left, y: e.clientY - rect.top };
+  }
+
+  canvas.addEventListener("pointerdown", function (e) {
+    if (!e.isPrimary) return; // ignore extra fingers
+    e.preventDefault(); // no text selection while dragging
+    canvas.setPointerCapture(e.pointerId); // keep the stroke going if it leaves the pad
+    isDrawing = true;
+
+    const { x, y } = getPos(e);
+
+    ctx.beginPath();
+    ctx.arc(x, y, ctx.lineWidth / 2, 0, Math.PI * 2);
+    ctx.fill();
+
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+  });
+
+  canvas.addEventListener("pointermove", function (e) {
+    if (!isDrawing || !e.isPrimary) return;
+    const { x, y } = getPos(e);
+    ctx.lineTo(x, y);
+    ctx.stroke();
+  });
+
+  function stopDrawing() {
+    isDrawing = false;
+  }
+
+  canvas.addEventListener("pointerup", stopDrawing);
+  canvas.addEventListener("pointercancel", stopDrawing);
+
+  // save/share
+  function saveDoodle() {
+    const out = document.createElement("canvas");
+    out.width = canvas.width;
+    out.height = canvas.height;
+    const outCtx = out.getContext("2d");
+    outCtx.fillStyle = getComputedStyle(canvas).backgroundColor;
+    outCtx.fillRect(0, 0, out.width, out.height);
+    outCtx.drawImage(canvas, 0, 0);
+
+    out.toBlob(async function (blob) {
+      const file = new File([blob], "doodle.png", { type: "image/png" });
+
+      const isTouchDevice = window.matchMedia("(pointer: coarse)").matches;
+      if (isTouchDevice && navigator.canShare && navigator.canShare({ files: [file] })) {
+        try {
+          await navigator.share({ files: [file], title: "My doodle" });
+          return;
+        } catch (err) {
+          if (err.name === "AbortError") return; // they closed the share sheet
+          // anything else: fall through to a normal download
+        }
+      }
+
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "doodle.png";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    }, "image/png");
+  }
+
+  // cear button
+  function clearDoodle() {
+    ctx.save();
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.restore();
+  }
+
+  const saveButton = document.getElementById("saveDoodle");
+  if (saveButton) saveButton.addEventListener("click", saveDoodle);
+
+  const clearButton = document.getElementById("clearDoodle");
+  if (clearButton) clearButton.addEventListener("click", clearDoodle);
+
+  new ResizeObserver(resizeCanvas).observe(canvas);
+
   new MutationObserver(recolorInk).observe(document.documentElement, {
     attributes: true,
     attributeFilter: ["data-theme"],
   });
-
-  window.addEventListener("resize", () => {
-    if (!isDrawing) {
-      resizeCanvas();
-    }
-  });
-
-  // initialize
-  window.addEventListener("load", resizeCanvas);
-
-  // helpers for mouse/touch position
-  function getPos(e) {
-    const rect = canvas.getBoundingClientRect();
-
-    let clientX, clientY;
-
-    if (e.touches && e.touches.length > 0) {
-      clientX = e.touches[0].clientX;
-      clientY = e.touches[0].clientY;
-    } else {
-      clientX = e.clientX;
-      clientY = e.clientY;
-    }
-
-    const dpr = window.devicePixelRatio || 1;
-
-    // physical / logical pixels
-    const scaleX = canvas.width / dpr / rect.width;
-    const scaleY = canvas.height / dpr / rect.height;
-
-    return {
-      x: (clientX - rect.left) * scaleX,
-      y: (clientY - rect.top) * scaleY,
-    };
-  }
-
-  // drawing
-  function startDrawing(e) {
-    isDrawing = true;
-
-    const pos = getPos(e);
-
-    ctx.beginPath();
-    ctx.moveTo(pos.x, pos.y);
-  }
-
-  function stopDrawing() {
-    isDrawing = false;
-    ctx.beginPath();
-  }
-
-  function draw(e) {
-    if (!isDrawing) return;
-
-    const pos = getPos(e);
-
-    ctx.lineTo(pos.x, pos.y);
-    ctx.stroke();
-  }
-
-  // mouse
-  canvas.addEventListener("mousedown", startDrawing);
-  canvas.addEventListener("mousemove", draw);
-  canvas.addEventListener("mouseup", stopDrawing);
-  canvas.addEventListener("mouseleave", stopDrawing);
-
-  // touch
-  canvas.addEventListener(
-    "touchstart",
-    (e) => {
-      e.preventDefault();
-      startDrawing(e);
-    },
-    { passive: false },
-  );
-
-  canvas.addEventListener(
-    "touchmove",
-    (e) => {
-      e.preventDefault();
-      draw(e);
-    },
-    { passive: false },
-  );
-
-  canvas.addEventListener(
-    "touchend",
-    (e) => {
-      e.preventDefault();
-      stopDrawing();
-    },
-    { passive: false },
-  );
-
-  canvas.addEventListener("touchcancel", stopDrawing);
 });

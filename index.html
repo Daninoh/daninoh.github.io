@@ -208,10 +208,17 @@
 
 
 					<div class="col-xl-4 col-md-12">
-						<!-- DOODLE PAD, inspired by (appropriated from?) Jean-Peïc Chou [https://jeanpeic.github.io/] -->
 						<h2 class="mb-4">&#6000; Doodle Pad</h2>
 						<div class="pb-3 canvas-container">
-							<canvas id="drawingCanvas" class="drawing-area" width="100%" height="350"></canvas>
+							<div class="doodle-pad">
+								<canvas id="drawingCanvas" class="drawing-area"></canvas>
+								<div class="doodle-actions">
+									<button type="button" id="saveDoodle" class="btn btn-outline-info btn-sm">Save
+										Doodle</button>
+									<button type="button" id="clearDoodle"
+										class="btn btn-outline-info btn-sm">Clear</button>
+								</div>
+							</div>
 						</div>
 						<!-- NEWS AND UPDATES -->
 						<h2 class="mb-3">&#128240; News and Updates</h2>
