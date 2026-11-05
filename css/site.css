@@ -112,8 +112,8 @@ p a {
   font-weight: 400;
 }
 
-:is(p, .nameicon, h1, h2, h3, h4, h5) a:hover,
-:is(p, .nameicon, h1, h2, h3, h4, h5) a:focus-visible {
+:is(p, h1, h2, h3, h4, h5) a:hover,
+:is(p, h1, h2, h3, h4, h5) a:focus-visible {
   color: var(--on-accent) !important;
   background-color: var(--accent) !important;
   transition: 0.2s ease-in-out;
@@ -154,18 +154,6 @@ p {
 
 img {
   width: 100%;
-}
-
-.content img {
-  max-width: 100%;
-}
-
-video {
-  padding-top: 1.875rem;
-  padding-bottom: 1.875rem;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 footer {
@@ -243,10 +231,6 @@ h1 span a:focus-visible {
   margin-top: 0.3rem;
   border: none;
   outline-color: var(--accent);
-}
-
-.navbar-brand {
-  border-radius: 6px;
 }
 
 .nav-link {
@@ -399,87 +383,10 @@ h1 span a:focus-visible {
   box-shadow: none;
 }
 
-.list-group-item-action:hover,
-.list-group-item-action:focus-visible {
-  color: var(--on-accent);
-  background-color: var(--accent);
-}
-
-.currentindex {
-  text-decoration: line-through !important;
-}
-
-/* layout helpers */
-
-.container2 {
-  position: relative;
-  width: 100%;
-  display: flex;
-  gap: 0.9375rem;
-}
-
-.column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.9375rem;
-}
-
-.post {
-  position: relative;
-  overflow: hidden;
-}
-
-.headimage {
-  width: 100%;
-  overflow: hidden;
-  margin-bottom: 2.8125rem;
-}
-
 .my-5 {
   width: 100%;
   margin-top: 1.875rem;
   margin-bottom: 1.875rem;
-}
-
-.subtitle {
-  margin-top: 2.8125rem;
-}
-
-.grid-item {
-  width: 12.5rem;
-}
-
-.grid-item--width2 {
-  width: 25rem;
-}
-
-/* embeds */
-
-iframe {
-  top: 0;
-  left: 0;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-
-.iframe_wrapper {
-  position: relative;
-  margin-top: 0.9375rem;
-  padding-bottom: 56.25%;
-}
-
-.iframe_wrapper_long {
-  position: relative;
-  margin-top: 0.9375rem;
-  padding-bottom: 206%;
-}
-
-.iframe_wrapper_game {
-  position: relative;
-  height: 0;
-  padding-bottom: 41.25rem;
 }
 
 /* social media icons */
@@ -600,11 +507,6 @@ iframe {
   border-radius: 12px;
 }
 
-.headshot {
-  border-style: solid;
-  border-radius: 12px;
-}
-
 /* doodle pad */
 
 .drawing-area {
@@ -613,7 +515,7 @@ iframe {
   border: 1px solid var(--accent);
   background-color: var(--surface);
   cursor: crosshair;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0;
   border-radius: 12px;
   touch-action: none;
 }
@@ -702,9 +604,39 @@ iframe {
    Illustrations
    ========================================================== */
 
+/* masonry grid: each illustration at its natural shape */
+.illo-masonry {
+  column-count: 2;
+  column-gap: 1.875rem;
+}
+
+@media (max-width: 767.98px) {
+  .illo-masonry {
+    column-count: 1;
+  }
+}
+
+.illo-tile {
+  break-inside: avoid; /* keep each tile in one piece */
+  margin-bottom: 1.5rem;
+}
+
+/* once script.js has dealt the tiles into columns (keeps left-to-right order);
+   the column-count rules above are the fallback if the script doesn't run */
+.illo-masonry.is-columns {
+  column-count: auto;
+  display: flex;
+  gap: 1.875rem;
+  align-items: flex-start;
+}
+
+.illo-column {
+  flex: 1 1 0;
+  min-width: 0;
+}
+
 .modal-gallery img {
-  object-fit: cover;
-  aspect-ratio: 3/2;
+  display: block;
   margin-bottom: 0.625rem;
   border: 0.0625rem solid var(--border);
   border-radius: 12px;
@@ -741,9 +673,9 @@ iframe {
   max-height: calc(100vh - 9rem);
 }
 
-.heroillo {
-  margin-top: 0.9375rem;
-  margin-bottom: 0.9375rem;
+/* remove Bootstrap's divider line above each caption */
+.carousel-item .modal-footer {
+  border-top: 0;
 }
 
 /* ==========================================================
@@ -756,21 +688,4 @@ iframe {
   background-color: var(--accent);
   transition: 0.2s ease-in-out;
   outline: 2px solid var(--accent);
-}
-
-.page-cv .iframe_wrapper_long {
-  padding-bottom: 125%;
-}
-
-.proj-subheading {
-  font-size: 1.4rem;
-  font-weight: 600;
-}
-
-.project-title {
-  font-size: 1.6rem;
-}
-
-.proj-description {
-  line-height: 1.4;
 }

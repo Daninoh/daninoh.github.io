@@ -55,3 +55,48 @@ document.addEventListener("keydown", function (e) {
   if (e.key === "ArrowLeft") modal.querySelector(".carousel-control-prev").click();
   if (e.key === "ArrowRight") modal.querySelector(".carousel-control-next").click();
 });
+
+(function () {
+  const grid = document.querySelector(".illo-masonry");
+  if (!grid) return;
+
+  const tiles = Array.from(grid.querySelectorAll(".illo-tile"));
+  let currentCount = 0;
+
+  // 2 columns from tablet width up (Bootstrap's md breakpoint), 1 on phones
+  function columnCount() {
+    return window.matchMedia("(min-width: 768px)").matches ? 2 : 1;
+  }
+
+  function layout(force) {
+    const count = columnCount();
+    if (count === currentCount && force !== true) return;
+    currentCount = count;
+
+    const columns = [];
+    const heights = [];
+    for (let i = 0; i < count; i++) {
+      const col = document.createElement("div");
+      col.className = "illo-column";
+      columns.push(col);
+      heights.push(0);
+    }
+
+    tiles.forEach(function (tile) {
+      const img = tile.querySelector("img");
+      const ratio = img && img.naturalWidth ? img.naturalHeight / img.naturalWidth : 1;
+      const shortest = heights.indexOf(Math.min.apply(null, heights));
+      columns[shortest].appendChild(tile);
+      heights[shortest] += ratio + 0.15; // + a little for the title and year
+    });
+
+    grid.replaceChildren.apply(grid, columns);
+    grid.classList.add("is-columns");
+  }
+
+  // images have their real sizes once the page has loaded
+  window.addEventListener("load", function () {
+    layout(true);
+  });
+  window.addEventListener("resize", layout);
+})();
