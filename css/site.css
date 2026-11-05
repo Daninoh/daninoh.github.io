@@ -35,11 +35,12 @@
   --bg: #ffffff;
   --text: #212529;
   --muted: rgba(0, 0, 0, 0.6);
-  --surface: #ffffff; /* modal, social icons */
+  --surface: #ffffff;
   --border: rgba(0, 0, 0, 0.15);
   --border-strong: rgba(0, 0, 0, 0.25);
-  --on-accent: #ffffff; /* text on an accent-colored background */
+  --on-accent: #ffffff;
   --doodle-ink: var(--accent); /* doodle pad strokes */
+  --doodle-btn: rgba(255, 255, 255, 0.85);
 }
 
 [data-theme="dark"] {
@@ -49,9 +50,10 @@
   --muted: rgba(255, 255, 255, 0.65);
   --surface: #2a2b2f;
   --border: rgba(255, 255, 255, 0.15);
-  --border-strong: rgba(255, 255, 255, 0.25);
+  --border-strong: rgba(255, 255, 255, 0.85);
   --on-accent: #1e1f22;
   --doodle-ink: #ffffff;
+  --doodle-btn: rgba(40, 40, 40, 0.7);
 
   --research: #b48cff;
   --illos: #8ea2ff;
@@ -540,11 +542,12 @@ h1 span a:focus-visible {
   right: 0.6rem;
   bottom: 0.6rem;
   display: flex;
-  justify-content: space-between; /* Save on the left, Clear on the right */
-  pointer-events: none; /* you can still draw in the gap between the buttons */
+  justify-content: space-between;
+  pointer-events: none;
 }
 
 .doodle-actions .btn {
+  background-color: var(--doodle-btn);
   pointer-events: auto;
 }
 

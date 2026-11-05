@@ -123,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }, "image/png");
   }
 
-  // cear button
+  // clear button
   function clearDoodle() {
     ctx.save();
     ctx.setTransform(1, 0, 0, 1, 0, 0);
