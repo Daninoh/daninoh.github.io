@@ -63,6 +63,31 @@ document.addEventListener("keydown", function (e) {
   const tiles = Array.from(grid.querySelectorAll(".illo-tile"));
   let currentCount = 0;
 
+  // the modal carousel is built from the gallery tiles, so each illustration is listed once (in the HTML)
+  const inner = document.querySelector("#carouselExample .carousel-inner");
+  const slides = tiles.map(function (tile) {
+    const thumb = tile.querySelector("img");
+    const title = tile.querySelector("b").textContent;
+    const year = tile.querySelector(":scope > h3").textContent;
+
+    const slide = document.createElement("div");
+    slide.className = "carousel-item";
+    slide.innerHTML = '<img class="d-block w-100" alt="">' + '<div class="modal-footer pb-0"><p class="mt-2 mb-1"></p></div>';
+    const img = slide.querySelector("img");
+    img.src = thumb.getAttribute("src");
+    img.alt = thumb.alt;
+    slide.querySelector("p").textContent = title + ", " + year;
+    inner.appendChild(slide);
+
+    // open the carousel on the clicked illustration
+    tile.querySelector("a").addEventListener("click", function () {
+      slides.forEach(function (s) {
+        s.classList.toggle("active", s === slide);
+      });
+    });
+    return slide;
+  });
+
   // 2 columns from tablet width up (Bootstrap's md breakpoint), 1 on phones
   function columnCount() {
     return window.matchMedia("(min-width: 768px)").matches ? 2 : 1;

@@ -607,7 +607,6 @@ h1 span a:focus-visible {
    Illustrations
    ========================================================== */
 
-/* masonry grid: each illustration at its natural shape */
 .illo-masonry {
   column-count: 2;
   column-gap: 1.875rem;
@@ -620,12 +619,10 @@ h1 span a:focus-visible {
 }
 
 .illo-tile {
-  break-inside: avoid; /* keep each tile in one piece */
+  break-inside: avoid;
   margin-bottom: 1.5rem;
 }
 
-/* once script.js has dealt the tiles into columns (keeps left-to-right order);
-   the column-count rules above are the fallback if the script doesn't run */
 .illo-masonry.is-columns {
   column-count: auto;
   display: flex;
@@ -676,7 +673,6 @@ h1 span a:focus-visible {
   max-height: calc(100vh - 9rem);
 }
 
-/* remove Bootstrap's divider line above each caption */
 .carousel-item .modal-footer {
   border-top: 0;
 }
