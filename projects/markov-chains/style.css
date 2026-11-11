@@ -1,0 +1,258 @@
+:root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #5f6368;
+    --primary: #7c1de8;
+    --primary-dark: #5a12b5;
+    --primary-tint: #f6f0fe;
+    --card-bg: #ffffff;
+    --border: #bbb8c0;
+    --max-width: 900px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    font-size: 1.05rem;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    color: var(--primary);
+    text-underline-offset: 3px;
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--primary-dark);
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    padding: 0.5rem 1rem;
+    outline: none;
+    background: var(--primary);
+    color: #fff;
+    z-index: 10;
+}
+
+.skip-link:focus {
+    color: #fff;
+    left: 0;
+}
+
+.site-header {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.75rem 1.5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.75rem 1.5rem;
+}
+
+.wordmark {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.5rem 1.5rem 3rem;
+}
+
+.intro {
+    font-weight: 600;
+    line-height: 1.35;
+    letter-spacing: -0.01em;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid var(--border);
+    margin: 2rem 0;
+}
+
+.section-title {
+    font-size: 1.4rem;
+}
+
+.resources {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.25rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background: var(--card-bg);
+    border: 2px solid var(--primary);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.card:hover,
+.card:focus-visible {
+    background: var(--primary-tint);
+    color: inherit;
+}
+
+.card:focus-visible {
+    outline: 3px solid var(--primary);
+    outline-offset: 3px;
+}
+
+.card h3 {
+    margin: 0 0 0.5rem;
+    color: var(--primary);
+    font-size: 1.25rem;
+}
+
+.card p {
+    margin: 0 0 1.25rem;
+    color: var(--muted);
+    flex-grow: 1;
+}
+
+.card-cta {
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.intro-sub,
+.section-lead {
+    color: var(--muted);
+}
+
+.intro-sub {
+    margin-bottom: 0;
+}
+
+.activities {
+    display: grid;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.activity {
+    display: flex;
+    gap: 1.1rem;
+    align-items: flex-start;
+    padding: 1.25rem 1.5rem;
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition:
+        border-color 0.15s ease,
+        background 0.15s ease;
+}
+
+.activity-num {
+    flex: 0 0 2.25rem;
+    height: 2.25rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 700;
+}
+
+.activity h3 {
+    margin: 0 0 0.25rem;
+    color: var(--primary);
+    font-size: 1.15rem;
+}
+
+.activity p {
+    margin: 0;
+    color: var(--muted);
+}
+
+.activity .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.75rem;
+}
+
+.tags span {
+    padding: 0.15rem 0.7rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--primary-dark);
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.paper-link {
+    display: inline-block;
+    padding: 0.6rem 1.25rem;
+    border: 2px solid var(--primary);
+    border-radius: 999px;
+    color: var(--primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        background 0.15s ease,
+        color 0.15s ease;
+}
+
+.paper-link:hover,
+.paper-link:focus-visible {
+    background: var(--primary);
+    color: #fff;
+}
+
+.site-footer {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding-top: 3rem;
+    color: var(--muted);
+    font-size: 0.9rem;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    .card,
+    .paper-link,
+    .activity {
+        transition: none;
+    }
+    .card:hover,
+    .card:focus-visible {
+        transform: none;
+    }
+}

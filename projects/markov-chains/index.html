@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#ffffff" />
+        <link
+            rel="icon"
+            href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛓️</text></svg>"
+        />
+        <title>Markov Chains Unplugged</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <a class="skip-link" href="#main-content">Skip to Main Content</a>
+
+        <header class="site-header">
+            <div class="wordmark">⛓️ Markov Chains Unplugged🔌</div>
+            <a class="paper-link" href="#">Link to Paper</a>
+        </header>
+
+        <main id="main-content">
+            <h2 class="intro">
+                Five unplugged, paper-based activities that introduce teens to Markov chains as an entry point for
+                learning about generative language models.
+            </h2>
+            <p class="intro-sub">
+                Using materials that require no prior technical background other than an understanding of fractions,
+                learners explore state-based prediction, tokenization, n-grams, and state transition diagrams, and build
+                their own paper-based Markov chains from datasets they collect themselves.
+            </p>
+
+            <hr />
+
+            <section id="materials" aria-labelledby="materials-heading">
+                <h2 class="section-title" id="materials-heading">Teaching Materials</h2>
+                <p class="section-lead">
+                    The activities are sequential, each building on concepts from the one before. The first three
+                    include a "doing it together" section for the whole class, then an "on your own" section for
+                    individual or paired practice. Running all five takes around 90 minutes.
+                </p>
+
+                <div class="resources">
+                    <a
+                        class="card"
+                        href="https://docs.google.com/document/d/19QoT5nZDqbYjsmTJMw7lu_tdA-_dgQHo3DaNCzZDFC8/edit?usp=sharing"
+                        target="_blank"
+                    >
+                        <h3>Teaching Guide &rarr;</h3>
+                        <p>
+                            Includes learning objectives, facilitation points, and discussion questions
+                        </p>
+                    </a>
+
+                    <a
+                        class="card"
+                        href="https://docs.google.com/presentation/d/1XZq1x0DVhr23sBCfflIv673n6xQWVLlUXAxltrk8cQM/edit?usp=sharing"
+                        target="_blank"
+                    >
+                        <h3>Slides &rarr;</h3>
+                        <p>A supporting slide deck to introduce each activity and guide learners</p>
+              
+                    </a>
+
+                    <a
+                        class="card"
+                        href="https://docs.google.com/presentation/d/1lGx1EnV9Wizy0kTfFOPpmHUsLxjAamFZ9WX6k329XtA/edit?usp=sharing"
+                        target="_blank"
+                    >
+                        <h3>Activity Print-outs &rarr;</h3>
+                        <p>
+                            Learner-facing printouts for all five activities
+                        </p>
+                    </a>
+                </div>
+            </section>
+
+            <section id="activities" aria-labelledby="activities-heading">
+
+
+                <ol class="activities">
+                    <li class="activity">
+                        <span class="activity-num" aria-hidden="true">1</span>
+                        <div>
+                            <h3>😊 ☹️ 😊 What Comes Next?</h3>
+                            <p>
+                                Learners predict the next animal emoji based on the one right before it. Spotting
+                                patterns builds intuition for how systems make predictions from prior data, and
+                                introduces tokenization.
+                            </p>
+                            <p class="tags"><span>Prediction from prior data</span></p>
+                        </div>
+                    </li>
+
+                    <li class="activity">
+                        <span class="activity-num" aria-hidden="true">2</span>
+                        <div>
+                            <h3>🐘 🦁 🐘 N-imals</h3>
+                            <p>
+                                Predictions now depend on the previous two or three tokens instead of one. Learners
+                                consider how more or less context changes a model's accuracy and behavior, and the
+                                tradeoffs of memory length.
+                            </p>
+                            <p class="tags"><span>N-grams</span><span>More context changes predictions</span></p>
+                        </div>
+                    </li>
+
+                    <li class="activity">
+                        <span class="activity-num" aria-hidden="true">3</span>
+                        <div>
+                            <h3>☀️ 🌧️ ☁️ Sunny, Rainy, Cloudy </h3>
+                            <p>
+                                Using weather emojis, learners move from single predictions to modeling a whole system,
+                                completing a state transition diagram of every possible state-to-state probability.
+                            </p>
+                            <p class="tags">
+                                <span>State transition diagrams</span><span>Prediction models as a system</span>
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="activity">
+                        <span class="activity-num" aria-hidden="true">4</span>
+                        <div>
+                            <h3>👊 ✌️ ✋ Rock, Paper, Scissors </h3>
+                            <p>
+                                Learners generate their own datasets by playing rock-paper-scissors against each other,
+                                then think about how the quantity and quality of data shape what a model predicts.
+                            </p>
+                            <p class="tags"><span>Data quantity and quality</span><span>Bias</span></p>
+                        </div>
+                    </li>
+
+                    <li class="activity">
+                        <span class="activity-num" aria-hidden="true">5</span>
+                        <div>
+                            <h3>🫩 🫠 😬 (Extension Activity) Guess the Emoji </h3>
+                            <p>
+                                Bringing it all together, learners design their own emoji datasets and challenge peers
+                                to model the predictive behavior of that data using state transition diagrams.
+                            </p>
+                            <p class="tags"><span>Dataset creation</span><span>Testing</span></p>
+                        </div>
+                    </li>
+                </ol>
+            </section>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Daniel Noh & Luis Morales-Navarro. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
